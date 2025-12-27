@@ -32,7 +32,9 @@ watch(isOnline, (online) => {
     </Transition>
 
     <NuxtLayout>
-      <NuxtPage />
+      <Transition name="page" mode="out-in">
+        <NuxtPage />
+      </Transition>
     </NuxtLayout>
 
     <!-- 토스트 알림 컨테이너 -->
@@ -41,6 +43,7 @@ watch(isOnline, (online) => {
 </template>
 
 <style>
+/* 오프라인 배너 트랜지션 */
 .slide-down-enter-active,
 .slide-down-leave-active {
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -50,5 +53,21 @@ watch(isOnline, (online) => {
 .slide-down-leave-to {
   transform: translateY(-100%);
   opacity: 0;
+}
+
+/* 페이지 트랜지션 */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
 }
 </style>

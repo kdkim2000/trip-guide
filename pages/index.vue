@@ -4,10 +4,13 @@ import type { DaySchedule } from '~/types'
 // 여행 스토어
 const tripStore = useTripStore()
 
-// Composable을 통한 데이터 로드
-const { data: itinerary } = await useItinerary()
-const { data: placesData } = await usePlaces()
-const { data: highlightsData } = await useHighlights()
+// Composable을 통한 데이터 로드 (pending, error 상태 추적)
+const { data: itinerary, pending: itineraryPending, error: itineraryError, refresh: refreshItinerary } = await useItinerary()
+const { data: placesData, pending: placesPending } = await usePlaces()
+const { data: highlightsData, pending: highlightsPending } = await useHighlights()
+
+// 전체 로딩 상태
+const isLoading = computed(() => itineraryPending.value || placesPending.value || highlightsPending.value)
 
 // 현재 시간
 const now = useNow({ interval: 1000 })
@@ -44,10 +47,25 @@ const topHighlights = computed(() => {
     .filter(h => h.priority <= 2)
     .slice(0, 4)
 })
+
+// Pull to Refresh
+const pageRef = ref<HTMLElement | null>(null)
+const { isPulling, isRefreshing, pullDistance, canRefresh } = usePullToRefresh(pageRef, {
+  onRefresh: async () => {
+    await refreshItinerary()
+  }
+})
 </script>
 
 <template>
-  <div class="min-h-screen">
+  <div ref="pageRef" class="min-h-screen relative">
+    <!-- Pull to Refresh 인디케이터 -->
+    <PullToRefresh
+      :is-refreshing="isRefreshing"
+      :pull-distance="pullDistance"
+      :can-refresh="canRefresh"
+    />
+
     <!-- 헤더 -->
     <header class="bg-primary-500 text-white px-4 pt-12 pb-6 safe-top">
       <div class="max-w-lg mx-auto">
@@ -75,9 +93,49 @@ const topHighlights = computed(() => {
 
     <!-- 메인 콘텐츠 -->
     <div class="px-4 py-6 max-w-lg mx-auto space-y-6">
-      <!-- 오늘의 일정 (여행 중일 때) -->
-      <section v-if="currentSchedule" class="card">
-        <h2 class="text-lg font-semibold mb-3">오늘의 일정</h2>
+      <!-- 로딩 상태 -->
+      <template v-if="isLoading">
+        <SkeletonCard :show-image="false" :lines="2" />
+        <SkeletonCard :show-image="false" :lines="3" />
+        <SkeletonList :count="2" :show-thumbnail="false" />
+      </template>
+
+      <!-- 에러 상태 -->
+      <ErrorState
+        v-else-if="itineraryError"
+        message="여행 정보를 불러올 수 없습니다"
+        @retry="refreshItinerary"
+      />
+
+      <!-- 콘텐츠 -->
+      <template v-else>
+        <!-- 빠른 링크 (상단으로 이동) -->
+        <section class="grid grid-cols-2 gap-3">
+          <NuxtLink to="/schedule" class="card flex items-center gap-3 hover:shadow-md transition-shadow active:scale-98">
+            <IconCalendar class="w-8 h-8 text-primary-500" />
+            <div>
+              <p class="font-semibold">전체 일정</p>
+              <p class="text-sm text-gray-500">{{ itinerary?.schedules.length }}일</p>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="/guide" class="card flex items-center gap-3 hover:shadow-md transition-shadow active:scale-98">
+            <IconMap class="w-8 h-8 text-primary-500" />
+            <div>
+              <p class="font-semibold">여행지 정보</p>
+              <p class="text-sm text-gray-500">{{ placesData?.places.length }}곳</p>
+            </div>
+          </NuxtLink>
+        </section>
+
+        <!-- 오늘의 일정 (여행 중일 때) - 강조 스타일 -->
+        <section v-if="currentSchedule" class="card border-l-4 border-l-primary-500 bg-gradient-to-r from-primary-50 to-white dark:from-primary-900/20 dark:to-gray-800">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xl">📅</span>
+            <h2 class="text-lg font-bold">오늘의 일정</h2>
+            <span class="ml-auto text-xs bg-primary-500 text-white px-2 py-0.5 rounded-full">
+              Day {{ tripStatus?.dayNumber }}
+            </span>
+          </div>
         <div class="space-y-3">
           <div
             v-for="item in currentSchedule.items.slice(0, 3)"
@@ -132,24 +190,7 @@ const topHighlights = computed(() => {
           </div>
         </dl>
       </section>
-
-      <!-- 빠른 링크 -->
-      <section class="grid grid-cols-2 gap-3">
-        <NuxtLink to="/schedule" class="card flex items-center gap-3">
-          <IconCalendar class="w-8 h-8 text-primary-500" />
-          <div>
-            <p class="font-medium">전체 일정</p>
-            <p class="text-sm text-gray-500">{{ itinerary?.schedules.length }}일</p>
-          </div>
-        </NuxtLink>
-        <NuxtLink to="/guide" class="card flex items-center gap-3">
-          <IconMap class="w-8 h-8 text-primary-500" />
-          <div>
-            <p class="font-medium">여행지 정보</p>
-            <p class="text-sm text-gray-500">{{ placesData?.places.length }}곳</p>
-          </div>
-        </NuxtLink>
-      </section>
+      </template>
     </div>
   </div>
 </template>

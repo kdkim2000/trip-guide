@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Place } from '~/types'
 
-// Composable을 통한 데이터 로드
-const { data: placesData } = await usePlaces()
+// Composable을 통한 데이터 로드 (pending, error 상태 추적)
+const { data: placesData, pending, error, refresh } = await usePlaces()
 
 // 검색어
 const searchQuery = ref('')
@@ -115,9 +115,24 @@ const placesByCity = computed(() => {
 
     <!-- 장소 목록 -->
     <div class="px-4 py-6 max-w-lg mx-auto">
-      <p class="text-sm text-gray-500 mb-4">총 {{ filteredPlaces.length }}곳</p>
+      <!-- 로딩 상태 -->
+      <template v-if="pending">
+        <div class="h-5 w-20 bg-gray-200 rounded animate-pulse mb-4" />
+        <SkeletonList :count="6" :show-thumbnail="true" />
+      </template>
 
-      <div v-for="(places, city) in placesByCity" :key="city" class="mb-6">
+      <!-- 에러 상태 -->
+      <ErrorState
+        v-else-if="error"
+        message="여행지 정보를 불러올 수 없습니다"
+        @retry="refresh"
+      />
+
+      <!-- 콘텐츠 -->
+      <template v-else>
+        <p class="text-sm text-gray-500 mb-4">총 {{ filteredPlaces.length }}곳</p>
+
+        <div v-for="(places, city) in placesByCity" :key="city" class="mb-6">
         <h2 class="text-lg font-semibold mb-3">{{ city }}</h2>
 
         <div class="space-y-3">
@@ -164,9 +179,10 @@ const placesByCity = computed(() => {
         </div>
       </div>
 
-      <div v-if="filteredPlaces.length === 0" class="text-center py-12 text-gray-500">
-        검색 결과가 없습니다
-      </div>
+        <div v-if="filteredPlaces.length === 0" class="text-center py-12 text-gray-500">
+          검색 결과가 없습니다
+        </div>
+      </template>
     </div>
   </div>
 </template>
