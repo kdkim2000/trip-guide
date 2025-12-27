@@ -1,0 +1,15 @@
+{
+  "trips": [
+    {
+      "id": "spain-portugal-2025",
+      "title": "스페인 & 포르투갈",
+      "subtitle": "9일간의 이베리아 반도 여행",
+      "thumbnail": "/images/톨레도대성당1.jpg",
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-09",
+      "countries": ["스페인", "포르투갈"],
+      "status": "upcoming"
+    }
+  ],
+  "defaultTripId": "spain-portugal-2025"
+}

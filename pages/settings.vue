@@ -2,6 +2,10 @@
 // 토스트 알림
 const toast = useToast()
 
+// 런타임 설정 (앱 버전)
+const config = useRuntimeConfig()
+const appVersion = config.public.appVersion as string
+
 // 다크모드 토글
 const colorMode = useColorMode()
 const isDark = computed({
@@ -11,17 +15,49 @@ const isDark = computed({
   }
 })
 
+// 여행 스토어
+const tripStore = useTripStore()
+
 // PWA 설치
-const { $pwa } = useNuxtApp()
+const canInstall = ref(false)
+const installPrompt = ref<any>(null)
 
 // 알림 권한
 const notificationPermission = ref<NotificationPermission>('default')
 
 onMounted(() => {
+  // 알림 권한 확인
   if ('Notification' in window) {
     notificationPermission.value = Notification.permission
   }
+
+  // PWA 설치 프롬프트 이벤트 리스너
+  window.addEventListener('beforeinstallprompt', (e: Event) => {
+    e.preventDefault()
+    installPrompt.value = e
+    canInstall.value = true
+  })
+
+  // 앱이 이미 설치된 경우 감지
+  window.addEventListener('appinstalled', () => {
+    canInstall.value = false
+    installPrompt.value = null
+    toast.success('앱이 설치되었습니다!')
+  })
 })
+
+// PWA 설치
+const installPWA = async () => {
+  if (installPrompt.value) {
+    installPrompt.value.prompt()
+    const { outcome } = await installPrompt.value.userChoice
+    if (outcome === 'accepted') {
+      toast.success('앱 설치가 시작되었습니다')
+    }
+    canInstall.value = false
+    installPrompt.value = null
+  }
+}
 
 const requestNotificationPermission = async () => {
   if ('Notification' in window) {
@@ -54,10 +90,30 @@ const clearCache = async () => {
 // 데이터 내보내기
 const exportData = () => {
   try {
+    // localStorage 데이터 수집
+    const localStorageData: Record<string, any> = {}
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i)
+      if (key) {
+        try {
+          localStorageData[key] = JSON.parse(localStorage.getItem(key) || '')
+        } catch {
+          localStorageData[key] = localStorage.getItem(key)
+        }
+      }
+    }
+
     const data = {
       exportedAt: new Date().toISOString(),
-      // 로컬 스토리지 데이터 등
+      appVersion: appVersion,
+      currentTripId: tripStore.currentTripId,
+      settings: {
+        colorMode: colorMode.preference,
+        notificationPermission: notificationPermission.value,
+      },
+      localStorage: localStorageData,
     }
+
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -80,13 +136,34 @@ const exportData = () => {
     </header>
 
     <div class="px-4 py-6 max-w-lg mx-auto space-y-6">
+      <!-- PWA 설치 (설치 가능할 때만 표시) -->
+      <section v-if="canInstall" class="card bg-primary-50 border-primary-200 dark:bg-primary-900/20 dark:border-primary-800">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-primary-500 flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold text-primary-900 dark:text-primary-100">앱 설치하기</h2>
+            <p class="text-sm text-primary-700 dark:text-primary-300 mt-1">홈 화면에 추가하여 더 빠르게 접근하세요.</p>
+            <button
+              @click="installPWA"
+              class="mt-3 btn btn-primary text-sm"
+            >
+              설치하기
+            </button>
+          </div>
+        </div>
+      </section>
+
       <!-- 앱 정보 -->
       <section class="card">
         <h2 class="text-lg font-semibold mb-4">앱 정보</h2>
         <div class="space-y-3">
           <div class="flex justify-between items-center">
             <span class="text-gray-600">버전</span>
-            <span class="text-gray-900">1.0.0</span>
+            <span class="text-gray-900">{{ appVersion }}</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="text-gray-600">빌드</span>

@@ -3,6 +3,12 @@
 const isOnline = useOnline()
 const toast = useToast()
 
+// 여행 스토어 초기화
+const tripStore = useTripStore()
+onMounted(() => {
+  tripStore.loadTrips()
+})
+
 // 오프라인/온라인 알림
 watch(isOnline, (online) => {
   if (!online) {

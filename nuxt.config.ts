@@ -8,7 +8,22 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vite-pwa/nuxt',
     '@nuxt/image',
+    '@nuxtjs/color-mode',
   ],
+
+  // 다크 모드 설정
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+  },
+
+  // 런타임 설정
+  runtimeConfig: {
+    public: {
+      appVersion: process.env.npm_package_version || '1.0.0',
+    },
+  },
 
   // 이미지 최적화 설정
   image: {
@@ -93,8 +108,9 @@ export default defineNuxtConfig({
     typeCheck: false,
   },
 
-  // Nitro 설정 - 정적 파일 서빙 개선
+  // Nitro 설정 - Vercel 배포
   nitro: {
+    preset: 'vercel',
     publicAssets: [
       {
         dir: 'public',

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { DaySchedule } from '~/types'
 
+// 여행 스토어
+const tripStore = useTripStore()
+
 // Composable을 통한 데이터 로드
 const { data: itinerary } = await useItinerary()
 const { data: placesData } = await usePlaces()
@@ -46,13 +49,15 @@ const topHighlights = computed(() => {
 <template>
   <div class="min-h-screen">
     <!-- 헤더 -->
-    <header class="bg-primary-500 text-white px-4 pt-12 pb-8 safe-top">
+    <header class="bg-primary-500 text-white px-4 pt-12 pb-6 safe-top">
       <div class="max-w-lg mx-auto">
-        <h1 class="text-2xl font-bold">{{ itinerary?.tripInfo.title || 'TripGuide' }}</h1>
-        <p class="text-primary-100 mt-1">{{ itinerary?.tripInfo.subtitle }}</p>
+        <!-- 여행 선택 -->
+        <div class="mb-4">
+          <TripSelector />
+        </div>
 
         <!-- 여행 상태 -->
-        <div v-if="tripStatus" class="mt-4 bg-white/20 rounded-lg p-4">
+        <div v-if="tripStatus" class="bg-white/20 rounded-lg p-4">
           <template v-if="tripStatus.type === 'before'">
             <p class="text-sm text-primary-100">여행까지</p>
             <p class="text-3xl font-bold">D-{{ tripStatus.daysLeft }}</p>

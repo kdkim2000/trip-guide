@@ -1,3 +1,21 @@
+// 여행 메타데이터 (목록용)
+export interface TripMeta {
+  id: string
+  title: string
+  subtitle: string
+  thumbnail: string
+  startDate: string
+  endDate: string
+  countries: string[]
+  status: 'upcoming' | 'ongoing' | 'completed'
+}
+
+// 여행 목록 데이터
+export interface TripsData {
+  trips: TripMeta[]
+  defaultTripId: string
+}
+
 // 여행 정보
 export interface TripInfo {
   id: string

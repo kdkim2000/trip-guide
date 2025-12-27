@@ -207,3 +207,87 @@
     @apply text-sm text-gray-500;
   }
 }
+
+/* 다크 모드 스타일 */
+@layer base {
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  /* 다크 모드 카드 */
+  .dark .card {
+    @apply bg-gray-800 border-gray-700;
+  }
+
+  /* 다크 모드 버튼 */
+  .dark .btn-secondary {
+    @apply bg-gray-700 text-gray-200 hover:bg-gray-600 active:bg-gray-500;
+  }
+
+  /* 다크 모드 헤더 */
+  .dark header {
+    @apply bg-gray-800 border-gray-700;
+  }
+
+  /* 다크 모드 타임라인 */
+  .dark .timeline-item {
+    @apply border-gray-600;
+  }
+
+  .dark .timeline-item::before {
+    @apply bg-gray-800 border-gray-500;
+  }
+
+  /* 다크 모드 토스트 */
+  .dark .toast {
+    @apply bg-gray-700;
+  }
+
+  /* 다크 모드 스켈레톤 */
+  .dark .skeleton {
+    @apply bg-gray-700;
+  }
+}
+
+@layer utilities {
+  /* 다크 모드 텍스트 - 직접 색상값 사용 */
+  .dark .text-gray-900 {
+    color: #f3f4f6; /* gray-100 */
+  }
+
+  .dark .text-gray-600 {
+    color: #9ca3af; /* gray-400 */
+  }
+
+  .dark .text-gray-500 {
+    color: #9ca3af; /* gray-400 */
+  }
+
+  /* 다크 모드 배경 - 직접 색상값 사용 */
+  .dark .bg-white {
+    background-color: #1f2937; /* gray-800 */
+  }
+
+  .dark .bg-gray-50 {
+    background-color: #111827; /* gray-900 */
+  }
+
+  .dark .bg-gray-100 {
+    background-color: #374151; /* gray-700 */
+  }
+
+  .dark .bg-gray-200 {
+    background-color: #4b5563; /* gray-600 */
+  }
+
+  /* 다크 모드 보더 - 직접 색상값 사용 */
+  .dark .border-gray-100 {
+    border-color: #374151; /* gray-700 */
+  }
+
+  .dark .border-gray-200 {
+    border-color: #4b5563; /* gray-600 */
+  }
+}
