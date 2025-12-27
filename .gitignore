@@ -40,3 +40,5 @@ coverage
 # PWA
 sw.*
 workbox-*
+
+.vercel

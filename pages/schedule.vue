@@ -5,8 +5,26 @@ import type { DaySchedule, Place } from '~/types'
 const { data: itinerary, pending, error, refresh } = await useItinerary()
 const { data: placesData } = await usePlaces()
 
-// 선택된 일자
-const selectedDay = ref(1)
+// URL 쿼리에서 선택된 일자 읽기/쓰기
+const route = useRoute()
+const router = useRouter()
+
+// 선택된 일자 (URL 쿼리 파라미터로 유지)
+const getInitialDay = () => {
+  const queryDay = Number(route.query.day)
+  const maxDays = itinerary.value?.schedules.length || 1
+  // 유효한 범위 내의 값만 허용
+  if (queryDay >= 1 && queryDay <= maxDays) {
+    return queryDay
+  }
+  return 1
+}
+const selectedDay = ref(getInitialDay())
+
+// 선택된 일자가 변경되면 URL 업데이트
+watch(selectedDay, (day) => {
+  router.replace({ query: { ...route.query, day: day.toString() } })
+}, { immediate: false })
 
 // 콘텐츠 영역 ref (스와이프용)
 const contentRef = ref<HTMLElement | null>(null)
