@@ -23,9 +23,15 @@ const relatedPhotoSpots = computed<PhotoSpot[]>(() => {
   return highlightsData.value?.photoSpots.filter(p => p.placeId === placeId) || []
 })
 
-// 뒤로가기
+// 뒤로가기 - 브라우저 히스토리 사용
+const router = useRouter()
 const goBack = () => {
-  navigateTo('/guide')
+  // 히스토리가 있으면 이전 페이지로, 없으면 가이드 목록으로
+  if (window.history.length > 1) {
+    router.back()
+  } else {
+    navigateTo('/guide')
+  }
 }
 
 // 카테고리 한글명
