@@ -6,6 +6,12 @@
 .cache
 dist
 
+# Vercel
+.vercel
+
+# Claude Code
+.claude
+
 # Node dependencies
 node_modules
 
