@@ -1,0 +1,872 @@
+{
+  "tripInfo": {
+    "id": "trip-spain-portugal-2026",
+    "title": "스페인 포르투갈 9일",
+    "subtitle": "가우디와 이슬람 건축의 걸작을 만나는 여행",
+    "startDate": "2026-02-01",
+    "endDate": "2026-02-09",
+    "timezone": "Europe/Madrid",
+    "airline": {
+      "name": "대한항공",
+      "mileage": "약 70~80% 적립 (성인기준)"
+    },
+    "accommodation": "전 일정 투어리스트급 또는 일급 호텔 (2인 1실 기준)",
+    "highlights": [
+      "가우디 투어의 중심지 바르셀로나",
+      "이슬람 건축의 최고 걸작 알함브라궁전",
+      "세계 3대 미술관 프라도미술관",
+      "성모 발현지 파티마",
+      "투우의 발상지 론다"
+    ]
+  },
+  "schedules": [
+    {
+      "id": "day-1",
+      "date": "2026-02-01",
+      "dayNumber": 1,
+      "dayOfWeek": "일",
+      "title": "인천 - 마드리드",
+      "cities": ["인천", "마드리드"],
+      "items": [
+        {
+          "id": "d1-item-1",
+          "startTime": "08:30",
+          "endTime": "09:30",
+          "title": "인천공항 미팅",
+          "type": "meeting",
+          "placeId": null,
+          "location": "인천공항 제2터미널(T2) 3층 1번 출입구 부근 여행사 카운터 (17,18번)",
+          "notes": "가이드는 출발 2~3일전 개별 안내",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-2",
+          "startTime": "12:10",
+          "endTime": "19:25",
+          "title": "인천 → 마드리드 (KE913)",
+          "type": "transport",
+          "transportType": "flight",
+          "placeId": null,
+          "notes": "약 15시간 20분 소요. 대한항공 상품은 인솔자가 동행하지 않습니다. 현지 도착 시 한국인 및 현지인 가이드로 진행",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-3",
+          "startTime": "19:25",
+          "endTime": "21:00",
+          "title": "마드리드 공항 도착 및 가이드 미팅",
+          "type": "transfer",
+          "placeId": null,
+          "notes": "호텔 투숙 및 휴식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "불포함", "description": null },
+        "lunch": { "type": "기내식", "description": null },
+        "dinner": { "type": "기내식", "description": null }
+      }
+    },
+    {
+      "id": "day-2",
+      "date": "2026-02-02",
+      "dayNumber": 2,
+      "dayOfWeek": "월",
+      "title": "마드리드 - 톨레도 - 파티마",
+      "cities": ["마드리드", "톨레도", "파티마"],
+      "items": [
+        {
+          "id": "d2-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-2",
+          "startTime": "09:00",
+          "endTime": "10:10",
+          "title": "마드리드 → 톨레도 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 1시간 10분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-3",
+          "startTime": "10:10",
+          "endTime": "11:30",
+          "title": "톨레도 대성당 관람",
+          "type": "attraction",
+          "placeId": "place-toledo-cathedral",
+          "notes": "스페인 가톨릭의 수석성당 (내부 관람)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-4",
+          "startTime": "11:30",
+          "endTime": "12:30",
+          "title": "산토토메 교회 관람",
+          "type": "attraction",
+          "placeId": "place-santo-tome",
+          "notes": "엘그레코의 명화가 소장된 교회 (내부 관람)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-5",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-6",
+          "startTime": "13:30",
+          "endTime": "18:30",
+          "title": "톨레도 → 파티마 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 5시간 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-7",
+          "startTime": "18:30",
+          "endTime": "19:30",
+          "title": "파티마 대성당 관람",
+          "type": "attraction",
+          "placeId": "place-fatima-sanctuary",
+          "notes": "성모발현을 기념하기 위한 대성당 (내부 관람)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-8",
+          "startTime": "19:30",
+          "endTime": "20:00",
+          "title": "삼위일체 성당",
+          "type": "attraction",
+          "placeId": "place-holy-trinity",
+          "notes": "많은 관광객들로 추가 건설한 성당 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-9",
+          "startTime": "20:00",
+          "endTime": "21:00",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "한식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "한식", "description": null }
+      }
+    },
+    {
+      "id": "day-3",
+      "date": "2026-02-03",
+      "dayNumber": 3,
+      "dayOfWeek": "화",
+      "title": "파티마 - 리스본 - 세비야",
+      "cities": ["파티마", "리스본", "세비야"],
+      "items": [
+        {
+          "id": "d3-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-2",
+          "startTime": "09:00",
+          "endTime": "10:50",
+          "title": "파티마 → 리스본 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 1시간 50분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-3",
+          "startTime": "10:50",
+          "endTime": "11:20",
+          "title": "로시우 광장",
+          "type": "attraction",
+          "placeId": "place-rossio-square",
+          "notes": "리스본의 중심지",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-4",
+          "startTime": "11:20",
+          "endTime": "11:50",
+          "title": "벨렘 탑",
+          "type": "attraction",
+          "placeId": "place-belem-tower",
+          "notes": "바스코 다가마 원정을 기리는 탑 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-5",
+          "startTime": "11:50",
+          "endTime": "12:30",
+          "title": "제로니모스 수도원",
+          "type": "attraction",
+          "placeId": "place-jeronimos",
+          "notes": "유네스코 세계문화유산 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-6",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-7",
+          "startTime": "13:30",
+          "endTime": "14:30",
+          "title": "리스본 자유시간",
+          "type": "free",
+          "placeId": null,
+          "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-8",
+          "startTime": "14:30",
+          "endTime": "18:30",
+          "title": "리스본 → 세비야 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 4시간 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-9",
+          "startTime": "18:30",
+          "endTime": "20:00",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "호텔식", "description": null }
+      }
+    },
+    {
+      "id": "day-4",
+      "date": "2026-02-04",
+      "dayNumber": 4,
+      "dayOfWeek": "수",
+      "title": "세비야 - 론다 - 그라나다",
+      "cities": ["세비야", "론다", "그라나다"],
+      "items": [
+        {
+          "id": "d4-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-2",
+          "startTime": "09:00",
+          "endTime": "09:40",
+          "title": "스페인 광장",
+          "type": "attraction",
+          "placeId": "place-spain-square",
+          "notes": "스페인에서 가장 아름다운 광장",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-3",
+          "startTime": "09:40",
+          "endTime": "11:00",
+          "title": "세비야 대성당",
+          "type": "attraction",
+          "placeId": "place-sevilla-cathedral",
+          "notes": "세계 3대 성당 중 하나 (내부). 휴관시 대체 일정",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-4",
+          "startTime": "11:00",
+          "endTime": "11:30",
+          "title": "히랄다 탑",
+          "type": "attraction",
+          "placeId": "place-giralda",
+          "notes": "세비야의 상징 97.4m 높이 (자유관람)",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-5",
+          "startTime": "11:30",
+          "endTime": "11:50",
+          "title": "황금의 탑",
+          "type": "attraction",
+          "placeId": "place-torre-oro",
+          "notes": "정십이각형으로 우뚝 솟은 탑 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-6",
+          "startTime": "11:50",
+          "endTime": "13:50",
+          "title": "세비야 → 론다 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 2시간 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-7",
+          "startTime": "13:50",
+          "endTime": "14:30",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-8",
+          "startTime": "14:30",
+          "endTime": "15:10",
+          "title": "누에보 다리",
+          "type": "attraction",
+          "placeId": "place-puente-nuevo",
+          "notes": "따호강 절벽 시가지를 연결하는 다리",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-9",
+          "startTime": "15:10",
+          "endTime": "15:40",
+          "title": "론다 투우장",
+          "type": "attraction",
+          "placeId": "place-ronda-bullring",
+          "notes": "스페인에서 가장 오래된 투우장 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-10",
+          "startTime": "15:40",
+          "endTime": "16:30",
+          "title": "론다 파라도르 티타임",
+          "type": "activity",
+          "placeId": "place-ronda-parador",
+          "notes": "파라도르에서 즐기는 티 타임. 공사시 대체 카페 진행",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-11",
+          "startTime": "16:30",
+          "endTime": "18:40",
+          "title": "론다 → 그라나다 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 2시간 10분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-12",
+          "startTime": "18:40",
+          "endTime": "20:00",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "호텔식", "description": null }
+      }
+    },
+    {
+      "id": "day-5",
+      "date": "2026-02-05",
+      "dayNumber": 5,
+      "dayOfWeek": "목",
+      "title": "그라나다 - 발렌시아",
+      "cities": ["그라나다", "발렌시아"],
+      "items": [
+        {
+          "id": "d5-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-2",
+          "startTime": "09:00",
+          "endTime": "11:30",
+          "title": "알함브라 궁전",
+          "type": "attraction",
+          "placeId": "place-alhambra",
+          "notes": "이슬람 건축의 걸작 (내부). 예약 불가시 대체 관광지",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-3",
+          "startTime": "11:30",
+          "endTime": "12:30",
+          "title": "헤네랄리페 정원",
+          "type": "attraction",
+          "placeId": "place-generalife",
+          "notes": "왕의 여름 별궁 정원 산책",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-4",
+          "startTime": "12:30",
+          "endTime": "13:00",
+          "title": "알바이신 지구",
+          "type": "attraction",
+          "placeId": "place-albaicin",
+          "notes": "무어인들이 살았던 지구 (조망)",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-5",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-6",
+          "startTime": "14:00",
+          "endTime": "19:20",
+          "title": "그라나다 → 발렌시아 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 5시간 20분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d5-item-7",
+          "startTime": "19:20",
+          "endTime": "20:30",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "호텔식", "description": null }
+      }
+    },
+    {
+      "id": "day-6",
+      "date": "2026-02-06",
+      "dayNumber": 6,
+      "dayOfWeek": "금",
+      "title": "발렌시아 - 몬세라트 - 바르셀로나",
+      "cities": ["발렌시아", "몬세라트", "바르셀로나"],
+      "items": [
+        {
+          "id": "d6-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-2",
+          "startTime": "09:00",
+          "endTime": "13:10",
+          "title": "발렌시아 → 몬세라트 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 4시간 10분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-3",
+          "startTime": "13:10",
+          "endTime": "14:30",
+          "title": "몬세라트 수도원",
+          "type": "attraction",
+          "placeId": "place-montserrat",
+          "notes": "기암절벽위에 세워진 수도원 절경 감상",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-4",
+          "startTime": "14:30",
+          "endTime": "15:30",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-5",
+          "startTime": "15:30",
+          "endTime": "16:40",
+          "title": "몬세라트 → 바르셀로나 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 1시간 10분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-6",
+          "startTime": "16:40",
+          "endTime": "17:30",
+          "title": "람블라스 거리",
+          "type": "attraction",
+          "placeId": "place-las-ramblas",
+          "notes": "바르셀로나 최고의 번화가",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-7",
+          "startTime": "17:30",
+          "endTime": "18:30",
+          "title": "바르셀로나 자유시간",
+          "type": "free",
+          "placeId": null,
+          "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
+          "status": "pending"
+        },
+        {
+          "id": "d6-item-8",
+          "startTime": "18:30",
+          "endTime": "20:00",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "호텔식", "description": null }
+      }
+    },
+    {
+      "id": "day-7",
+      "date": "2026-02-07",
+      "dayNumber": 7,
+      "dayOfWeek": "토",
+      "title": "바르셀로나 - 사라고사",
+      "cities": ["바르셀로나", "사라고사"],
+      "items": [
+        {
+          "id": "d7-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-2",
+          "startTime": "09:00",
+          "endTime": "11:00",
+          "title": "성가족 성당",
+          "type": "attraction",
+          "placeId": "place-sagrada-familia",
+          "notes": "가우디 관광의 하이라이트 (내부). 예약 불가시 대체 관광지",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-3",
+          "startTime": "11:00",
+          "endTime": "12:30",
+          "title": "구엘 공원",
+          "type": "attraction",
+          "placeId": "place-park-guell",
+          "notes": "천재 가우디의 공원 (내부)",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-4",
+          "startTime": "12:30",
+          "endTime": "12:45",
+          "title": "카사 밀라",
+          "type": "attraction",
+          "placeId": "place-casa-mila",
+          "notes": "가우디 건축물 (차창 관광)",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-5",
+          "startTime": "12:45",
+          "endTime": "13:45",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-6",
+          "startTime": "13:45",
+          "endTime": "17:15",
+          "title": "바르셀로나 → 사라고사 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 3시간 30분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-7",
+          "startTime": "17:15",
+          "endTime": "17:45",
+          "title": "필라 성모 대성당",
+          "type": "attraction",
+          "placeId": "place-basilica-pilar",
+          "notes": "고야의 프레스코화로 유명한 대성당 (외관)",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-8",
+          "startTime": "17:45",
+          "endTime": "18:15",
+          "title": "필라르 광장",
+          "type": "attraction",
+          "placeId": "place-plaza-pilar",
+          "notes": "빙하를 형상화한 분수가 있는 광장",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-9",
+          "startTime": "18:15",
+          "endTime": "18:45",
+          "title": "로마시대 성벽",
+          "type": "attraction",
+          "placeId": "place-roman-wall",
+          "notes": "나폴레옹의 침공으로 무너진 성벽",
+          "status": "pending"
+        },
+        {
+          "id": "d7-item-10",
+          "startTime": "18:45",
+          "endTime": "20:00",
+          "title": "저녁 식사 및 호텔 투숙",
+          "type": "meal",
+          "placeId": null,
+          "notes": "한식",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "한식", "description": null }
+      }
+    },
+    {
+      "id": "day-8",
+      "date": "2026-02-08",
+      "dayNumber": 8,
+      "dayOfWeek": "일",
+      "title": "사라고사 - 마드리드",
+      "cities": ["사라고사", "마드리드"],
+      "items": [
+        {
+          "id": "d8-item-1",
+          "startTime": "08:00",
+          "endTime": "09:00",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔식",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-2",
+          "startTime": "09:00",
+          "endTime": "12:30",
+          "title": "사라고사 → 마드리드 이동",
+          "type": "transport",
+          "transportType": "bus",
+          "placeId": null,
+          "notes": "약 3시간 30분 소요",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-3",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "title": "점심 식사",
+          "type": "meal",
+          "placeId": null,
+          "notes": "현지식",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-4",
+          "startTime": "13:30",
+          "endTime": "15:30",
+          "title": "프라도 미술관",
+          "type": "attraction",
+          "placeId": "place-prado-museum",
+          "notes": "세계 3대 미술관 (내부)",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-5",
+          "startTime": "15:30",
+          "endTime": "16:00",
+          "title": "푸에르타 델 솔",
+          "type": "attraction",
+          "placeId": "place-puerta-sol",
+          "notes": "'태양의 문'이라 불리우는 광장",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-6",
+          "startTime": "16:00",
+          "endTime": "16:30",
+          "title": "마요르 광장",
+          "type": "attraction",
+          "placeId": "place-plaza-mayor",
+          "notes": "마드리드 시민들의 휴식처",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-7",
+          "startTime": "16:30",
+          "endTime": "17:30",
+          "title": "마드리드 자유시간",
+          "type": "free",
+          "placeId": null,
+          "notes": "약 1시간 진행 (가이드 미동행). 자유시간에 식사는 불포함으로 개별 자유",
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-8",
+          "startTime": "17:30",
+          "endTime": "19:00",
+          "title": "공항으로 이동",
+          "type": "transfer",
+          "placeId": null,
+          "notes": null,
+          "status": "pending"
+        },
+        {
+          "id": "d8-item-9",
+          "startTime": "21:25",
+          "endTime": "18:15",
+          "title": "마드리드 → 인천 (KE914)",
+          "type": "transport",
+          "transportType": "flight",
+          "placeId": null,
+          "notes": "약 12시간 45분 소요 (익일 도착)",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": null },
+        "lunch": { "type": "현지식", "description": null },
+        "dinner": { "type": "자유식", "description": "불포함" }
+      }
+    },
+    {
+      "id": "day-9",
+      "date": "2026-02-09",
+      "dayNumber": 9,
+      "dayOfWeek": "월",
+      "title": "인천 도착",
+      "cities": ["인천"],
+      "items": [
+        {
+          "id": "d9-item-1",
+          "startTime": "18:15",
+          "endTime": "19:00",
+          "title": "인천공항 제2터미널(T2) 도착",
+          "type": "arrival",
+          "placeId": null,
+          "notes": "입국 수속",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "기내식", "description": null },
+        "lunch": { "type": "기내식", "description": null },
+        "dinner": { "type": "불포함", "description": null }
+      }
+    }
+  ],
+  "specialFeatures": [
+    {
+      "title": "대표 도시 자유 시간",
+      "description": "리스본, 바르셀로나, 마드리드에서 자유시간 제공"
+    },
+    {
+      "title": "론다 티 타임",
+      "description": "론다 파라도르에서 즐기는 여유로운 티 타임"
+    },
+    {
+      "title": "개인 수신기",
+      "description": "개인 수신기 대여로 완성도 있게 듣는 관광지 설명"
+    }
+  ],
+  "foodHighlights": {
+    "desserts": ["하몽", "에그타르트", "발렌시아 오렌지", "타파스"],
+    "mainDishes": ["바깔라우", "빠에야", "에저", "몽골리안 BBQ"],
+    "drinks": ["샹그리아", "와인"]
+  }
+}

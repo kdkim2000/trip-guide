@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npx nuxt:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(npm install:*)",
+      "WebSearch"
+    ]
+  }
+}

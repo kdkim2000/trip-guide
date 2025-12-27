@@ -1,0 +1,287 @@
+{
+  "tripHighlights": [
+    {
+      "id": "hl-001",
+      "placeId": "place-sagrada-familia",
+      "dayNumber": 7,
+      "title": "가우디의 미완성 걸작, 성가족 성당",
+      "description": "2026년 완공을 앞둔 가우디의 생애 역작. 40년간 생을 바쳐 설계한 이 성당은 탄생의 파사드와 수난의 파사드, 그리고 빛의 향연을 보여주는 스테인드글라스가 압권입니다.",
+      "priority": 1,
+      "tags": ["필수방문", "가우디", "세계문화유산", "바르셀로나"]
+    },
+    {
+      "id": "hl-002",
+      "placeId": "place-alhambra",
+      "dayNumber": 5,
+      "title": "이슬람 건축의 최고 걸작, 알함브라 궁전",
+      "description": "세계문화유산으로 입장객을 엄격히 제한하는 보물과도 같은 궁전. 정교한 아라베스크 문양과 물을 활용한 정원 설계가 인상적입니다.",
+      "priority": 1,
+      "tags": ["필수방문", "이슬람건축", "세계문화유산", "그라나다"]
+    },
+    {
+      "id": "hl-003",
+      "placeId": "place-prado-museum",
+      "dayNumber": 8,
+      "title": "세계 3대 미술관, 프라도 미술관",
+      "description": "벨라스케스의 '시녀들', 고야의 걸작들을 만나는 예술의 보고. 8,000점 이상의 작품을 소장한 스페인 최고의 미술관입니다.",
+      "priority": 1,
+      "tags": ["필수방문", "미술관", "예술", "마드리드"]
+    },
+    {
+      "id": "hl-004",
+      "placeId": "place-puente-nuevo",
+      "dayNumber": 4,
+      "title": "절벽 위의 도시 론다, 누에보 다리",
+      "description": "100m 협곡을 가로지르는 아찔한 다리와 새하얀 집들의 조화. 투우의 발상지이자 헤밍웨이가 사랑한 도시입니다.",
+      "priority": 2,
+      "tags": ["절경", "사진명소", "론다"]
+    },
+    {
+      "id": "hl-005",
+      "placeId": "place-ronda-parador",
+      "dayNumber": 4,
+      "title": "론다 파라도르에서 즐기는 티타임",
+      "description": "누에보 다리 바로 옆, 최고의 전망을 자랑하는 국영 호텔에서 여유로운 티타임을 즐겨보세요.",
+      "priority": 2,
+      "tags": ["특별체험", "휴식", "론다"]
+    },
+    {
+      "id": "hl-006",
+      "placeId": "place-montserrat",
+      "dayNumber": 6,
+      "title": "기암절벽 속 성지, 몬세라트 수도원",
+      "description": "해발 1,200m 톱니 모양 산에 세워진 스페인 3대 순례지. 검은 성모상과 기암괴석의 절경이 신비로움을 더합니다.",
+      "priority": 2,
+      "tags": ["성지순례", "절경", "몬세라트"]
+    },
+    {
+      "id": "hl-007",
+      "placeId": "place-fatima-sanctuary",
+      "dayNumber": 2,
+      "title": "세계 3대 성모 발현지, 파티마",
+      "description": "1917년 세 아이에게 성모가 발현한 기적의 장소. 전 세계 순례자들이 찾는 가톨릭 성지입니다.",
+      "priority": 2,
+      "tags": ["성지순례", "파티마"]
+    },
+    {
+      "id": "hl-008",
+      "placeId": "place-park-guell",
+      "dayNumber": 7,
+      "title": "가우디의 환상 세계, 구엘 공원",
+      "description": "직선이 없는 자연 그대로의 곡선, 모자이크 도마뱀, 파도 모양 벤치. 초현실주의 공원에서 바르셀로나를 조망하세요.",
+      "priority": 2,
+      "tags": ["가우디", "사진명소", "바르셀로나"]
+    },
+    {
+      "id": "hl-009",
+      "placeId": "place-sevilla-cathedral",
+      "dayNumber": 4,
+      "title": "세계 최대 고딕 성당, 세비야 대성당",
+      "description": "콜럼버스의 묘가 있는 세계 3대 성당. 100년 넘게 지어진 역작 앞에서 인간의 작음을 느껴보세요.",
+      "priority": 2,
+      "tags": ["세계문화유산", "성당", "세비야"]
+    },
+    {
+      "id": "hl-010",
+      "placeId": "place-toledo-cathedral",
+      "dayNumber": 2,
+      "title": "266년의 역작, 톨레도 대성당",
+      "description": "스페인 가톨릭의 수석성당이자 중세 도시 톨레도의 상징. 마을 전체가 문화유적인 이곳에서 시간 여행을 떠나보세요.",
+      "priority": 3,
+      "tags": ["성당", "중세도시", "톨레도"]
+    },
+    {
+      "id": "hl-011",
+      "placeId": "place-belem-tower",
+      "dayNumber": 3,
+      "title": "대항해 시대의 상징, 벨렘 탑",
+      "description": "바스코 다가마의 업적을 기리는 마누엘 양식의 등대. 포르투갈 대항해 시대의 영광을 간직한 세계문화유산입니다.",
+      "priority": 3,
+      "tags": ["세계문화유산", "리스본"]
+    },
+    {
+      "id": "hl-012",
+      "placeId": "place-albaicin",
+      "dayNumber": 5,
+      "title": "알함브라 최고의 조망점, 알바이신",
+      "description": "산 니콜라스 전망대에서 바라보는 알함브라 궁전의 일몰은 그라나다 여행의 백미입니다.",
+      "priority": 3,
+      "tags": ["전망대", "일몰", "그라나다"]
+    }
+  ],
+  "dailyBest": [
+    {
+      "dayNumber": 1,
+      "title": "여행의 시작",
+      "bestMoment": "마드리드 도착, 새로운 여행의 설렘"
+    },
+    {
+      "dayNumber": 2,
+      "title": "중세와 기적의 만남",
+      "bestMoment": "톨레도 대성당의 장엄함과 파티마 성지의 경건함"
+    },
+    {
+      "dayNumber": 3,
+      "title": "대항해 시대의 영광",
+      "bestMoment": "리스본 벨렘 지구에서 만나는 포르투갈의 역사"
+    },
+    {
+      "dayNumber": 4,
+      "title": "스페인의 정열",
+      "bestMoment": "세비야 대성당과 론다 협곡의 아찔한 절경"
+    },
+    {
+      "dayNumber": 5,
+      "title": "이슬람 문화의 정수",
+      "bestMoment": "알함브라 궁전의 정교한 아름다움"
+    },
+    {
+      "dayNumber": 6,
+      "title": "신비의 성지",
+      "bestMoment": "몬세라트 수도원과 바르셀로나 람블라스 거리"
+    },
+    {
+      "dayNumber": 7,
+      "title": "가우디의 세계",
+      "bestMoment": "성가족 성당과 구엘 공원의 천재적 상상력"
+    },
+    {
+      "dayNumber": 8,
+      "title": "예술의 향연",
+      "bestMoment": "프라도 미술관에서 만나는 스페인 예술의 정수"
+    },
+    {
+      "dayNumber": 9,
+      "title": "아쉬운 귀환",
+      "bestMoment": "9일간의 추억을 안고 인천으로"
+    }
+  ],
+  "photoSpots": [
+    {
+      "id": "photo-001",
+      "placeId": "place-sagrada-familia",
+      "title": "성가족 성당 탄생의 파사드",
+      "description": "오전 빛이 들어올 때 스테인드글라스와 함께 촬영",
+      "bestTime": "오전 9-11시",
+      "tips": "탄생의 파사드는 동쪽을 향해 있어 오전에 빛이 좋습니다"
+    },
+    {
+      "id": "photo-002",
+      "placeId": "place-puente-nuevo",
+      "title": "누에보 다리와 협곡",
+      "description": "다리 아래 전망대에서 협곡 전체를 담는 구도",
+      "bestTime": "오후 황금시간대",
+      "tips": "협곡 아래에서 올려다보는 앵글이 가장 드라마틱합니다"
+    },
+    {
+      "id": "photo-003",
+      "placeId": "place-alhambra",
+      "title": "미르토스 안뜰 반영",
+      "description": "연못에 비친 궁전의 대칭 구도",
+      "bestTime": "맑은 날 오전",
+      "tips": "바람이 없는 날 연못 반영이 완벽합니다"
+    },
+    {
+      "id": "photo-004",
+      "placeId": "place-albaicin",
+      "title": "산 니콜라스 전망대",
+      "description": "알함브라 궁전 전경과 일몰",
+      "bestTime": "일몰 30분 전",
+      "tips": "자리 선점을 위해 일찍 도착 추천"
+    },
+    {
+      "id": "photo-005",
+      "placeId": "place-park-guell",
+      "title": "모자이크 도마뱀",
+      "description": "가우디의 상징적인 도마뱀 조형물",
+      "bestTime": "개장 직후",
+      "tips": "관광객이 적은 아침 일찍이 촬영 최적"
+    },
+    {
+      "id": "photo-006",
+      "placeId": "place-spain-square",
+      "title": "세비야 스페인 광장 파노라마",
+      "description": "반원형 건물과 운하를 담은 전경",
+      "bestTime": "오전 또는 석양",
+      "tips": "광장 중앙에서 파노라마 촬영 추천"
+    },
+    {
+      "id": "photo-007",
+      "placeId": "place-belem-tower",
+      "title": "벨렘 탑 전경",
+      "description": "테주강과 함께 담는 탑 전체 모습",
+      "bestTime": "일몰 시간",
+      "tips": "강변에서 탑 전체가 보이는 위치 선정"
+    },
+    {
+      "id": "photo-008",
+      "placeId": "place-montserrat",
+      "title": "몬세라트 기암절벽과 수도원",
+      "description": "톱니 모양 산과 수도원의 조화",
+      "bestTime": "맑은 날",
+      "tips": "케이블카에서 내려다보는 뷰도 추천"
+    }
+  ],
+  "localTips": [
+    {
+      "category": "음식",
+      "title": "하몽 (Jamón)",
+      "description": "스페인 대표 생햄. 람블라스 거리의 보케리아 시장에서 저렴하게 맛볼 수 있습니다.",
+      "where": "바르셀로나, 마드리드"
+    },
+    {
+      "category": "음식",
+      "title": "에그타르트 (Pastel de Nata)",
+      "description": "포르투갈 대표 디저트. 제로니모스 수도원 근처 '파스테이스 드 벨렘'이 원조입니다.",
+      "where": "리스본"
+    },
+    {
+      "category": "음식",
+      "title": "빠에야 (Paella)",
+      "description": "스페인 대표 쌀요리. 발렌시아가 본고장이지만 바르셀로나에서도 맛볼 수 있습니다.",
+      "where": "발렌시아, 바르셀로나"
+    },
+    {
+      "category": "음식",
+      "title": "타파스 (Tapas)",
+      "description": "스페인식 소량 요리. 산 미구엘 시장(마드리드)에서 다양하게 맛보세요.",
+      "where": "스페인 전역"
+    },
+    {
+      "category": "음식",
+      "title": "샹그리아 (Sangría)",
+      "description": "과일을 넣은 레드 와인 칵테일. 더운 날 시원하게 마시기 좋습니다.",
+      "where": "스페인 전역"
+    },
+    {
+      "category": "음식",
+      "title": "바깔라우 (Bacalhau)",
+      "description": "포르투갈의 대구 요리. 365가지 레시피가 있다고 합니다.",
+      "where": "리스본"
+    },
+    {
+      "category": "주의사항",
+      "title": "소매치기 주의",
+      "description": "관광지, 특히 람블라스 거리와 지하철에서 소매치기가 많습니다. 귀중품 관리에 주의하세요.",
+      "where": "바르셀로나, 마드리드"
+    },
+    {
+      "category": "주의사항",
+      "title": "시에스타 시간",
+      "description": "14:00-17:00 사이 많은 상점이 문을 닫습니다. 이 시간에는 관광지 위주로 일정을 짜세요.",
+      "where": "스페인 전역"
+    },
+    {
+      "category": "문화",
+      "title": "늦은 식사 시간",
+      "description": "스페인의 저녁 식사는 21:00 이후가 일반적입니다. 레스토랑도 20:00 이후에 붐빕니다.",
+      "where": "스페인 전역"
+    },
+    {
+      "category": "예약필수",
+      "title": "사전 예약 필수 관광지",
+      "description": "알함브라 궁전, 성가족 성당, 구엘 공원은 반드시 사전 예약이 필요합니다.",
+      "where": "그라나다, 바르셀로나"
+    }
+  ]
+}
