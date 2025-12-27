@@ -44,6 +44,22 @@ export interface DayMeals {
   dinner: Meal
 }
 
+// 자유시간 추천 활동
+export interface FreeTimeRecommendation {
+  title: string
+  description: string
+  location: string
+  duration: string
+  cost: string
+}
+
+// 대체 관광지
+export interface AttractionAlternative {
+  title: string
+  description: string
+  reason: string
+}
+
 // 일정 아이템
 export interface ScheduleItem {
   id: string
@@ -56,6 +72,8 @@ export interface ScheduleItem {
   location?: string
   notes: string | null
   status: 'pending' | 'in_progress' | 'completed'
+  recommendations?: FreeTimeRecommendation[]  // 자유시간 추천 활동
+  alternatives?: AttractionAlternative[]       // 대체 관광지/선택관광
 }
 
 // 일별 일정

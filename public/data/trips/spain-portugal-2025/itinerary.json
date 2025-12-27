@@ -251,7 +251,30 @@
           "type": "free",
           "placeId": null,
           "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
-          "status": "pending"
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "파스텔 드 벨렘 (에그타르트)",
+              "description": "1837년부터 전통 레시피로 만드는 포르투갈 에그타르트 원조 가게",
+              "location": "Rua de Belém 84-92",
+              "duration": "20분",
+              "cost": "약 €2-3"
+            },
+            {
+              "title": "산타 주스타 엘리베이터",
+              "description": "1902년 건설된 네오고딕 양식의 엘리베이터. 리스본 시내 전경 조망",
+              "location": "Rua do Ouro",
+              "duration": "30분",
+              "cost": "약 €5"
+            },
+            {
+              "title": "알파마 지구 산책",
+              "description": "리스본에서 가장 오래된 지구. 좁은 골목길과 파두(Fado) 음악의 발상지",
+              "location": "로시우 광장에서 도보 10분",
+              "duration": "40분",
+              "cost": "무료"
+            }
+          ]
         },
         {
           "id": "d3-item-8",
@@ -317,7 +340,19 @@
           "type": "attraction",
           "placeId": "place-sevilla-cathedral",
           "notes": "세계 3대 성당 중 하나 (내부). 휴관시 대체 일정",
-          "status": "pending"
+          "status": "pending",
+          "alternatives": [
+            {
+              "title": "알카사르 궁전 (Real Alcázar)",
+              "description": "무데하르 양식의 걸작. 이슬람과 기독교 건축이 조화된 왕궁",
+              "reason": "세비야 대성당 휴관 또는 예약 불가 시"
+            },
+            {
+              "title": "산타 크루스 지구 도보 투어",
+              "description": "세비야의 옛 유대인 거주지역. 좁은 골목과 아름다운 광장이 있는 역사 지구",
+              "reason": "세비야 대성당 휴관 시"
+            }
+          ]
         },
         {
           "id": "d4-item-4",
@@ -388,7 +423,19 @@
           "type": "activity",
           "placeId": "place-ronda-parador",
           "notes": "파라도르에서 즐기는 티 타임. 공사시 대체 카페 진행",
-          "status": "pending"
+          "status": "pending",
+          "alternatives": [
+            {
+              "title": "카페 델 푸엔테 누에보",
+              "description": "누에보 다리 전망이 아름다운 카페. 현지인들이 즐겨 찾는 명소",
+              "reason": "파라도르 공사 또는 만석 시"
+            },
+            {
+              "title": "알라메다 공원 전망대",
+              "description": "론다 절벽과 올리브 나무 평원이 내려다보이는 전망 포인트에서 자유 시간",
+              "reason": "파라도르 이용 불가 시"
+            }
+          ]
         },
         {
           "id": "d4-item-11",
@@ -444,7 +491,24 @@
           "type": "attraction",
           "placeId": "place-alhambra",
           "notes": "이슬람 건축의 걸작 (내부). 예약 불가시 대체 관광지",
-          "status": "pending"
+          "status": "pending",
+          "alternatives": [
+            {
+              "title": "알함브라 궁전 외부 정원 + 알바이신 지구 심층 투어",
+              "description": "나스르 궁전 입장 불가 시, 알카사바와 헤네랄리페 정원 관람 후 알바이신 지구 도보 투어",
+              "reason": "나스르 궁전 예약 불가 시"
+            },
+            {
+              "title": "그라나다 대성당 + 왕실 예배당",
+              "description": "스페인 르네상스 양식의 대성당과 이사벨 여왕이 잠든 왕실 예배당 관람",
+              "reason": "알함브라 전체 예약 불가 시"
+            },
+            {
+              "title": "사크로몬테 동굴 플라멩코",
+              "description": "집시들이 살던 동굴 주거지 방문 및 플라멩코 공연 관람 (추가 비용)",
+              "reason": "알함브라 예약 불가 시 선택 옵션"
+            }
+          ]
         },
         {
           "id": "d5-item-3",
@@ -582,7 +646,30 @@
           "type": "free",
           "placeId": null,
           "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
-          "status": "pending"
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "보케리아 시장 (La Boqueria)",
+              "description": "1217년부터 이어온 유럽 최대 규모의 식품 시장. 신선한 과일, 하몽, 해산물 타파스 맛보기",
+              "location": "람블라스 거리 중간",
+              "duration": "30-40분",
+              "cost": "타파스 약 €5-15"
+            },
+            {
+              "title": "고딕 지구 (Barri Gòtic) 산책",
+              "description": "로마 시대부터 이어진 좁은 골목길과 중세 건축물. 피카소가 즐겨 찾던 '4마리 고양이' 카페 인근",
+              "location": "람블라스 거리에서 도보 5분",
+              "duration": "40분",
+              "cost": "무료"
+            },
+            {
+              "title": "츄러스 & 초콜릿",
+              "description": "바르셀로나 명물 츄러스와 진한 초콜릿. 추천: Granja Viader 또는 Xurreria Trebol",
+              "location": "고딕 지구 내",
+              "duration": "20분",
+              "cost": "약 €4-6"
+            }
+          ]
         },
         {
           "id": "d6-item-8",
@@ -627,7 +714,24 @@
           "type": "attraction",
           "placeId": "place-sagrada-familia",
           "notes": "가우디 관광의 하이라이트 (내부). 예약 불가시 대체 관광지",
-          "status": "pending"
+          "status": "pending",
+          "alternatives": [
+            {
+              "title": "성가족 성당 외관 + 카사 바트요 (내부)",
+              "description": "성가족 성당 외관 감상 후, 가우디의 또 다른 걸작 카사 바트요 내부 관람",
+              "reason": "성가족 성당 예약 불가 시"
+            },
+            {
+              "title": "카사 밀라 (라 페드레라) 내부",
+              "description": "가우디의 마지막 민간 건축물. 옥상의 독특한 굴뚝과 내부 전시 관람",
+              "reason": "성가족 성당 예약 불가 시"
+            },
+            {
+              "title": "산 파우 병원 (Hospital de Sant Pau)",
+              "description": "모더니즘 건축의 보석. 유네스코 세계문화유산으로 지정된 아르누보 양식 병원",
+              "reason": "성가족 성당 예약 불가 시"
+            }
+          ]
         },
         {
           "id": "d7-item-3",
@@ -794,7 +898,37 @@
           "type": "free",
           "placeId": null,
           "notes": "약 1시간 진행 (가이드 미동행). 자유시간에 식사는 불포함으로 개별 자유",
-          "status": "pending"
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "산 미겔 시장 (Mercado de San Miguel)",
+              "description": "마요르 광장 인근 고급 식품 시장. 타파스, 하몽, 와인, 해산물을 한곳에서",
+              "location": "마요르 광장에서 도보 1분",
+              "duration": "30-40분",
+              "cost": "타파스 약 €3-8"
+            },
+            {
+              "title": "초콜라테리아 산 히네스",
+              "description": "1894년 창업한 마드리드 최고의 츄러스 전문점. 진한 초콜릿과 함께",
+              "location": "Pasadizo de San Ginés 5",
+              "duration": "20분",
+              "cost": "약 €4-5"
+            },
+            {
+              "title": "그란 비아 거리 쇼핑",
+              "description": "마드리드 최대 번화가. 자라, 망고 등 스페인 브랜드 쇼핑",
+              "location": "푸에르타 델 솔에서 도보 5분",
+              "duration": "40분",
+              "cost": "쇼핑에 따라 상이"
+            },
+            {
+              "title": "하몽 전문점 방문",
+              "description": "스페인 대표 음식 하몽(이베리코) 시식 및 구매. 추천: Museo del Jamón",
+              "location": "마요르 광장 인근 다수",
+              "duration": "15분",
+              "cost": "약 €3-10"
+            }
+          ]
         },
         {
           "id": "d8-item-8",
