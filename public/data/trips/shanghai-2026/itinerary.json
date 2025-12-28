@@ -1,0 +1,451 @@
+{
+  "tripInfo": {
+    "id": "trip-shanghai-2026",
+    "title": "상하이 4일",
+    "subtitle": "전통과 현대가 공존하는 상하이 자유여행",
+    "startDate": "2026-01-12",
+    "endDate": "2026-01-15",
+    "timezone": "Asia/Shanghai",
+    "airline": {
+      "name": "대한항공/아시아나",
+      "mileage": "약 50% 적립 (성인기준)"
+    },
+    "accommodation": "디 이튼 호텔 상하이 (4성급)",
+    "highlights": [
+      "외탄에서 바라보는 푸동 스카이라인 야경",
+      "460년 역사의 예원과 난샹 샤오롱바오",
+      "대한민국 임시정부청사 방문",
+      "아시아 최대 스타벅스 리저브 로스터리",
+      "상하이 신천지와 티엔즈팡 골목 탐방"
+    ]
+  },
+  "schedules": [
+    {
+      "id": "day-1",
+      "date": "2026-01-12",
+      "dayNumber": 1,
+      "dayOfWeek": "월",
+      "title": "김포 → 상하이 도착",
+      "cities": ["김포", "상하이"],
+      "items": [
+        {
+          "id": "d1-item-1",
+          "startTime": "14:00",
+          "endTime": "15:55",
+          "title": "김포공항 집결 및 출국수속",
+          "type": "meeting",
+          "placeId": null,
+          "location": "김포공항 국제선 출국장",
+          "notes": "출발 2시간 전 도착 권장",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-2",
+          "startTime": "15:55",
+          "endTime": "17:10",
+          "title": "김포 → 상하이 홍차오",
+          "type": "transport",
+          "transportType": "flight",
+          "placeId": null,
+          "notes": "약 2시간 15분 소요 (현지시간 기준 17:10 도착, 시차 -1시간)",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-3",
+          "startTime": "17:30",
+          "endTime": "18:20",
+          "title": "지하철로 호텔 이동",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 2호선 홍차오공항역 → 루자주이역 (약 50분, 요금 약 6위안)",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-4",
+          "startTime": "18:30",
+          "endTime": "19:00",
+          "title": "호텔 체크인",
+          "type": "hotel",
+          "placeId": "place-eaton-hotel",
+          "notes": "디 이튼 호텔 상하이 (루자주이역 도보 5분)",
+          "status": "pending"
+        },
+        {
+          "id": "d1-item-5",
+          "startTime": "19:30",
+          "endTime": "21:30",
+          "title": "루자주이 야경 산책 & 석식",
+          "type": "free",
+          "placeId": "place-lujiazui",
+          "notes": "IFC몰에서 저녁식사 후 루자주이 육교에서 야경 감상",
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "IFC몰 푸드코트",
+              "description": "다양한 중식, 양식, 한식 레스토랑",
+              "duration": "1시간"
+            },
+            {
+              "title": "루자주이 육교 야경",
+              "description": "동방명주탑, 상하이타워 조명 감상",
+              "duration": "30분"
+            }
+          ]
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "불포함", "description": null },
+        "lunch": { "type": "불포함", "description": "기내식 또는 자유식" },
+        "dinner": { "type": "자유식", "description": "IFC몰 레스토랑" }
+      }
+    },
+    {
+      "id": "day-2",
+      "date": "2026-01-13",
+      "dayNumber": 2,
+      "dayOfWeek": "화",
+      "title": "외탄 & 남경로 투어",
+      "cities": ["상하이"],
+      "items": [
+        {
+          "id": "d2-item-1",
+          "startTime": "07:30",
+          "endTime": "08:30",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔 뷔페 조식",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-2",
+          "startTime": "09:00",
+          "endTime": "09:30",
+          "title": "지하철로 남경서로 이동",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 2호선 루자주이역 → 남경서로역 (약 15분, 요금 약 4위안)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-3",
+          "startTime": "09:30",
+          "endTime": "11:00",
+          "title": "스타벅스 리저브 로스터리",
+          "type": "attraction",
+          "placeId": "place-starbucks-reserve",
+          "notes": "아시아 최대 규모 스타벅스, 원두 로스팅 관람 및 커피 체험",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-4",
+          "startTime": "11:00",
+          "endTime": "12:30",
+          "title": "남경로 산책",
+          "type": "attraction",
+          "placeId": "place-nanjing-road",
+          "notes": "남경서로 → 남경동로 보행자거리 산책 (약 2km)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-5",
+          "startTime": "12:30",
+          "endTime": "13:30",
+          "title": "중식 - 상해 현지식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "남경로 주변 레스토랑 자유식 (생전병, 샤오롱바오 추천)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-6",
+          "startTime": "14:00",
+          "endTime": "16:00",
+          "title": "외탄 산책",
+          "type": "attraction",
+          "placeId": "place-the-bund",
+          "notes": "남경동로에서 외탄까지 도보 10분, 황푸강변 1.5km 산책로",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-7",
+          "startTime": "16:00",
+          "endTime": "17:30",
+          "title": "외탄 주변 자유시간",
+          "type": "free",
+          "placeId": null,
+          "notes": "외탄 카페에서 휴식 또는 역사건축물 둘러보기",
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "화평반점 건물 구경",
+              "description": "1929년 완공된 아르데코 건축물",
+              "duration": "20분"
+            },
+            {
+              "title": "외탄 카페",
+              "description": "황푸강 전망 카페에서 휴식",
+              "duration": "자유"
+            }
+          ]
+        },
+        {
+          "id": "d2-item-8",
+          "startTime": "17:30",
+          "endTime": "18:30",
+          "title": "석식 - 상해 요리",
+          "type": "meal",
+          "placeId": null,
+          "notes": "외탄 또는 남경동로 인근 레스토랑",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-9",
+          "startTime": "19:00",
+          "endTime": "21:00",
+          "title": "외탄 야경 감상",
+          "type": "attraction",
+          "placeId": "place-the-bund",
+          "notes": "해질녘부터 야경까지 푸동 스카이라인의 화려한 조명 감상 (점등 19:00경)",
+          "status": "pending"
+        },
+        {
+          "id": "d2-item-10",
+          "startTime": "21:00",
+          "endTime": "21:30",
+          "title": "호텔 복귀",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 2호선 남경동로역 → 루자주이역 (약 10분)",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": "호텔 조식 뷔페" },
+        "lunch": { "type": "자유식", "description": "남경로 주변 현지식" },
+        "dinner": { "type": "자유식", "description": "외탄 주변 상해요리" }
+      }
+    },
+    {
+      "id": "day-3",
+      "date": "2026-01-14",
+      "dayNumber": 3,
+      "dayOfWeek": "수",
+      "title": "예원 & 구시가지 투어",
+      "cities": ["상하이"],
+      "items": [
+        {
+          "id": "d3-item-1",
+          "startTime": "07:30",
+          "endTime": "08:30",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔 뷔페 조식",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-2",
+          "startTime": "09:00",
+          "endTime": "09:30",
+          "title": "지하철로 예원 이동",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 2호선 루자주이역 → 남경동로역 환승 → 10호선 예원역 (약 25분, 요금 약 4위안)",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-3",
+          "startTime": "09:30",
+          "endTime": "12:00",
+          "title": "예원 & 예원상성 관광",
+          "type": "attraction",
+          "placeId": "place-yuyuan-garden",
+          "notes": "460년 역사의 강남정원과 전통시장 구경. 구곡교, 호심정 포토스팟",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-4",
+          "startTime": "12:00",
+          "endTime": "13:00",
+          "title": "중식 - 난샹 샤오롱바오",
+          "type": "meal",
+          "placeId": null,
+          "notes": "난샹만터우뎬(南翔馒头店) - 1875년 창업, 샤오롱바오 원조",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-5",
+          "startTime": "13:30",
+          "endTime": "14:30",
+          "title": "대한민국 임시정부청사",
+          "type": "attraction",
+          "placeId": "place-provisional-government",
+          "notes": "예원에서 도보 약 15분. 1919년 대한민국 임시정부 역사 현장 (내부 촬영금지)",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-6",
+          "startTime": "14:30",
+          "endTime": "16:00",
+          "title": "신천지 관광",
+          "type": "attraction",
+          "placeId": "place-xintiandi",
+          "notes": "임시정부청사에서 도보 5분. 스쿠먼 건축 골목과 카페거리",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-7",
+          "startTime": "16:00",
+          "endTime": "16:30",
+          "title": "지하철로 티엔즈팡 이동",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 10호선 신천지역 → 13호선 환승 → 9호선 다푸차오역 (약 20분)",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-8",
+          "startTime": "16:30",
+          "endTime": "19:00",
+          "title": "티엔즈팡 관광 & 석식",
+          "type": "attraction",
+          "placeId": "place-tianzifang",
+          "notes": "상하이의 인사동, 좁은 골목의 기념품샵과 카페거리. 저녁식사 포함",
+          "status": "pending"
+        },
+        {
+          "id": "d3-item-9",
+          "startTime": "19:30",
+          "endTime": "20:30",
+          "title": "호텔 복귀",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 9호선 다푸차오역 → 4호선 환승 → 2호선 루자주이역 (약 35분)",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": "호텔 조식 뷔페" },
+        "lunch": { "type": "자유식", "description": "난샹 샤오롱바오" },
+        "dinner": { "type": "자유식", "description": "티엔즈팡 현지식" }
+      }
+    },
+    {
+      "id": "day-4",
+      "date": "2026-01-15",
+      "dayNumber": 4,
+      "dayOfWeek": "목",
+      "title": "루자주이 & 김포 귀국",
+      "cities": ["상하이", "김포"],
+      "items": [
+        {
+          "id": "d4-item-1",
+          "startTime": "07:30",
+          "endTime": "08:30",
+          "title": "호텔 조식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "호텔 뷔페 조식",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-2",
+          "startTime": "09:00",
+          "endTime": "11:00",
+          "title": "루자주이 자유시간",
+          "type": "free",
+          "placeId": "place-lujiazui",
+          "notes": "호텔 인근 루자주이 마지막 관광",
+          "status": "pending",
+          "recommendations": [
+            {
+              "title": "루자주이 육교",
+              "description": "360도 스카이라인 조망의 원형 보행자 육교",
+              "duration": "30분"
+            },
+            {
+              "title": "디즈니 스토어",
+              "description": "상하이 디즈니 공식 스토어 기념품 쇼핑",
+              "duration": "30분"
+            },
+            {
+              "title": "IFC몰 쇼핑",
+              "description": "200여 개 브랜드가 입점한 대형 쇼핑몰",
+              "duration": "자유"
+            },
+            {
+              "title": "동방명주탑 전망대",
+              "description": "상하이 상징, 전망대에서 도시 조망 (선택사항, 약 220위안)",
+              "duration": "1시간"
+            }
+          ]
+        },
+        {
+          "id": "d4-item-3",
+          "startTime": "11:30",
+          "endTime": "12:30",
+          "title": "중식",
+          "type": "meal",
+          "placeId": null,
+          "notes": "IFC몰 또는 루자주이 인근 레스토랑",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-4",
+          "startTime": "13:00",
+          "endTime": "14:00",
+          "title": "호텔 체크아웃",
+          "type": "hotel",
+          "placeId": "place-eaton-hotel",
+          "notes": "짐 정리 및 체크아웃",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-5",
+          "startTime": "14:00",
+          "endTime": "15:00",
+          "title": "지하철로 공항 이동",
+          "type": "transport",
+          "transportType": "metro",
+          "placeId": null,
+          "notes": "지하철 2호선 루자주이역 → 홍차오공항역 (약 50분, 요금 약 6위안)",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-6",
+          "startTime": "15:00",
+          "endTime": "18:25",
+          "title": "공항 출국수속",
+          "type": "meeting",
+          "placeId": null,
+          "location": "상하이 홍차오 국제공항",
+          "notes": "출국심사, 면세점 쇼핑, 탑승 대기",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-7",
+          "startTime": "18:25",
+          "endTime": "21:35",
+          "title": "상하이 홍차오 → 김포",
+          "type": "transport",
+          "transportType": "flight",
+          "placeId": null,
+          "notes": "약 2시간 10분 소요 (한국시간 기준 21:35 도착)",
+          "status": "pending"
+        }
+      ],
+      "meals": {
+        "breakfast": { "type": "호텔식", "description": "호텔 조식 뷔페" },
+        "lunch": { "type": "자유식", "description": "루자주이 인근 자유식" },
+        "dinner": { "type": "기내식", "description": null }
+      }
+    }
+  ]
+}

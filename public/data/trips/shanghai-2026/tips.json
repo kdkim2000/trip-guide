@@ -1,0 +1,477 @@
+{
+  "precautions": [
+    {
+      "id": "general",
+      "title": "일반 유의사항",
+      "icon": "warning",
+      "items": [
+        {
+          "id": "g1",
+          "title": "VPN 필수 준비",
+          "description": "중국에서는 구글, 유튜브, 카카오톡, 인스타그램 등 해외 서비스가 차단됩니다. 출국 전 VPN 앱을 설치하고 테스트하세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g2",
+          "title": "현금 준비",
+          "description": "중국은 위챗페이/알리페이 결제가 대부분이지만 외국인은 사용이 어려울 수 있습니다. 위안화 현금을 충분히 준비하세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g3",
+          "title": "여권 소지",
+          "description": "호텔 체크인, 기차표 구매 등 여권이 필수입니다. 항상 원본을 소지하고, 사본도 별도 보관하세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g4",
+          "title": "물 주의",
+          "description": "수돗물은 마시지 마세요. 생수를 구매하거나 끓인 물을 드세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g5",
+          "title": "대기오염 대비",
+          "description": "미세먼지가 심한 날이 있으니 마스크를 준비하세요. 실시간 대기질 앱 사용을 권장합니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "g6",
+          "title": "지하철 보안검색",
+          "description": "모든 지하철역에서 짐 검사를 합니다. 시간 여유를 두고 이동하세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "g7",
+          "title": "교통카드 발급",
+          "description": "지하철역에서 교통카드를 구매하면 편리합니다. 보증금 20위안이며 퇴경 시 환불 가능합니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "g8",
+          "title": "택시 이용",
+          "description": "정식 택시만 이용하세요. 호출 앱 '디디추싱'이 편리하나 외국인 사용이 어려울 수 있습니다.",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "안전 수칙",
+      "icon": "shield",
+      "items": [
+        {
+          "id": "s1",
+          "title": "소매치기 주의",
+          "description": "관광지와 지하철에서 소매치기에 주의하세요. 가방은 앞으로 메고, 귀중품은 안쪽 주머니에 보관하세요.",
+          "importance": "high"
+        },
+        {
+          "id": "s2",
+          "title": "횡단보도 주의",
+          "description": "신호등이 있어도 우회전 차량이 멈추지 않습니다. 항상 좌우를 확인하고 건너세요.",
+          "importance": "high"
+        },
+        {
+          "id": "s3",
+          "title": "사진 촬영 주의",
+          "description": "군사시설, 정부기관 근처에서는 사진 촬영을 삼가세요.",
+          "importance": "high"
+        },
+        {
+          "id": "s4",
+          "title": "호객행위 주의",
+          "description": "관광지 주변의 호객꾼, 불법 환전상을 조심하세요. 정식 매장과 은행만 이용하세요.",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "id": "food",
+      "title": "음식 관련",
+      "icon": "utensils",
+      "items": [
+        {
+          "id": "f1",
+          "title": "위생 확인",
+          "description": "길거리 음식은 위생을 확인 후 드세요. 현지인이 많은 가게가 상대적으로 안전합니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "f2",
+          "title": "향신료 주의",
+          "description": "중국 음식은 향신료가 강할 수 있습니다. '不要辣(뿌야오라, 맵지 않게)'를 기억하세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "f3",
+          "title": "식당 메뉴",
+          "description": "사진이 있는 메뉴판이나 번역 앱을 활용하세요. 미리 먹고 싶은 음식 사진을 저장해두면 편리합니다.",
+          "importance": "low"
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "title": "통신 및 인터넷",
+      "icon": "wifi",
+      "items": [
+        {
+          "id": "c1",
+          "title": "로밍/유심",
+          "description": "출국 전 중국용 유심이나 포켓와이파이를 준비하세요. 공항에서도 구매 가능합니다.",
+          "importance": "high"
+        },
+        {
+          "id": "c2",
+          "title": "오프라인 지도",
+          "description": "구글맵이 작동하지 않습니다. 바이두맵이나 고덕맵을 설치하고, 오프라인 지도를 다운로드하세요.",
+          "importance": "high"
+        },
+        {
+          "id": "c3",
+          "title": "번역 앱",
+          "description": "파파고나 구글 번역의 오프라인 팩을 미리 다운로드하세요.",
+          "importance": "medium"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    { "code": "chinese", "label": "중국어" }
+  ],
+  "phrases": [
+    {
+      "id": "cn-greet-1",
+      "language": "chinese",
+      "category": "인사",
+      "korean": "안녕하세요",
+      "foreign": "你好",
+      "pronunciation": "니하오"
+    },
+    {
+      "id": "cn-greet-2",
+      "language": "chinese",
+      "category": "인사",
+      "korean": "감사합니다",
+      "foreign": "谢谢",
+      "pronunciation": "씨에씨에"
+    },
+    {
+      "id": "cn-greet-3",
+      "language": "chinese",
+      "category": "인사",
+      "korean": "천만에요",
+      "foreign": "不客气",
+      "pronunciation": "뿌커치"
+    },
+    {
+      "id": "cn-greet-4",
+      "language": "chinese",
+      "category": "인사",
+      "korean": "안녕히 가세요",
+      "foreign": "再见",
+      "pronunciation": "짜이찌엔"
+    },
+    {
+      "id": "cn-greet-5",
+      "language": "chinese",
+      "category": "인사",
+      "korean": "죄송합니다",
+      "foreign": "对不起",
+      "pronunciation": "뚜이뿌치"
+    },
+    {
+      "id": "cn-basic-1",
+      "language": "chinese",
+      "category": "기본표현",
+      "korean": "예",
+      "foreign": "是",
+      "pronunciation": "스"
+    },
+    {
+      "id": "cn-basic-2",
+      "language": "chinese",
+      "category": "기본표현",
+      "korean": "아니요",
+      "foreign": "不是",
+      "pronunciation": "뿌스"
+    },
+    {
+      "id": "cn-basic-3",
+      "language": "chinese",
+      "category": "기본표현",
+      "korean": "좋아요",
+      "foreign": "好",
+      "pronunciation": "하오"
+    },
+    {
+      "id": "cn-basic-4",
+      "language": "chinese",
+      "category": "기본표현",
+      "korean": "저는 한국 사람입니다",
+      "foreign": "我是韩国人",
+      "pronunciation": "워스 한궈런"
+    },
+    {
+      "id": "cn-basic-5",
+      "language": "chinese",
+      "category": "기본표현",
+      "korean": "중국어 못해요",
+      "foreign": "我不会说中文",
+      "pronunciation": "워뿌훼이 슈오 쭝원"
+    },
+    {
+      "id": "cn-restaurant-1",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "메뉴판 주세요",
+      "foreign": "请给我菜单",
+      "pronunciation": "칭게이워 차이단"
+    },
+    {
+      "id": "cn-restaurant-2",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "계산서 주세요",
+      "foreign": "买单",
+      "pronunciation": "마이단"
+    },
+    {
+      "id": "cn-restaurant-3",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "물 주세요",
+      "foreign": "请给我水",
+      "pronunciation": "칭게이워 슈이"
+    },
+    {
+      "id": "cn-restaurant-4",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "맛있어요",
+      "foreign": "好吃",
+      "pronunciation": "하오츠"
+    },
+    {
+      "id": "cn-restaurant-5",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "맵지 않게 해주세요",
+      "foreign": "不要辣",
+      "pronunciation": "뿌야오라"
+    },
+    {
+      "id": "cn-restaurant-6",
+      "language": "chinese",
+      "category": "식당",
+      "korean": "이것 주세요",
+      "foreign": "我要这个",
+      "pronunciation": "워야오 쩌거"
+    },
+    {
+      "id": "cn-shopping-1",
+      "language": "chinese",
+      "category": "쇼핑",
+      "korean": "얼마예요?",
+      "foreign": "多少钱?",
+      "pronunciation": "뚜오샤오치엔?"
+    },
+    {
+      "id": "cn-shopping-2",
+      "language": "chinese",
+      "category": "쇼핑",
+      "korean": "너무 비싸요",
+      "foreign": "太贵了",
+      "pronunciation": "타이꾸이러"
+    },
+    {
+      "id": "cn-shopping-3",
+      "language": "chinese",
+      "category": "쇼핑",
+      "korean": "깎아주세요",
+      "foreign": "便宜一点",
+      "pronunciation": "피엔이 이디엔"
+    },
+    {
+      "id": "cn-shopping-4",
+      "language": "chinese",
+      "category": "쇼핑",
+      "korean": "현금으로 할게요",
+      "foreign": "我付现金",
+      "pronunciation": "워푸 씨엔찐"
+    },
+    {
+      "id": "cn-transport-1",
+      "language": "chinese",
+      "category": "교통",
+      "korean": "여기로 가주세요",
+      "foreign": "请去这里",
+      "pronunciation": "칭취 쩌리"
+    },
+    {
+      "id": "cn-transport-2",
+      "language": "chinese",
+      "category": "교통",
+      "korean": "여기서 내릴게요",
+      "foreign": "在这里下车",
+      "pronunciation": "짜이쩌리 씨아처"
+    },
+    {
+      "id": "cn-transport-3",
+      "language": "chinese",
+      "category": "교통",
+      "korean": "지하철역이 어디예요?",
+      "foreign": "地铁站在哪里?",
+      "pronunciation": "띠티에짠 짜이나리?"
+    },
+    {
+      "id": "cn-emergency-1",
+      "language": "chinese",
+      "category": "긴급상황",
+      "korean": "도와주세요!",
+      "foreign": "救命!",
+      "pronunciation": "찌우밍!"
+    },
+    {
+      "id": "cn-emergency-2",
+      "language": "chinese",
+      "category": "긴급상황",
+      "korean": "화장실이 어디예요?",
+      "foreign": "洗手间在哪里?",
+      "pronunciation": "씨쇼우찌엔 짜이나리?"
+    },
+    {
+      "id": "cn-emergency-3",
+      "language": "chinese",
+      "category": "긴급상황",
+      "korean": "병원에 가야 해요",
+      "foreign": "我需要去医院",
+      "pronunciation": "워쉬야오 취 이위엔"
+    },
+    {
+      "id": "cn-emergency-4",
+      "language": "chinese",
+      "category": "긴급상황",
+      "korean": "경찰을 불러주세요",
+      "foreign": "请叫警察",
+      "pronunciation": "칭찌아오 찡차"
+    },
+    {
+      "id": "cn-number-1",
+      "language": "chinese",
+      "category": "숫자",
+      "korean": "1, 2, 3, 4, 5",
+      "foreign": "一, 二, 三, 四, 五",
+      "pronunciation": "이, 얼, 싼, 쓰, 우"
+    },
+    {
+      "id": "cn-number-2",
+      "language": "chinese",
+      "category": "숫자",
+      "korean": "6, 7, 8, 9, 10",
+      "foreign": "六, 七, 八, 九, 十",
+      "pronunciation": "리우, 치, 빠, 찌우, 스"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "documents",
+      "title": "여행 서류",
+      "icon": "document",
+      "items": [
+        { "id": "doc-1", "name": "여권", "description": "유효기간 6개월 이상 확인", "essential": true },
+        { "id": "doc-2", "name": "항공권 / e-티켓", "description": "출력본 또는 모바일 저장", "essential": true },
+        { "id": "doc-3", "name": "호텔 예약 확인서", "description": "모든 숙소 바우처", "essential": true },
+        { "id": "doc-4", "name": "여권 사본", "description": "분실 대비 별도 보관", "essential": true },
+        { "id": "doc-5", "name": "증명사진 2매", "description": "여권 분실 시 재발급용", "essential": false },
+        { "id": "doc-6", "name": "여행자 보험증서", "description": "가입 확인 및 연락처 저장", "essential": true }
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "전자기기",
+      "icon": "phone",
+      "items": [
+        { "id": "elec-1", "name": "휴대폰", "description": "충전 완료 확인", "essential": true },
+        { "id": "elec-2", "name": "충전기 / 케이블", "description": "예비 케이블 권장", "essential": true },
+        { "id": "elec-3", "name": "여행용 어댑터", "description": "중국: A/C/I 타입 (220V)", "essential": true },
+        { "id": "elec-4", "name": "보조 배터리", "description": "기내 반입 가능 용량 확인 (160Wh 이하)", "essential": true },
+        { "id": "elec-5", "name": "카메라", "description": "메모리카드 여유 확인", "essential": false },
+        { "id": "elec-6", "name": "이어폰", "description": "기내 엔터테인먼트용", "essential": false }
+      ]
+    },
+    {
+      "id": "apps",
+      "title": "필수 앱",
+      "icon": "app",
+      "items": [
+        { "id": "app-1", "name": "VPN 앱", "description": "출국 전 설치 및 테스트 필수", "essential": true },
+        { "id": "app-2", "name": "바이두맵 / 고덕맵", "description": "오프라인 지도 다운로드", "essential": true },
+        { "id": "app-3", "name": "번역 앱", "description": "파파고/구글 번역 오프라인 팩", "essential": true },
+        { "id": "app-4", "name": "대기질 앱", "description": "실시간 미세먼지 확인", "essential": false }
+      ]
+    },
+    {
+      "id": "clothes",
+      "title": "의류",
+      "icon": "shirt",
+      "items": [
+        { "id": "cloth-1", "name": "속옷 / 양말", "description": "여행 일수 + 여분", "essential": true },
+        { "id": "cloth-2", "name": "겉옷 / 패딩", "description": "1월 상하이 평균 3~8도", "essential": true },
+        { "id": "cloth-3", "name": "편한 신발", "description": "관광 시 필수", "essential": true },
+        { "id": "cloth-4", "name": "목도리 / 장갑", "description": "겨울철 방한용", "essential": true },
+        { "id": "cloth-5", "name": "모자", "description": "방한 및 자외선 차단", "essential": false },
+        { "id": "cloth-6", "name": "우산", "description": "갑작스런 날씨 변화 대비", "essential": false }
+      ]
+    },
+    {
+      "id": "toiletries",
+      "title": "세면도구",
+      "icon": "droplet",
+      "items": [
+        { "id": "toil-1", "name": "칫솔 / 치약", "description": "여행용 소형", "essential": true },
+        { "id": "toil-2", "name": "샴푸 / 바디워시", "description": "100ml 이하 용기", "essential": false },
+        { "id": "toil-3", "name": "스킨케어 제품", "description": "기내 반입 규정 확인", "essential": false },
+        { "id": "toil-4", "name": "선크림", "description": "겨울에도 자외선 차단 필요", "essential": false },
+        { "id": "toil-5", "name": "마스크", "description": "미세먼지 대비 KF94 권장", "essential": true },
+        { "id": "toil-6", "name": "핸드크림 / 립밤", "description": "건조한 날씨 대비", "essential": false }
+      ]
+    },
+    {
+      "id": "medicine",
+      "title": "상비약",
+      "icon": "pill",
+      "items": [
+        { "id": "med-1", "name": "개인 상비약", "description": "소화제, 진통제, 지사제 등", "essential": true },
+        { "id": "med-2", "name": "처방약", "description": "영문 처방전 지참 권장", "essential": true },
+        { "id": "med-3", "name": "밴드 / 소독약", "description": "작은 상처 대비", "essential": false },
+        { "id": "med-4", "name": "해열제", "description": "긴급 상황 대비", "essential": false },
+        { "id": "med-5", "name": "감기약", "description": "기온차 대비", "essential": false }
+      ]
+    },
+    {
+      "id": "money",
+      "title": "금융",
+      "icon": "wallet",
+      "items": [
+        { "id": "money-1", "name": "현금 (위안화)", "description": "최소 500~1000위안 준비", "essential": true },
+        { "id": "money-2", "name": "신용카드", "description": "VISA/Master 해외 결제 확인", "essential": true },
+        { "id": "money-3", "name": "체크카드", "description": "해외 ATM 인출 가능 여부 확인", "essential": false },
+        { "id": "money-4", "name": "카드 분실 연락처", "description": "해외에서 정지 가능하도록", "essential": false }
+      ]
+    },
+    {
+      "id": "others",
+      "title": "기타",
+      "icon": "bag",
+      "items": [
+        { "id": "etc-1", "name": "캐리어 자물쇠", "description": "TSA 인증 권장", "essential": false },
+        { "id": "etc-2", "name": "목베개 / 안대", "description": "장거리 비행용", "essential": false },
+        { "id": "etc-3", "name": "지퍼백", "description": "액체류 기내 반입용", "essential": true },
+        { "id": "etc-4", "name": "필기구", "description": "입국신고서 작성용", "essential": false },
+        { "id": "etc-5", "name": "에코백", "description": "쇼핑 시 유용", "essential": false }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "places": [
+    {
+      "id": "place-tianzifang",
+      "name": "티엔즈팡",
+      "nameLocal": "田子坊",
+      "city": "상하이",
+      "country": "중국",
+      "category": "street",
+      "images": [
+        "/images/shanghai/tianzifang1.jpg",
+        "/images/shanghai/tianzifang2.jpeg"
+      ],
+      "location": {
+        "address": "Taikang Road, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.2107, "lng": 121.4669 }
+      },
+      "basicInfo": {
+        "openingHours": "10:00-22:00",
+        "admission": "무료",
+        "recommendedDuration": "1.5-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "서양과 중국의 건축 양식이 혼재된 이국적인 거리",
+        "history": "티엔즈팡은 상하이 타이캉루(泰康路) 210번지 일대에 위치한 예술 특구입니다. 원래 프랑스 조계지 시절 형성된 스쿠먼(石庫門) 주거지역으로, 1998년 화가 천이페이(陳逸飛)가 이곳에 스튜디오를 열면서 예술가들이 모여들기 시작했습니다. 스쿠먼은 1860년대부터 1930년대까지 상하이에서 유행한 독특한 건축양식으로, 서양의 연립주택 구조에 중국 전통 사합원(四合院) 요소를 결합한 것입니다. 좁은 골목(弄堂)을 중심으로 형성된 이 지역은 2000년대 들어 정부의 보존 정책에 따라 갤러리, 공방, 디자인 숍, 카페 등이 입점하며 '상하이의 인사동'으로 불리는 관광명소로 재탄생했습니다.",
+        "highlights": ["상하이의 인사동", "스쿠먼(石庫門) 건축 체험", "앤티크한 카페 골목", "기념품 숍과 공방"]
+      },
+      "tips": ["좁은 골목이 많아 미아 주의", "주말에는 인파가 많음", "현금 준비 권장"],
+      "photoSpots": ["골목 입구 간판", "옥상 카페에서 골목 전경", "스쿠먼 건물 배경"]
+    },
+    {
+      "id": "place-nanjing-road",
+      "name": "남경로",
+      "nameLocal": "南京路",
+      "city": "상하이",
+      "country": "중국",
+      "category": "street",
+      "images": [
+        "/images/shanghai/nanjing-road1.jpg",
+        "/images/shanghai/nanjing-road2.jpg",
+        "/images/shanghai/nanjing-road3.jpg",
+        "/images/shanghai/nanjing-road4.jpg"
+      ],
+      "location": {
+        "address": "Nanjing Road, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.2345, "lng": 121.4737 }
+      },
+      "basicInfo": {
+        "openingHours": "24시간 (상점별 상이)",
+        "admission": "무료",
+        "recommendedDuration": "1-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "상해에서 가장 번화한 거리",
+        "history": "남경로는 1845년 제1차 아편전쟁 이후 영국 조계지에서 처음 개발되어 180년 역사를 자랑하는 중국 최초의 상업 거리입니다. 원래 '화원로(花園路)'라 불렸으나 1865년 난징조약을 기념하여 '남경로'로 개칭되었습니다. 1920~30년대 '동양의 파리'로 불리며 선시(先施), 융안(永安), 신신(新新), 대신(大新) 4대 백화점이 들어서며 전성기를 누렸습니다. 현재 동쪽의 남경동로(南京東路)는 보행자 전용구역으로 지정되어 연간 1억 명 이상이 방문하는 세계적인 쇼핑거리가 되었으며, 서쪽의 남경서로(南京西路)는 명품 브랜드가 밀집한 고급 쇼핑가로 발전했습니다.",
+        "highlights": ["180년 역사의 중국 최초 상업거리", "야간 네온사인 조명", "이색적인 포토스팟", "4대 백화점 역사"]
+      },
+      "tips": ["야경이 특히 아름다움", "소매치기 주의", "관광열차 운행", "동로와 서로 구분 필요"],
+      "photoSpots": ["네온사인 배경", "보행자 거리 전경", "역사적 백화점 건물"]
+    },
+    {
+      "id": "place-panlong-tiandi",
+      "name": "판롱티엔디",
+      "nameLocal": "蟠龙天地",
+      "city": "상하이",
+      "country": "중국",
+      "category": "complex",
+      "images": [
+        "/images/shanghai/panlong-tiandi1.jpg",
+        "/images/shanghai/panlong-tiandi2.jpg",
+        "/images/shanghai/panlong-tiandi3.jpg",
+        "/images/shanghai/panlong-tiandi4.jpg"
+      ],
+      "location": {
+        "address": "Panlong Road, Qingpu District, Shanghai, China",
+        "coordinates": { "lat": 31.1832, "lng": 121.0621 }
+      },
+      "basicInfo": {
+        "openingHours": "10:00-22:00",
+        "admission": "무료",
+        "recommendedDuration": "2-3시간",
+        "website": null
+      },
+      "description": {
+        "summary": "2023년 4월 오픈한 상해 최고의 핫플레이스",
+        "history": "판롱티엔디는 2023년 4월에 그랜드 오픈한 상하이의 최신 복합문화공간입니다. 청포구(青浦區) 판롱진(蟠龙镇)에 위치하며, 명나라 시대부터 600년 역사를 가진 판롱고진(蟠龙古镇)을 현대적으로 재해석한 곳입니다. 물길과 다리가 어우러진 전통 수향마을(水鄉) 스타일을 유지하면서, 현대적인 브런치 카페와 디자이너 숍을 입점시켜 MZ세대의 핫플레이스로 부상했습니다. 특히 수로 위에서 즐기는 배 위 티타임, 캠핑 콘셉트 카페 CAMP33, 블루보틀 커피 등이 인기입니다.",
+        "highlights": ["600년 역사의 수향마을 재해석", "인스타그래머블 핫플레이스", "배 위 티타임 체험", "MZ세대 감성 카페거리"]
+      },
+      "tips": ["사전 예약 권장 (인기 카페)", "사진 촬영 명소가 많음", "주말 혼잡", "상하이 시내에서 약 40분 소요"],
+      "photoSpots": ["수로와 건물 배경", "카페 테라스", "배 위 티타임", "전통 다리 위"]
+    },
+    {
+      "id": "place-starbucks-reserve",
+      "name": "스타벅스 리저브 로스터리",
+      "nameLocal": "星巴克臻选上海烘焙工坊",
+      "city": "상하이",
+      "country": "중국",
+      "category": "cafe",
+      "images": [
+        "/images/shanghai/starbucks-reserve1.jpg",
+        "/images/shanghai/starbucks-reserve2.jpeg"
+      ],
+      "location": {
+        "address": "789 Nanjing West Road, Jing'an District, Shanghai, China",
+        "coordinates": { "lat": 31.2298, "lng": 121.4457 }
+      },
+      "basicInfo": {
+        "openingHours": "07:00-23:00",
+        "admission": "무료 (음료 별도)",
+        "recommendedDuration": "1-1.5시간",
+        "website": "https://www.starbucksreserve.com"
+      },
+      "description": {
+        "summary": "아시아 세계 최대 규모의 스타벅스 리저브",
+        "history": "상해 스타벅스 리저브 로스터리는 2017년 12월 6일 오픈한 아시아 최대, 세계에서 두 번째로 큰 스타벅스 매장입니다. 약 2,700평방미터(약 820평) 규모의 2층 건물로, 스타벅스 창업자 하워드 슐츠가 직접 기획에 참여했습니다. 이곳에서는 원두 로스팅 전 과정을 직접 관람할 수 있으며, 27톤 용량의 거대한 원두 저장 사일로가 상징적입니다. 100여 종의 프리미엄 음료와 40여 종의 베이커리 메뉴를 제공하며, 스타벅스의 커피 문화와 기술력을 체험할 수 있는 특별한 공간입니다. 증강현실(AR) 기술을 활용한 인터랙티브 체험도 가능합니다.",
+        "highlights": ["아시아 최대 2,700㎡ 규모", "27톤 원두 사일로", "원두 로스팅 현장 관람", "100여 종 프리미엄 음료", "AR 체험 가능"]
+      },
+      "tips": ["아메리카노 1잔 제공 (투어 포함)", "2층에서 전체 조망 가능", "기념품 숍 있음", "오전 시간대 여유로움"],
+      "photoSpots": ["거대한 원두 저장 사일로", "로스팅 기계", "2층 전경", "AR 체험 존"]
+    },
+    {
+      "id": "place-expo-museum",
+      "name": "상하이 엑스포 박물관",
+      "nameLocal": "上海世博会博物馆",
+      "city": "상하이",
+      "country": "중국",
+      "category": "museum",
+      "images": [
+        "/images/shanghai/expo-museum1.jpg",
+        "/images/shanghai/expo-museum2.jpg",
+        "/images/shanghai/expo-museum3.jpg"
+      ],
+      "location": {
+        "address": "818 Mengzi Road, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.1905, "lng": 121.4912 }
+      },
+      "basicInfo": {
+        "openingHours": "09:00-17:00 (월요일 휴관)",
+        "admission": "무료",
+        "recommendedDuration": "1.5-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "160여 년의 엑스포 역사를 한눈에",
+        "history": "상하이 엑스포 박물관은 국제박람회기구(BIE)가 공식 승인한 세계 유일의 세계박람회 전문 박물관입니다. 2017년 5월 1일 정식 개관했으며, 2010년 상하이 엑스포 개최지인 푸동-푸시 양안 지역 중 푸시 쪽 옛 엑스포 부지에 위치합니다. 1851년 런던 크리스탈 팰리스에서 열린 첫 번째 만국박람회부터 현재까지 160여 년의 세계박람회 역사를 8개 상설 전시관에서 관람할 수 있습니다. 2010년 상하이 엑스포의 테마였던 'Better City, Better Life(더 나은 도시, 더 나은 생활)'의 이념과 함께, 역대 엑스포의 혁신적 발명품과 건축물을 체험할 수 있습니다.",
+        "highlights": ["BIE 공식 승인 세계 유일 엑스포 박물관", "160년 세계박람회 역사", "2010 상해 엑스포 기념", "8개 상설 전시관"]
+      },
+      "tips": ["월요일 휴관 주의", "무료 입장", "오디오 가이드 이용 가능", "지하철 13호선 세보다다오역"],
+      "photoSpots": ["박물관 외관", "엑스포 기념물", "중국관 모형"]
+    },
+    {
+      "id": "place-the-bund",
+      "name": "외탄",
+      "nameLocal": "外滩",
+      "city": "상하이",
+      "country": "중국",
+      "category": "landmark",
+      "images": [
+        "/images/shanghai/the-bund1.jpg",
+        "/images/shanghai/the-bund2.jpg"
+      ],
+      "location": {
+        "address": "Zhongshan East 1st Road, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.2400, "lng": 121.4906 }
+      },
+      "basicInfo": {
+        "openingHours": "24시간",
+        "admission": "무료",
+        "recommendedDuration": "1-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "영국식 건축물과 화려한 야경의 상하이 상징",
+        "history": "외탄(外滩, The Bund)은 황푸강 서안을 따라 약 1.5km에 걸쳐 펼쳐진 상하이의 상징적인 산책로입니다. 1844년 제1차 아편전쟁 이후 영국 조계지로 지정되면서 개발이 시작되었고, 1920~30년대 '동양의 월스트리트'로 불리며 극동 금융의 중심지가 되었습니다. 현재 52개의 서양식 역사 건축물이 보존되어 있어 '만국건축박람회(万国建筑博览会)'라 불리며, 고딕, 바로크, 로마네스크, 아르데코 등 다양한 양식의 건물을 감상할 수 있습니다. 대표적으로 1923년 완공된 화평반점(옛 캐세이호텔), 1927년 완공된 상하이세관(해관대루) 등이 있습니다. 강 건너편 푸동의 동방명주탑, 상하이타워와 함께 상하이의 과거와 현재를 동시에 보여주는 곳입니다.",
+        "highlights": ["1844년부터의 조계지 역사", "52개 서양식 역사 건축물", "만국건축박람회", "푸동 스카이라인 조망"]
+      },
+      "tips": ["야경 필수 관람 (19:00-21:00 추천)", "황푸강 유람선 운행", "주말 저녁 혼잡", "와이탄 관광터널(VR)도 인기"],
+      "photoSpots": ["푸동 스카이라인 배경", "화평반점 건물", "상하이세관(해관대루)", "황푸강과 함께"]
+    },
+    {
+      "id": "place-yuyuan-garden",
+      "name": "예원 옛거리",
+      "nameLocal": "豫園商城",
+      "city": "상하이",
+      "country": "중국",
+      "category": "garden",
+      "images": [
+        "/images/shanghai/yuyuan-garden1.jpg",
+        "/images/shanghai/yuyuan-garden2.jpg"
+      ],
+      "location": {
+        "address": "Yuyuan Road, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.2272, "lng": 121.4921 }
+      },
+      "basicInfo": {
+        "openingHours": "08:30-17:00 (정원), 상가 별도",
+        "admission": "정원 약 40위안",
+        "recommendedDuration": "2-3시간",
+        "website": null
+      },
+      "description": {
+        "summary": "도심 한가운데서 느끼는 옛 상해의 정취",
+        "history": "예원(豫園)은 1559년 명나라 가정제(嘉靖帝) 시절 사천성 포정사를 지낸 반윤단(潘允端)이 18년에 걸쳐 조성한 강남 전통 정원입니다. 부친의 노후를 위해 지었으며, '예(豫)'는 '평안하고 즐겁다'는 뜻입니다. 약 2만㎡ 규모로 40여 개의 정자와 누각, 가산(假山), 연못이 어우러져 '도심 속 산림의 아름다움(城市山林之美)'을 자랑합니다. 청나라 때 쇠락했다가 1956년부터 복원되어 현재의 모습을 갖추었습니다. 정원 주변의 예원상성(豫園商城)은 140여 년 역사의 전통 시장으로, 1875년 설립된 난샹만터우뎬(南翔馒头店)의 샤오롱바오가 특히 유명합니다. 구곡교(九曲橋)와 호심정(湖心亭) 찻집은 예원의 상징적인 포토스팟입니다.",
+        "highlights": ["1559년 명나라 시대 조성", "460여 년 역사의 강남 정원", "난샹 샤오롱바오 원조", "구곡교와 호심정"]
+      },
+      "tips": ["샤오롱바오 필수 맛보기", "정원 입장 별도 요금", "흥정 가능", "오전 일찍 방문시 여유로움"],
+      "photoSpots": ["구곡교(九曲橋)", "호심정(湖心亭)", "전통 건물 배경", "정원 내 가산"]
+    },
+    {
+      "id": "place-provisional-government",
+      "name": "대한민국 임시정부청사",
+      "nameLocal": "大韓民國臨時政府舊址",
+      "city": "상하이",
+      "country": "중국",
+      "category": "museum",
+      "images": [
+        "/images/shanghai/provisional-government1.jpg",
+        "/images/shanghai/provisional-government2.jfif"
+      ],
+      "location": {
+        "address": "No. 4, Lane 306, Madang Road, Huangpu District, Shanghai",
+        "coordinates": { "lat": 31.2173, "lng": 121.4713 }
+      },
+      "basicInfo": {
+        "openingHours": "09:00-17:00 (월요일 휴관)",
+        "admission": "무료",
+        "recommendedDuration": "30분-1시간",
+        "website": null
+      },
+      "description": {
+        "summary": "일제 강점기 독립운동의 구심점",
+        "history": "대한민국 임시정부는 1919년 4월 11일 3.1 운동 직후 상하이에서 수립되었으며, 대한민국 헌법 전문에 명시된 대한민국의 법통입니다. 현재의 마당로(馬當路) 청사는 1926년부터 1932년까지 사용된 곳으로, 김구 선생이 국무령과 주석으로 활동하며 독립운동을 지휘한 역사적 현장입니다. 1932년 윤봉길 의사의 훙커우공원 의거 이후 일제의 탄압을 피해 항저우로 이전했습니다. 1993년 한중 수교 이후 복원되어 현재는 기념관으로 운영되며, 임시정부 요인들의 집무실, 침실, 회의실이 재현되어 있습니다. 독립선언문 원본, 태극기, 독립운동 관련 유물 등 귀중한 자료를 전시하고 있어 한국인 관광객의 필수 방문지입니다.",
+        "highlights": ["1919년 대한민국 임시정부 수립지", "김구 선생 집무실 복원", "윤봉길 의사 의거 역사", "대한민국 법통의 상징"]
+      },
+      "tips": ["청사 안 사진촬영 금지", "한국어 안내 가능", "신천지 인근 위치 (도보 5분)", "월요일 휴관"],
+      "photoSpots": ["청사 외관", "기념비", "입구 태극기"]
+    },
+    {
+      "id": "place-xintiandi",
+      "name": "신천지",
+      "nameLocal": "新天地",
+      "city": "상하이",
+      "country": "중국",
+      "category": "complex",
+      "images": [
+        "/images/shanghai/xintiandi1.jpg",
+        "/images/shanghai/xintiandi2.jpg"
+      ],
+      "location": {
+        "address": "Xintiandi, Huangpu District, Shanghai, China",
+        "coordinates": { "lat": 31.2189, "lng": 121.4738 }
+      },
+      "basicInfo": {
+        "openingHours": "10:00-23:00 (매장별 상이)",
+        "admission": "무료",
+        "recommendedDuration": "1-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "상해 속 작은 프랑스, 세련된 카페 골목",
+        "history": "신천지는 1999년부터 2001년까지 홍콩 서이그룹(瑞安集团)이 개발한 복합문화공간으로, 1920~30년대 프랑스 조계지 시절의 스쿠먼(石庫門) 건물을 현대적으로 재해석한 곳입니다. 스쿠먼은 '돌로 된 문'이라는 뜻으로, 서양 연립주택 구조에 중국 전통 안마당 구조를 결합한 상하이 고유의 건축양식입니다. 30,000㎡ 규모의 신천지는 북리(北里)와 남리(南里)로 나뉘며, 북리는 카페와 레스토랑 위주, 남리는 현대적 쇼핑몰과 연결됩니다. 개발 당시 역사 건축물 보존과 현대화를 동시에 달성한 성공 사례로 평가받아, 전 세계 도시재생 프로젝트의 모델이 되었습니다.",
+        "highlights": ["1920년대 스쿠먼 건축 보존", "홍콩 자본의 성공적 도시재생", "북리 카페거리 vs 남리 쇼핑몰", "세련된 노천카페"]
+      },
+      "tips": ["저녁 시간 분위기 좋음", "카페와 레스토랑 다수", "임시정부청사 도보 5분", "중공1대회지 인근"],
+      "photoSpots": ["스쿠먼 건물 골목", "노천카페 테라스", "야간 조명"]
+    },
+    {
+      "id": "place-lujiazui",
+      "name": "루자주이",
+      "nameLocal": "陆家嘴",
+      "city": "상하이",
+      "country": "중국",
+      "category": "district",
+      "images": [
+        "/images/shanghai/the-bund1.jpg"
+      ],
+      "location": {
+        "address": "Lujiazui, Pudong New District, Shanghai, China",
+        "coordinates": { "lat": 31.2382, "lng": 121.5029 }
+      },
+      "basicInfo": {
+        "openingHours": "24시간 (시설별 상이)",
+        "admission": "무료 (개별 시설 별도)",
+        "recommendedDuration": "1.5-2시간",
+        "website": null
+      },
+      "description": {
+        "summary": "상하이 금융 중심지, 미래 도시의 모습",
+        "history": "루자주이(陸家嘴)는 황푸강이 굽이치는 푸동신구의 핵심 금융지구입니다. '루(陸)'씨 성을 가진 사람의 집이 강변 모퉁이(嘴)에 있었다는 데서 이름이 유래했습니다. 1990년 푸동개발 선언 이후 30여 년 만에 아시아 최대 금융중심지로 성장했습니다. 1994년 완공된 동방명주탑(468m), 2008년 완공된 환구금융센터(492m), 2015년 완공된 상하이타워(632m, 중국 최고층)가 스카이라인을 이룹니다. IFC몰은 루이비통, 샤넬 등 200여 개 명품 브랜드가 입점한 대형 쇼핑몰이며, 원형 루자주이 육교(陆家嘴环形天桥)에서 360도 스카이라인을 감상할 수 있습니다. 외탄에서 바라보는 루자주이 야경은 상하이 여행의 백미입니다.",
+        "highlights": ["1990년 푸동개발 이후 30년 역사", "상하이타워(632m) 중국 최고층", "IFC몰 200여 개 브랜드", "루자주이 육교 360도 전망"]
+      },
+      "tips": ["자유시간 약 90분 활용", "IFC몰에서 쇼핑과 휴식", "육교에서 스카이라인 촬영", "디즈니 스토어도 인기"],
+      "photoSpots": ["루자주이 육교 위", "IFC몰 테라스", "동방명주탑 배경", "3대 초고층 빌딩"]
+    },
+    {
+      "id": "place-eaton-hotel",
+      "name": "디 이튼 호텔 상하이",
+      "nameLocal": "上海裕景大饭店",
+      "city": "상하이",
+      "country": "중국",
+      "category": "hotel",
+      "images": [
+        "/images/shanghai/eaton-hotel1.jpg",
+        "/images/shanghai/eaton-hotel2.jfif"
+      ],
+      "location": {
+        "address": "180 Lujiazui Ring Road, Pudong New District, Shanghai",
+        "coordinates": { "lat": 31.2373, "lng": 121.5021 }
+      },
+      "basicInfo": {
+        "openingHours": "24시간",
+        "admission": "숙박 예약",
+        "recommendedDuration": null,
+        "website": null
+      },
+      "description": {
+        "summary": "푸동 루자주이 지역의 4성급 호텔",
+        "history": "디 이튼 호텔 상하이(The Eton Hotel Shanghai)는 푸동 금융지구 루자주이에 위치한 4성급 비즈니스 호텔입니다. 동방명주탑과 IFC몰에서 도보 거리에 있어 관광과 비즈니스 모두에 편리합니다. 지하철 2호선 루자주이역에서 가까워 외탄, 남경로 등 주요 관광지 접근성이 뛰어납니다. 현대적인 시설의 객실과 중식, 양식 레스토랑, 피트니스 센터 등 부대시설을 갖추고 있습니다.",
+        "highlights": ["루자주이 금융지구 위치", "4성급 시설", "지하철역 도보 거리", "동방명주탑 인근"]
+      },
+      "tips": ["조식 뷔페 포함", "무료 와이파이", "지하철 2호선 루자주이역 인근"],
+      "photoSpots": null
+    }
+  ]
+}
