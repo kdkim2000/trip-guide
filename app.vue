@@ -3,11 +3,9 @@
 const isOnline = useOnline()
 const toast = useToast()
 
-// 여행 스토어 초기화
+// 여행 스토어 초기화 - SSR 시점에 실행되도록 await 사용
 const tripStore = useTripStore()
-onMounted(() => {
-  tripStore.loadTrips()
-})
+await tripStore.loadTrips()
 
 // 오프라인/온라인 알림
 watch(isOnline, (online) => {

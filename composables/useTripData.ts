@@ -19,9 +19,13 @@ export const useItinerary = () => {
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<Itinerary>(
-    () => `itinerary-${tripId.value}`,
+    'itinerary',
     () => $fetch(`/data/trips/${tripId.value}/itinerary.json`),
-    { watch: [tripId] }
+    {
+      watch: [tripId],
+      // tripId가 변경되면 캐시 무시하고 새로 fetch
+      getCachedData: () => undefined,
+    }
   )
 }
 
@@ -31,9 +35,12 @@ export const usePlaces = () => {
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<PlacesData>(
-    () => `places-${tripId.value}`,
+    'places',
     () => $fetch(`/data/trips/${tripId.value}/places.json`),
-    { watch: [tripId] }
+    {
+      watch: [tripId],
+      getCachedData: () => undefined,
+    }
   )
 }
 
@@ -43,9 +50,12 @@ export const useHighlights = () => {
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<HighlightsData>(
-    () => `highlights-${tripId.value}`,
+    'highlights',
     () => $fetch(`/data/trips/${tripId.value}/highlights.json`),
-    { watch: [tripId] }
+    {
+      watch: [tripId],
+      getCachedData: () => undefined,
+    }
   )
 }
 
