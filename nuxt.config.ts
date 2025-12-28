@@ -30,7 +30,9 @@ export default defineNuxtConfig({
 
   // 이미지 최적화 설정
   image: {
-    // 로컬 이미지 최적화
+    // GitHub Pages 정적 호스팅: IPX 서버가 없으므로 최적화 비활성화
+    provider: process.env.NUXT_APP_BASE_URL ? 'none' : 'ipx',
+    // 로컬 이미지 디렉토리
     dir: 'public',
     // 이미지 품질 (기본값 80)
     quality: 80,
