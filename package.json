@@ -17,7 +17,10 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "migrate": "node scripts/migrate-conversations.mjs --verbose",
+    "migrate:status": "node scripts/migrate-conversations.mjs --status",
+    "migrate:force": "node scripts/migrate-conversations.mjs --force --verbose"
   },
   "dependencies": {
     "@nuxt/image": "^2.0.0",
