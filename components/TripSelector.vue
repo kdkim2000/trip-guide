@@ -41,10 +41,10 @@ onUnmounted(() => {
     <!-- 현재 여행 표시 버튼 -->
     <button
       @click="isOpen = true"
-      class="w-full flex items-center justify-between p-3 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-primary-300 transition-colors"
+      class="w-full flex items-center justify-between p-3 card-apple touch-feedback"
     >
       <div v-if="tripStore.currentTrip" class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-lg overflow-hidden bg-gray-100 flex-shrink-0">
+        <div class="w-10 h-10 rounded-apple-md overflow-hidden bg-apple-gray-100 dark:bg-apple-gray-700 shrink-0">
           <NuxtImg
             :src="tripStore.currentTrip.thumbnail"
             :alt="tripStore.currentTrip.title"
@@ -54,17 +54,17 @@ onUnmounted(() => {
           />
         </div>
         <div class="text-left">
-          <p class="font-semibold text-gray-900 text-sm">{{ tripStore.currentTrip.title }}</p>
-          <p class="text-xs text-gray-500">{{ tripStore.currentTrip.subtitle }}</p>
+          <p class="text-body font-medium dark:text-white">{{ tripStore.currentTrip.title }}</p>
+          <p class="text-footnote text-apple-gray-500">{{ tripStore.currentTrip.subtitle }}</p>
         </div>
       </div>
-      <div v-else class="flex items-center gap-2 text-gray-400">
-        <span>여행을 선택하세요</span>
+      <div v-else class="flex items-center gap-2 text-apple-gray-400">
+        <span class="text-body">여행을 선택하세요</span>
       </div>
 
       <!-- 화살표 아이콘 -->
       <svg
-        class="w-5 h-5 text-gray-400 transition-transform"
+        class="w-5 h-5 text-apple-gray-400 transition-transform"
         :class="{ 'rotate-180': isOpen }"
         fill="none"
         stroke="currentColor"
@@ -79,28 +79,33 @@ onUnmounted(() => {
       <Transition name="modal">
         <div
           v-if="isOpen"
-          class="modal-backdrop fixed inset-0 z-50 flex items-end justify-center bg-black/50"
+          class="modal-backdrop fixed inset-0 z-50 flex items-end justify-center bg-black/40"
           @click="closeOnOutside"
         >
           <div
-            class="modal-content w-full max-w-lg max-h-[70vh] bg-white rounded-t-2xl overflow-hidden"
+            class="modal-content w-full max-w-lg max-h-[70vh] bg-apple-gray-100 dark:bg-apple-gray-900 rounded-t-[20px] overflow-hidden"
             @click.stop
           >
+            <!-- 핸들 -->
+            <div class="flex justify-center pt-2 pb-1">
+              <div class="w-9 h-1 rounded-full bg-apple-gray-300 dark:bg-apple-gray-600"></div>
+            </div>
+
             <!-- 헤더 -->
-            <div class="sticky top-0 bg-white border-b border-gray-100 px-4 py-3 flex items-center justify-between">
-              <h2 class="text-lg font-semibold">여행 선택</h2>
+            <div class="px-4 py-3 flex items-center justify-between">
+              <h2 class="text-headline dark:text-white">여행 선택</h2>
               <button
                 @click="isOpen = false"
-                class="p-1 rounded-full hover:bg-gray-100 transition-colors"
+                class="w-8 h-8 rounded-full bg-apple-gray-200 dark:bg-apple-gray-700 flex items-center justify-center touch-feedback"
               >
-                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-4 h-4 text-apple-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
             </div>
 
             <!-- 여행 목록 -->
-            <div class="p-4 space-y-2 overflow-y-auto">
+            <div class="px-4 pb-4 space-y-2 overflow-y-auto">
               <TripCard
                 v-for="trip in tripStore.tripsWithStatus"
                 :key="trip.id"
@@ -112,17 +117,17 @@ onUnmounted(() => {
               <!-- 빈 상태 -->
               <div
                 v-if="tripStore.trips.length === 0"
-                class="text-center py-8 text-gray-400"
+                class="text-center py-8"
               >
-                <svg class="w-12 h-12 mx-auto mb-2 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg class="w-12 h-12 mx-auto mb-2 text-apple-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <p>등록된 여행이 없습니다</p>
+                <p class="text-body text-apple-gray-500">등록된 여행이 없습니다</p>
               </div>
             </div>
 
             <!-- 하단 안전 영역 -->
-            <div class="h-safe-bottom bg-white" />
+            <div class="h-safe-bottom bg-apple-gray-100 dark:bg-apple-gray-900" />
           </div>
         </div>
       </Transition>
@@ -138,7 +143,7 @@ onUnmounted(() => {
 
 .modal-enter-active .modal-content,
 .modal-leave-active .modal-content {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .modal-enter-from,

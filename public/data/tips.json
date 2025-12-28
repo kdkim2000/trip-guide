@@ -1,0 +1,678 @@
+{
+  "precautions": [
+    {
+      "id": "general",
+      "title": "일반 유의사항",
+      "icon": "warning",
+      "items": [
+        {
+          "id": "g1",
+          "title": "비상 연락처",
+          "description": "비상 상황에 대비해 인솔자와 가이드의 연락처를 항상 지참해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g2",
+          "title": "안전장비 착용",
+          "description": "차량이나 배 등 이동 수단 이용 시에는 안전벨트나 구명조끼, 헬멧 등 안전장비를 착용한 뒤 지정된 좌석에 앉아주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g3",
+          "title": "귀중품 관리",
+          "description": "여권, 현금, 휴대폰 등 귀중품은 도난·분실 위험이 높으니 반드시 본인이 직접 소지해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g4",
+          "title": "외부 음식 반입 금지",
+          "description": "식당에서는 제공된 음식 외에 외부 음식 반입을 삼가주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "g5",
+          "title": "건강 이상 시 즉시 알림",
+          "description": "질병이나 부상 등 건강 이상이 있을 경우, 즉시 인솔자나 가이드에게 알려주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g6",
+          "title": "노약자/어린이 보호",
+          "description": "노약자나 어린이와 함께하는 보호자는 항상 곁을 지켜주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g7",
+          "title": "개별 행동 자제",
+          "description": "개별 행동은 삼가 주시고, 일정에서 벗어난 활동으로 생기는 사고는 본인의 책임임을 꼭 기억해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "g8",
+          "title": "미팅 장소/시간 확인",
+          "description": "미팅 장소와 시간을 잘 확인해주시고, 관광지나 숙소 등 시설물과 자연환경 훼손은 절대 금지입니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "g9",
+          "title": "단체 이동 시 주의",
+          "description": "단체 이동 시 대열에서 이탈하지 않도록 주의해주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "g10",
+          "title": "에티켓 준수",
+          "description": "고성방가, 반말, 음주, 흡연, 노상방뇨 등 다른 사람에게 불쾌감을 주는 행동은 절대 금지이며, 인솔자나 가이드에게 상식을 벗어난 무리한 요구는 하지 말아주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "g11",
+          "title": "배려와 양보",
+          "description": "모두가 즐거운 여행이 될 수 있도록 이기적인 행동은 피하고, 서로를 배려하며 양보하는 마음을 가져주세요.",
+          "importance": "low"
+        },
+        {
+          "id": "g12",
+          "title": "손 씻기",
+          "description": "식사 전후나 화장실 사용 뒤에는 흐르는 물에 비누로 30초 이상 손 씻기를 권장합니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "g13",
+          "title": "음식 위생",
+          "description": "위생이 불확실한 길거리 음식이나 유통기한이 지난 음식은 피하고, 익히지 않은 날음식은 식중독 위험이 있으니 가급적 피해 주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "g14",
+          "title": "설사/구토 증상 시",
+          "description": "설사나 구토 증상이 있을 경우, 임의로 약을 먹기보다는 가이드나 인솔자에게 즉시 알리고 병원 진료를 받으세요. 수분도 충분히 섭취해주세요.",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "id": "accommodation",
+      "title": "숙박시설 이용 시",
+      "icon": "hotel",
+      "items": [
+        {
+          "id": "a1",
+          "title": "비상구 확인",
+          "description": "화재 등 긴급 상황에 대비해 비상구 위치와 대피 요령을 미리 확인해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "a2",
+          "title": "흡연구역 준수",
+          "description": "숙박시설 내 지정된 흡연구역에서만 흡연하시기 바랍니다.",
+          "importance": "medium"
+        },
+        {
+          "id": "a3",
+          "title": "귀중품 보관",
+          "description": "귀중품은 객실 금고에 보관하시고, 사용이 어려울 경우 인솔자나 가이드에게 미리 상의해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "a4",
+          "title": "문단속",
+          "description": "객실 출입 시 문단속을 꼭 확인해주시고, 누군가 문을 두드릴 경우 반드시 신원을 확인한 뒤 응대해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "a5",
+          "title": "미끄러움 주의",
+          "description": "숙박시설내 바닥이 미끄러울 수 있으니 이동 시 주의해주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "a6",
+          "title": "부대시설 이용",
+          "description": "부대시설 이용이나 숙소 주변 바다에 입수할 경우, 운영시간과 이용 방법, 안전수칙을 꼭 확인해주세요. (안전요원이 없을 수 있으니 특히 주의 바랍니다.)",
+          "importance": "medium"
+        },
+        {
+          "id": "a7",
+          "title": "주류/음료 반입",
+          "description": "직접 가져온 주류나 음료를 숙소 식당이나 외부 식당에 반입해 드실 경우 추가 요금이 발생할 수 있으니 유의해주세요.",
+          "importance": "low"
+        },
+        {
+          "id": "a8",
+          "title": "일정 외 시간 외출",
+          "description": "일정 외 시간에 발생한 사고는 본인의 책임입니다. 외출 전에는 반드시 인솔자나 가이드에게 알리고, 숙소의 주소와 연락처도 확인해주세요.",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "운송수단 이용 시",
+      "icon": "bus",
+      "items": [
+        {
+          "id": "t1",
+          "title": "탑승 시 주의",
+          "description": "보행하거나 차량·선박에 오르내릴 때는 좌우를 꼭 확인하고, 탑승 후에는 안전벨트나 구명조끼, 헬멧 등 안전장비를 착용한 뒤 지정된 좌석에 앉아주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "t2",
+          "title": "이동 중 안전",
+          "description": "이동 중에는 절대 자리에서 일어나지 말고, 음주나 노래 등 위험한 행동은 삼가주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "t3",
+          "title": "소지품 관리",
+          "description": "탑승 시 모자나 스카프 등 소지품이 날아가거나 떨어지지 않도록 주의해주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "t4",
+          "title": "선박 관광",
+          "description": "선박 관광은 사전 유의사항을 꼭 숙지한 후 이용해주세요. (미성년자, 임산부, 노약자, 음주자, 허리디스크 등 질환이 있는 분은 이용이 제한되며, 보호자 동의 하에 이용하시기 바랍니다.)",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "title": "물놀이 시",
+      "icon": "water",
+      "items": [
+        {
+          "id": "w1",
+          "title": "안전수칙 및 준비운동",
+          "description": "물에 들어가기 전 안전수칙을 숙지하고, 반드시 준비 운동을 해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "w2",
+          "title": "안전장비 착용",
+          "description": "수경이나 구명조끼 등 안전장비 착용을 권장합니다.",
+          "importance": "high"
+        },
+        {
+          "id": "w3",
+          "title": "식사 후 물놀이",
+          "description": "물놀이 1시간 전에는 음식물 섭취를 삼가주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "w4",
+          "title": "음주 후/야간 물놀이 금지",
+          "description": "음주 후나 밤에는 절대 물에 들어가지 마세요. 매우 위험합니다.",
+          "importance": "high"
+        },
+        {
+          "id": "w5",
+          "title": "미끄러움 주의",
+          "description": "물놀이 장소 주변은 미끄러우니 뛰거나 장난치지 말아주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "w6",
+          "title": "몸 상태 점검",
+          "description": "자신의 몸 상태를 잘 살피고, 이상 징후가 느껴지면 즉시 물놀이를 멈춰주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "w7",
+          "title": "휴식",
+          "description": "장시간 물놀이는 피로를 부르니 중간중간 휴식을 꼭 취해주세요.",
+          "importance": "medium"
+        },
+        {
+          "id": "w8",
+          "title": "해양스포츠",
+          "description": "해양스포츠를 이용하기 전에는 안전수칙과 유의사항을 반드시 확인해주세요. 미성년자, 임산부, 노약자, 지병이 있거나 건강상 특이사항이 있는 경우 이용이 제한될 수 있습니다.",
+          "importance": "high"
+        },
+        {
+          "id": "w9",
+          "title": "호수/강 수영",
+          "description": "호수나 강에서는 절대로 혼자 수영하지 마세요.",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "id": "optional",
+      "title": "선택관광 진행 시",
+      "icon": "star",
+      "items": [
+        {
+          "id": "o1",
+          "title": "안전수칙 숙지",
+          "description": "선택관광에 참여할 때는 안전수칙을 반드시 숙지하고, 안전요원의 지시에 따라주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "o2",
+          "title": "장비 사용법",
+          "description": "해양스포츠, 버기카, 사륜차 등 직접 조작이 필요한 활동은 사용법을 정확히 익힌 후 이용해주세요.",
+          "importance": "high"
+        },
+        {
+          "id": "o3",
+          "title": "면책사항",
+          "description": "안전수칙을 지키지 않거나 사용법 미숙으로 인한 사고는 당사가 책임지지 않습니다.",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "id": "disclaimer",
+      "title": "면책사항 고지",
+      "icon": "info",
+      "items": [
+        {
+          "id": "d1",
+          "title": "면책사항",
+          "description": "당사는 여행객이 스스로 안전수칙 등을 준수하지 아니하는 등의 잘못으로 일어난 사고 및 천재지변 등 불가항력에 의한 사고에 대하여는 책임을 지지 않습니다.",
+          "importance": "high"
+        }
+      ]
+    }
+  ],
+  "termsAndConditions": {
+    "specialTerms": [
+      "본 상품은 항공 좌석에 대한 비용을 선납해 놓은 하드블럭 상품으로, 취소 또는 변경시 국외 여행 표준약관과는 별도로 국외행 표준약관 '제 5조 특약' 당사 하드블럭 특별약관에 따른 취소 수수료가 적용됨을 양해 바랍니다.",
+      "출발 확정 여부는 출발일 기준 약 30일 전 드리며 항공권 발권은 출발 4~5일 전 진행합니다.",
+      "항공기 좌석을 전세 또는 예치금을 입금한 경우 특별 약관 규정에 따라 발권 후 취소시, 예약금 및 상품가격은 환불되지 않습니다.",
+      "상품 예약과 동시에 발권되는 현지의 기차, 중간 국내선, 국제선 등의 비용은 100% 환불이 되지 않습니다.",
+      "현지 호텔, 교통 수단의 경우에도 환불이 불가하므로 취소시 이 점 유의하시기 바랍니다.",
+      "단, 여행 참가자수 미달로 여행개시 7일 전까지 여행 계약 해제 통지시에는 계약금만 환급됩니다."
+    ],
+    "cancellationPolicy": [
+      { "period": "예약 시점부터 45일전 통보시", "fee": "취소 수수료 없음 (계약금 환급)" },
+      { "period": "44~30일전 통보시", "fee": "상품가격의 10% 공제 후 환급" },
+      { "period": "29~20일전 통보시", "fee": "상품가격의 20% 공제 후 환급" },
+      { "period": "19~7일전 통보시", "fee": "상품가격의 50% 공제 후 환급" },
+      { "period": "6일전~당일 통보시", "fee": "상품가격의 100% 배상" },
+      { "period": "출발일 이후", "fee": "취소 불가" }
+    ],
+    "regulations": "근무일(공휴일 및 토,일요일 제외) 및 근무시간(18시까지) 내에 취소요청에 한하여 적용됩니다. 예시) 토/일/월요일 출발은 금요일 업무종료전까지 취소하셔야 하며 업무종료후 취소는 당일 취소로 적용됩니다."
+  },
+  "phrases": [
+    {
+      "id": "sp-greet-1",
+      "language": "spanish",
+      "category": "인사",
+      "korean": "안녕하세요",
+      "foreign": "Hola",
+      "pronunciation": "올라"
+    },
+    {
+      "id": "sp-greet-2",
+      "language": "spanish",
+      "category": "인사",
+      "korean": "좋은 아침이에요",
+      "foreign": "Buenos días",
+      "pronunciation": "부에노스 디아스"
+    },
+    {
+      "id": "sp-greet-3",
+      "language": "spanish",
+      "category": "인사",
+      "korean": "안녕히 가세요 / 잘가요",
+      "foreign": "Adiós",
+      "pronunciation": "아디오스"
+    },
+    {
+      "id": "sp-greet-4",
+      "language": "spanish",
+      "category": "인사",
+      "korean": "감사합니다",
+      "foreign": "Gracias",
+      "pronunciation": "그라시아스"
+    },
+    {
+      "id": "sp-greet-5",
+      "language": "spanish",
+      "category": "인사",
+      "korean": "천만에요",
+      "foreign": "De nada",
+      "pronunciation": "데 나다"
+    },
+    {
+      "id": "sp-basic-1",
+      "language": "spanish",
+      "category": "기본표현",
+      "korean": "예",
+      "foreign": "Sí",
+      "pronunciation": "시"
+    },
+    {
+      "id": "sp-basic-2",
+      "language": "spanish",
+      "category": "기본표현",
+      "korean": "아니요",
+      "foreign": "No",
+      "pronunciation": "노"
+    },
+    {
+      "id": "sp-basic-3",
+      "language": "spanish",
+      "category": "기본표현",
+      "korean": "실례합니다 / 죄송합니다",
+      "foreign": "Perdón",
+      "pronunciation": "페르돈"
+    },
+    {
+      "id": "sp-basic-4",
+      "language": "spanish",
+      "category": "기본표현",
+      "korean": "저는 한국 사람입니다",
+      "foreign": "Soy coreano/a",
+      "pronunciation": "소이 코레아노/아"
+    },
+    {
+      "id": "sp-restaurant-1",
+      "language": "spanish",
+      "category": "식당",
+      "korean": "메뉴판 주세요",
+      "foreign": "La carta, por favor",
+      "pronunciation": "라 카르타, 포르 파보르"
+    },
+    {
+      "id": "sp-restaurant-2",
+      "language": "spanish",
+      "category": "식당",
+      "korean": "계산서 주세요",
+      "foreign": "La cuenta, por favor",
+      "pronunciation": "라 쿠엔타, 포르 파보르"
+    },
+    {
+      "id": "sp-restaurant-3",
+      "language": "spanish",
+      "category": "식당",
+      "korean": "물 주세요",
+      "foreign": "Agua, por favor",
+      "pronunciation": "아구아, 포르 파보르"
+    },
+    {
+      "id": "sp-restaurant-4",
+      "language": "spanish",
+      "category": "식당",
+      "korean": "맛있어요",
+      "foreign": "Está delicioso",
+      "pronunciation": "에스타 델리시오소"
+    },
+    {
+      "id": "sp-shopping-1",
+      "language": "spanish",
+      "category": "쇼핑",
+      "korean": "얼마예요?",
+      "foreign": "¿Cuánto cuesta?",
+      "pronunciation": "꾸안또 꾸에스따?"
+    },
+    {
+      "id": "sp-shopping-2",
+      "language": "spanish",
+      "category": "쇼핑",
+      "korean": "이것 주세요",
+      "foreign": "Esto, por favor",
+      "pronunciation": "에스토, 포르 파보르"
+    },
+    {
+      "id": "sp-emergency-1",
+      "language": "spanish",
+      "category": "긴급상황",
+      "korean": "도와주세요!",
+      "foreign": "¡Ayuda!",
+      "pronunciation": "아유다!"
+    },
+    {
+      "id": "sp-emergency-2",
+      "language": "spanish",
+      "category": "긴급상황",
+      "korean": "화장실이 어디에요?",
+      "foreign": "¿Dónde está el baño?",
+      "pronunciation": "돈데 에스따 엘 바뇨?"
+    },
+    {
+      "id": "sp-emergency-3",
+      "language": "spanish",
+      "category": "긴급상황",
+      "korean": "병원에 가야 해요",
+      "foreign": "Necesito ir al hospital",
+      "pronunciation": "네세시또 이르 알 오스피탈"
+    },
+    {
+      "id": "pt-greet-1",
+      "language": "portuguese",
+      "category": "인사",
+      "korean": "안녕하세요",
+      "foreign": "Olá",
+      "pronunciation": "올라"
+    },
+    {
+      "id": "pt-greet-2",
+      "language": "portuguese",
+      "category": "인사",
+      "korean": "좋은 아침이에요",
+      "foreign": "Bom dia",
+      "pronunciation": "봉 디아"
+    },
+    {
+      "id": "pt-greet-3",
+      "language": "portuguese",
+      "category": "인사",
+      "korean": "안녕히 가세요",
+      "foreign": "Adeus",
+      "pronunciation": "아데우스"
+    },
+    {
+      "id": "pt-greet-4",
+      "language": "portuguese",
+      "category": "인사",
+      "korean": "감사합니다",
+      "foreign": "Obrigado/a",
+      "pronunciation": "오브리가두/다"
+    },
+    {
+      "id": "pt-greet-5",
+      "language": "portuguese",
+      "category": "인사",
+      "korean": "천만에요",
+      "foreign": "De nada",
+      "pronunciation": "데 나다"
+    },
+    {
+      "id": "pt-basic-1",
+      "language": "portuguese",
+      "category": "기본표현",
+      "korean": "예",
+      "foreign": "Sim",
+      "pronunciation": "심"
+    },
+    {
+      "id": "pt-basic-2",
+      "language": "portuguese",
+      "category": "기본표현",
+      "korean": "아니요",
+      "foreign": "Não",
+      "pronunciation": "나웅"
+    },
+    {
+      "id": "pt-basic-3",
+      "language": "portuguese",
+      "category": "기본표현",
+      "korean": "실례합니다",
+      "foreign": "Com licença",
+      "pronunciation": "콩 리센사"
+    },
+    {
+      "id": "pt-basic-4",
+      "language": "portuguese",
+      "category": "기본표현",
+      "korean": "저는 한국 사람입니다",
+      "foreign": "Sou coreano/a",
+      "pronunciation": "소우 코레아누/아"
+    },
+    {
+      "id": "pt-restaurant-1",
+      "language": "portuguese",
+      "category": "식당",
+      "korean": "메뉴판 주세요",
+      "foreign": "O menu, por favor",
+      "pronunciation": "우 메누, 포르 파보르"
+    },
+    {
+      "id": "pt-restaurant-2",
+      "language": "portuguese",
+      "category": "식당",
+      "korean": "계산서 주세요",
+      "foreign": "A conta, por favor",
+      "pronunciation": "아 콘타, 포르 파보르"
+    },
+    {
+      "id": "pt-restaurant-3",
+      "language": "portuguese",
+      "category": "식당",
+      "korean": "물 주세요",
+      "foreign": "Água, por favor",
+      "pronunciation": "아구아, 포르 파보르"
+    },
+    {
+      "id": "pt-restaurant-4",
+      "language": "portuguese",
+      "category": "식당",
+      "korean": "맛있어요",
+      "foreign": "Está delicioso",
+      "pronunciation": "에스따 델리시오주"
+    },
+    {
+      "id": "pt-shopping-1",
+      "language": "portuguese",
+      "category": "쇼핑",
+      "korean": "얼마예요?",
+      "foreign": "Quanto custa?",
+      "pronunciation": "꾸안뚜 꾸스따?"
+    },
+    {
+      "id": "pt-shopping-2",
+      "language": "portuguese",
+      "category": "쇼핑",
+      "korean": "이것 주세요",
+      "foreign": "Isto, por favor",
+      "pronunciation": "이스뚜, 포르 파보르"
+    },
+    {
+      "id": "pt-emergency-1",
+      "language": "portuguese",
+      "category": "긴급상황",
+      "korean": "도와주세요!",
+      "foreign": "Ajuda!",
+      "pronunciation": "아주다!"
+    },
+    {
+      "id": "pt-emergency-2",
+      "language": "portuguese",
+      "category": "긴급상황",
+      "korean": "화장실이 어디에요?",
+      "foreign": "Onde fica o banheiro?",
+      "pronunciation": "온지 피카 우 바녜이루?"
+    },
+    {
+      "id": "pt-emergency-3",
+      "language": "portuguese",
+      "category": "긴급상황",
+      "korean": "병원에 가야 해요",
+      "foreign": "Preciso ir ao hospital",
+      "pronunciation": "프레시주 이르 아우 오스피탈"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "documents",
+      "title": "여행 서류",
+      "icon": "document",
+      "items": [
+        { "id": "doc-1", "name": "여권", "description": "유효기간 6개월 이상 확인", "essential": true },
+        { "id": "doc-2", "name": "항공권 / e-티켓", "description": "출력본 또는 모바일 저장", "essential": true },
+        { "id": "doc-3", "name": "여행자 보험증서", "description": "가입 확인 및 연락처 저장", "essential": true },
+        { "id": "doc-4", "name": "호텔 예약 확인서", "description": "바우처 출력 또는 저장", "essential": false },
+        { "id": "doc-5", "name": "여권 사본", "description": "분실 대비 별도 보관", "essential": true },
+        { "id": "doc-6", "name": "증명사진", "description": "여권 분실 시 재발급용", "essential": false }
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "전자기기",
+      "icon": "phone",
+      "items": [
+        { "id": "elec-1", "name": "휴대폰", "description": "충전 완료 확인", "essential": true },
+        { "id": "elec-2", "name": "충전기 / 케이블", "description": "예비 케이블 권장", "essential": true },
+        { "id": "elec-3", "name": "여행용 어댑터", "description": "스페인/포르투갈: C타입 (유럽형)", "essential": true },
+        { "id": "elec-4", "name": "보조 배터리", "description": "기내 반입 가능 용량 확인", "essential": true },
+        { "id": "elec-5", "name": "카메라", "description": "메모리카드 여유 확인", "essential": false },
+        { "id": "elec-6", "name": "이어폰", "description": "기내 엔터테인먼트용", "essential": false }
+      ]
+    },
+    {
+      "id": "clothes",
+      "title": "의류",
+      "icon": "shirt",
+      "items": [
+        { "id": "cloth-1", "name": "속옷 / 양말", "description": "여행 일수 + 여분", "essential": true },
+        { "id": "cloth-2", "name": "겉옷 / 자켓", "description": "기내 및 일교차 대비", "essential": true },
+        { "id": "cloth-3", "name": "편한 신발", "description": "관광 시 필수", "essential": true },
+        { "id": "cloth-4", "name": "정장/드레스코드 의류", "description": "고급 식당 방문 시", "essential": false },
+        { "id": "cloth-5", "name": "모자 / 선글라스", "description": "자외선 차단", "essential": false },
+        { "id": "cloth-6", "name": "우산 / 우비", "description": "갑작스런 날씨 변화 대비", "essential": false }
+      ]
+    },
+    {
+      "id": "toiletries",
+      "title": "세면도구",
+      "icon": "droplet",
+      "items": [
+        { "id": "toil-1", "name": "칫솔 / 치약", "description": "여행용 소형", "essential": true },
+        { "id": "toil-2", "name": "샴푸 / 바디워시", "description": "100ml 이하 용기", "essential": false },
+        { "id": "toil-3", "name": "스킨케어 제품", "description": "기내 반입 규정 확인", "essential": false },
+        { "id": "toil-4", "name": "선크림", "description": "SPF 30 이상 권장", "essential": true },
+        { "id": "toil-5", "name": "면도기", "description": "기내 반입 규정 확인", "essential": false },
+        { "id": "toil-6", "name": "헤어용품", "description": "드라이기는 호텔 비치 확인", "essential": false }
+      ]
+    },
+    {
+      "id": "medicine",
+      "title": "상비약",
+      "icon": "pill",
+      "items": [
+        { "id": "med-1", "name": "개인 상비약", "description": "소화제, 진통제, 지사제 등", "essential": true },
+        { "id": "med-2", "name": "처방약", "description": "영문 처방전 지참 권장", "essential": true },
+        { "id": "med-3", "name": "밴드 / 소독약", "description": "작은 상처 대비", "essential": false },
+        { "id": "med-4", "name": "멀미약", "description": "버스/배 이동 시 필요", "essential": false },
+        { "id": "med-5", "name": "해열제", "description": "긴급 상황 대비", "essential": false }
+      ]
+    },
+    {
+      "id": "money",
+      "title": "금융",
+      "icon": "wallet",
+      "items": [
+        { "id": "money-1", "name": "현금 (유로)", "description": "소액 준비 권장", "essential": true },
+        { "id": "money-2", "name": "신용카드 / 체크카드", "description": "해외 결제 가능 여부 확인", "essential": true },
+        { "id": "money-3", "name": "카드 분실 연락처", "description": "해외에서 정지 가능하도록", "essential": false },
+        { "id": "money-4", "name": "환전 영수증", "description": "재환전 시 필요", "essential": false }
+      ]
+    },
+    {
+      "id": "others",
+      "title": "기타",
+      "icon": "bag",
+      "items": [
+        { "id": "etc-1", "name": "캐리어 자물쇠", "description": "TSA 인증 권장", "essential": false },
+        { "id": "etc-2", "name": "목베개 / 안대", "description": "장거리 비행 필수", "essential": false },
+        { "id": "etc-3", "name": "지퍼백", "description": "액체류 기내 반입용", "essential": true },
+        { "id": "etc-4", "name": "필기구 / 메모장", "description": "입국신고서 작성용", "essential": false },
+        { "id": "etc-5", "name": "여행 가이드북", "description": "오프라인 참고용", "essential": false }
+      ]
+    }
+  ]
+}

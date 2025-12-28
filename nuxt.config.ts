@@ -50,7 +50,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
         { name: 'description', content: '여행 계획 수립 및 실시간 가이드 애플리케이션' },
-        { name: 'theme-color', content: '#3b82f6' },
+        { name: 'theme-color', content: '#007AFF' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
       name: 'TripGuide - 여행 가이드',
       short_name: 'TripGuide',
       description: '여행 계획 수립 및 실시간 가이드 애플리케이션',
-      theme_color: '#3b82f6',
+      theme_color: '#007AFF',
       background_color: '#ffffff',
       display: 'standalone',
       orientation: 'portrait',

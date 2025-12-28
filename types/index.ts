@@ -223,3 +223,95 @@ export interface HighlightsData {
   photoSpots: PhotoSpot[]
   localTips: LocalTip[]
 }
+
+// ===== 여행꿀팁 관련 타입 =====
+
+// 유의사항 아이템
+export interface PrecautionItem {
+  id: string
+  title: string
+  description: string
+  importance?: 'high' | 'medium' | 'low'
+}
+
+// 유의사항 카테고리
+export interface PrecautionCategory {
+  id: string
+  title: string
+  icon: string
+  items: PrecautionItem[]
+}
+
+// 취소 수수료
+export interface CancellationFee {
+  period: string
+  fee: string
+  description?: string
+}
+
+// 약관 및 조건
+export interface TermsAndConditions {
+  specialTerms: string[]
+  cancellationPolicy: CancellationFee[]
+  regulations: string
+}
+
+// 언어 표현
+export interface LanguagePhrase {
+  id: string
+  language: 'spanish' | 'portuguese'
+  category: string
+  korean: string
+  foreign: string
+  pronunciation: string
+}
+
+// 체크리스트 아이템
+export interface ChecklistItem {
+  id: string
+  name: string
+  description?: string
+  essential: boolean
+}
+
+// 체크리스트 카테고리
+export interface ChecklistCategory {
+  id: string
+  title: string
+  icon: string
+  items: ChecklistItem[]
+}
+
+// 전체 여행꿀팁 데이터
+export interface TravelTipsData {
+  precautions: PrecautionCategory[]
+  termsAndConditions: TermsAndConditions
+  phrases: LanguagePhrase[]
+  checklist: ChecklistCategory[]
+}
+
+// ===== IndexedDB 사용자 여행 데이터 =====
+
+// 사용자 업로드 여행 데이터
+export interface UserTripData {
+  id: string
+  createdAt: string
+  updatedAt: string
+  tripMeta: TripMeta
+  itinerary: Itinerary
+  places: PlacesData
+  highlights: HighlightsData
+}
+
+// 업로드용 데이터 형식
+export interface TripUploadPayload {
+  tripMeta: TripMeta
+  itinerary: Itinerary
+  places: PlacesData
+  highlights: HighlightsData
+}
+
+// 데이터 소스 구분을 위한 확장 타입
+export interface TripMetaWithSource extends TripMeta {
+  source: 'static' | 'user'
+}

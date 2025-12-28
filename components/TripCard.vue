@@ -38,13 +38,13 @@ const statusLabel = computed(() => {
   }
 })
 
-// 상태 색상 클래스
-const statusClass = computed(() => {
+// 상태 배지 클래스
+const statusBadgeClass = computed(() => {
   switch (props.trip.status) {
-    case 'upcoming': return 'bg-blue-100 text-blue-700'
-    case 'ongoing': return 'bg-green-100 text-green-700'
-    case 'completed': return 'bg-gray-100 text-gray-600'
-    default: return ''
+    case 'upcoming': return 'badge-primary'
+    case 'ongoing': return 'badge-success'
+    case 'completed': return 'badge-secondary'
+    default: return 'badge-secondary'
   }
 })
 </script>
@@ -52,16 +52,16 @@ const statusClass = computed(() => {
 <template>
   <button
     @click="emit('select', trip.id)"
-    class="w-full text-left p-3 rounded-xl transition-all duration-200"
+    class="w-full text-left p-3 rounded-apple-lg transition-all duration-200 touch-feedback"
     :class="[
       isSelected
-        ? 'bg-primary-50 border-2 border-primary-500'
-        : 'bg-white border border-gray-200 hover:border-primary-300 hover:shadow-md'
+        ? 'bg-apple-blue/5 dark:bg-apple-blue/10 ring-2 ring-apple-blue'
+        : 'bg-white dark:bg-apple-gray-800 hover:bg-apple-gray-50 dark:hover:bg-apple-gray-700'
     ]"
   >
     <div class="flex gap-3">
       <!-- 썸네일 -->
-      <div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-gray-100">
+      <div class="w-16 h-16 rounded-apple-md overflow-hidden shrink-0 bg-apple-gray-100 dark:bg-apple-gray-700">
         <NuxtImg
           :src="trip.thumbnail"
           :alt="trip.title"
@@ -75,20 +75,15 @@ const statusClass = computed(() => {
       <!-- 정보 -->
       <div class="flex-1 min-w-0">
         <div class="flex items-start justify-between gap-2">
-          <h3 class="font-semibold text-gray-900 truncate">{{ trip.title }}</h3>
-          <span
-            class="text-xs px-2 py-0.5 rounded-full flex-shrink-0"
-            :class="statusClass"
-          >
-            {{ statusLabel }}
-          </span>
+          <h3 class="text-body font-medium dark:text-white truncate">{{ trip.title }}</h3>
+          <span class="badge shrink-0" :class="statusBadgeClass">{{ statusLabel }}</span>
         </div>
 
-        <p class="text-sm text-gray-500 mt-0.5 truncate">{{ trip.subtitle }}</p>
+        <p class="text-footnote text-apple-gray-500 mt-0.5 truncate">{{ trip.subtitle }}</p>
 
-        <div class="flex items-center gap-2 mt-1.5 text-xs text-gray-400">
+        <div class="flex items-center gap-2 mt-1.5 text-caption-1 text-apple-gray-400">
           <span>{{ formatDate(trip.startDate) }} - {{ formatDate(trip.endDate) }}</span>
-          <span class="text-gray-300">|</span>
+          <span class="text-apple-gray-300">|</span>
           <span>{{ tripDuration }}</span>
         </div>
 
@@ -96,7 +91,7 @@ const statusClass = computed(() => {
           <span
             v-for="country in trip.countries"
             :key="country"
-            class="text-xs px-1.5 py-0.5 bg-gray-100 text-gray-600 rounded"
+            class="text-caption-2 px-1.5 py-0.5 bg-apple-gray-100 dark:bg-apple-gray-700 text-apple-gray-600 dark:text-apple-gray-400 rounded"
           >
             {{ country }}
           </span>
@@ -105,7 +100,7 @@ const statusClass = computed(() => {
 
       <!-- 선택 표시 -->
       <div v-if="isSelected" class="flex items-center">
-        <svg class="w-5 h-5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+        <svg class="w-5 h-5 text-apple-blue" fill="currentColor" viewBox="0 0 20 20">
           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
         </svg>
       </div>
