@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  // GitHub Pages 정적 사이트 생성
+  ssr: false,
+
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
@@ -44,6 +47,8 @@ export default defineNuxtConfig({
   },
 
   app: {
+    // GitHub Pages 배포 시 기본 경로 설정
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
       title: 'TripGuide - 여행 가이드',
       meta: [
@@ -108,21 +113,15 @@ export default defineNuxtConfig({
     typeCheck: false,
   },
 
-  // Nitro 설정 - Vercel 배포
+  // Nitro 설정 - GitHub Pages 배포
   nitro: {
-    preset: 'vercel',
+    preset: 'github-pages',
     publicAssets: [
       {
         dir: 'public',
         maxAge: 60 * 60 * 24 * 365, // 1 year
       },
     ],
-    // Vercel 함수 설정
-    vercel: {
-      functions: {
-        maxDuration: 10,
-      },
-    },
   },
 
   compatibilityDate: '2024-12-28',

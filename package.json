@@ -8,9 +8,11 @@
     "node": ">=18.0.0 <22.0.0"
   },
   "scripts": {
-    "build": "nuxt build && node scripts/fix-vercel-runtime.mjs",
+    "build": "nuxt build",
+    "build:vercel": "nuxt build && node scripts/fix-vercel-runtime.mjs",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "NUXT_APP_BASE_URL=/trip-guide/ nuxt generate",
+    "generate:local": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
