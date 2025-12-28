@@ -12,6 +12,7 @@
     },
     "accommodation": "디 이튼 호텔 상하이 (4성급)",
     "highlights": [
+      "동방명주탑 전망대에서 360도 상하이 파노라마",
       "외탄에서 바라보는 푸동 스카이라인 야경",
       "460년 역사의 예원과 난샹 샤오롱바오",
       "대한민국 임시정부청사 방문",
@@ -342,7 +343,7 @@
       "date": "2026-01-15",
       "dayNumber": 4,
       "dayOfWeek": "목",
-      "title": "루자주이 & 김포 귀국",
+      "title": "동방명주탑 & 김포 귀국",
       "cities": ["상하이", "김포"],
       "items": [
         {
@@ -357,18 +358,39 @@
         },
         {
           "id": "d4-item-2",
+          "startTime": "08:45",
+          "endTime": "09:00",
+          "title": "동방명주탑 이동",
+          "type": "transport",
+          "transportType": "walk",
+          "placeId": null,
+          "notes": "호텔에서 도보 약 10분 (루자주이역 방면)",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-3",
           "startTime": "09:00",
-          "endTime": "11:00",
+          "endTime": "10:30",
+          "title": "동방명주탑 전망대",
+          "type": "attraction",
+          "placeId": "place-oriental-pearl-tower",
+          "notes": "상하이의 상징, 350m 태공캡슐에서 360도 전망. 투명 바닥 체험. 지하 역사진열관 포함",
+          "status": "pending"
+        },
+        {
+          "id": "d4-item-4",
+          "startTime": "10:30",
+          "endTime": "12:00",
           "title": "루자주이 자유시간",
           "type": "free",
           "placeId": "place-lujiazui",
-          "notes": "호텔 인근 루자주이 마지막 관광",
+          "notes": "IFC몰 쇼핑 또는 루자주이 마지막 산책",
           "status": "pending",
           "recommendations": [
             {
-              "title": "루자주이 육교",
-              "description": "360도 스카이라인 조망의 원형 보행자 육교",
-              "duration": "30분"
+              "title": "IFC몰 쇼핑",
+              "description": "200여 개 브랜드가 입점한 대형 쇼핑몰",
+              "duration": "자유"
             },
             {
               "title": "디즈니 스토어",
@@ -376,21 +398,16 @@
               "duration": "30분"
             },
             {
-              "title": "IFC몰 쇼핑",
-              "description": "200여 개 브랜드가 입점한 대형 쇼핑몰",
-              "duration": "자유"
-            },
-            {
-              "title": "동방명주탑 전망대",
-              "description": "상하이 상징, 전망대에서 도시 조망 (선택사항, 약 220위안)",
-              "duration": "1시간"
+              "title": "루자주이 육교",
+              "description": "360도 스카이라인 조망의 원형 보행자 육교",
+              "duration": "20분"
             }
           ]
         },
         {
-          "id": "d4-item-3",
-          "startTime": "11:30",
-          "endTime": "12:30",
+          "id": "d4-item-5",
+          "startTime": "12:00",
+          "endTime": "13:00",
           "title": "중식",
           "type": "meal",
           "placeId": null,
@@ -398,7 +415,7 @@
           "status": "pending"
         },
         {
-          "id": "d4-item-4",
+          "id": "d4-item-6",
           "startTime": "13:00",
           "endTime": "14:00",
           "title": "호텔 체크아웃",
@@ -408,7 +425,7 @@
           "status": "pending"
         },
         {
-          "id": "d4-item-5",
+          "id": "d4-item-7",
           "startTime": "14:00",
           "endTime": "15:00",
           "title": "지하철로 공항 이동",
@@ -419,7 +436,7 @@
           "status": "pending"
         },
         {
-          "id": "d4-item-6",
+          "id": "d4-item-8",
           "startTime": "15:00",
           "endTime": "18:25",
           "title": "공항 출국수속",
@@ -430,7 +447,7 @@
           "status": "pending"
         },
         {
-          "id": "d4-item-7",
+          "id": "d4-item-9",
           "startTime": "18:25",
           "endTime": "21:35",
           "title": "상하이 홍차오 → 김포",

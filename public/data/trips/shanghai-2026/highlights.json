@@ -1,6 +1,15 @@
 {
   "tripHighlights": [
     {
+      "id": "hl-sh-000",
+      "placeId": "place-oriental-pearl-tower",
+      "dayNumber": 4,
+      "title": "상하이의 상징, 동방명주탑",
+      "description": "468m 높이의 상하이 랜드마크에서 360도 파노라마 전망을 즐기세요. 350m 태공캡슐의 투명 바닥에서 아찔한 스릴까지!",
+      "priority": 1,
+      "tags": ["필수방문", "전망대", "상하이상징", "랜드마크"]
+    },
+    {
       "id": "hl-sh-001",
       "placeId": "place-the-bund",
       "dayNumber": 2,
@@ -91,11 +100,19 @@
     },
     {
       "dayNumber": 4,
-      "title": "남경로와 안녕 상하이",
-      "bestMoment": "180년 역사의 번화가 남경로 산책과 2층 버스 시티투어"
+      "title": "동방명주탑과 안녕 상하이",
+      "bestMoment": "468m 동방명주탑 전망대에서 상하이 전경을 눈에 담고 떠나는 마지막 날"
     }
   ],
   "photoSpots": [
+    {
+      "id": "photo-sh-000",
+      "placeId": "place-oriental-pearl-tower",
+      "title": "동방명주탑 전망대",
+      "description": "350m 태공캡슐의 투명 바닥 위에서 아찔한 인증샷",
+      "bestTime": "오전 09:00-10:00 (대기 시간 짧음)",
+      "tips": "투명 바닥에 누워서 촬영하면 인생샷! 맑은 날 방문 권장"
+    },
     {
       "id": "photo-sh-001",
       "placeId": "place-the-bund",
