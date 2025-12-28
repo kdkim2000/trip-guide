@@ -109,7 +109,7 @@
         {
           "id": "d2-item-4",
           "startTime": "11:30",
-          "endTime": "12:30",
+          "endTime": "12:00",
           "title": "산토토메 교회 관람",
           "type": "attraction",
           "placeId": "place-santo-tome",
@@ -117,8 +117,45 @@
           "status": "pending"
         },
         {
-          "id": "d2-item-5",
+          "id": "d2-item-4a",
+          "startTime": "12:00",
+          "endTime": "12:30",
+          "title": "[선택] 톨레도 미니열차",
+          "type": "activity",
+          "placeId": null,
+          "notes": "톨레도 시내에서 타호강을 지나 전망대까지 운행. 중세도시 톨레도 전경을 한눈에 조망",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-toledo-train",
+            "title": "톨레도 미니열차 탑승",
+            "description": "톨레도 시내에서 타호강을 지나 전망대까지 운행하며, 전망대에서 중세도시 톨레도 전경을 한눈에 볼 수 있습니다.",
+            "cost": "40유로",
+            "duration": "약 40분",
+            "waitingPlace": "자유",
+            "waitingActivity": "톨레도 구시가지 자유 산책. 추천: 소코도베르 광장 카페에서 휴식, 기념품 쇼핑",
+            "isGuideAccompanied": false
+          }
+        },
+        {
+          "id": "d2-item-4b",
           "startTime": "12:30",
+          "endTime": "13:00",
+          "title": "[쇼핑] 올리브 제품",
+          "type": "activity",
+          "placeId": null,
+          "notes": "스페인 특산 올리브 오일, 올리브 비누 등",
+          "status": "pending",
+          "shopping": {
+            "id": "shop-olive",
+            "item": "올리브제품",
+            "location": "톨레도",
+            "duration": "30분",
+            "refundPolicy": "미개봉시 환불가능"
+          }
+        },
+        {
+          "id": "d2-item-5",
+          "startTime": "13:00",
           "endTime": "13:30",
           "title": "점심 식사",
           "type": "meal",
@@ -244,13 +281,33 @@
           "status": "pending"
         },
         {
+          "id": "d3-item-6a",
+          "startTime": "13:30",
+          "endTime": "14:30",
+          "title": "[선택] 리스본 툭툭(TukTuk) 투어",
+          "type": "activity",
+          "placeId": null,
+          "notes": "4~6인 탑승 오토바이로 리스본 시내 파노라믹 투어",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-lisbon-tuktuk",
+            "title": "리스본 TUKTUK 투어",
+            "description": "4~6인이 탑승할 수 있는 오토바이를 타고 시내 파노라믹 투어 진행. 알파마 지구, 벨렘 지역의 좁은 골목까지 구석구석 관광",
+            "cost": "60유로",
+            "duration": "약 1시간",
+            "waitingPlace": "없음",
+            "waitingActivity": "도보로 자유 관광",
+            "isGuideAccompanied": true
+          }
+        },
+        {
           "id": "d3-item-7",
           "startTime": "13:30",
           "endTime": "14:30",
           "title": "리스본 자유시간",
           "type": "free",
           "placeId": null,
-          "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
+          "notes": "약 1시간 진행 (가이드 미동행). 툭툭 투어 미참가자 또는 투어 후 자유시간",
           "status": "pending",
           "recommendations": [
             {
@@ -375,9 +432,29 @@
           "status": "pending"
         },
         {
-          "id": "d4-item-6",
+          "id": "d4-item-5a",
           "startTime": "11:50",
-          "endTime": "13:50",
+          "endTime": "12:30",
+          "title": "[선택] 세비야 마차투어",
+          "type": "activity",
+          "placeId": null,
+          "notes": "세비야 도심을 마차로 관광. 마리아 루이사 공원, 스페인 광장, 구시가지 등",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-sevilla-carriage",
+            "title": "세비야 마차투어",
+            "description": "세비야 도심을 마차를 타고 관광지 및 시내를 구석구석 돌아보는 투어입니다. 마리아 루이사 공원과 스페인 광장의 아름다운 풍경을 여유롭게 감상",
+            "cost": "60유로",
+            "duration": "약 40분",
+            "waitingPlace": "없음",
+            "waitingActivity": "세비야 구시가지 자유 산책. 추천: 산타 크루스 지구 골목 탐방, 타파스 바 방문",
+            "isGuideAccompanied": true
+          }
+        },
+        {
+          "id": "d4-item-6",
+          "startTime": "12:30",
+          "endTime": "14:30",
           "title": "세비야 → 론다 이동",
           "type": "transport",
           "transportType": "bus",
@@ -452,11 +529,32 @@
           "id": "d4-item-12",
           "startTime": "18:40",
           "endTime": "20:00",
-          "title": "저녁 식사 및 호텔 투숙",
+          "title": "저녁 식사",
           "type": "meal",
           "placeId": null,
           "notes": "호텔식",
           "status": "pending"
+        },
+        {
+          "id": "d4-item-13",
+          "startTime": "21:00",
+          "endTime": "22:30",
+          "title": "[선택] 플라맹고 공연",
+          "type": "activity",
+          "placeId": null,
+          "location": "그라나다 사크로몬테",
+          "notes": "열정적인 플라맹고 공연 감상",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-flamenco-granada",
+            "title": "그라나다 동굴 플라맹고 공연",
+            "description": "사크로몬테의 전통 동굴에서 펼쳐지는 정열의 플라맹고 공연. 스페인 남부 안달루시아의 대표적인 문화 체험으로, 기타 연주와 노래, 춤이 어우러진 약 1시간 30분의 감동적인 무대",
+            "cost": "80유로",
+            "duration": "약 1시간 30분",
+            "waitingPlace": "호텔",
+            "waitingActivity": "호텔에서 자유롭게 휴식. 수영장 이용, 스파 등 부대시설 활용 또는 숙면으로 다음날 여정 준비",
+            "isGuideAccompanied": true
+          }
         }
       ],
       "meals": {
@@ -608,6 +706,27 @@
           "status": "pending"
         },
         {
+          "id": "d6-item-3a",
+          "startTime": "13:30",
+          "endTime": "15:00",
+          "title": "[선택] 몬세라트 케이블카/산악열차",
+          "type": "activity",
+          "placeId": null,
+          "location": "몬세라트 수도원",
+          "notes": "몬세라트 산 정상까지 왕복",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-montserrat-cable",
+            "title": "몬세라트 케이블카 또는 산악열차",
+            "description": "케이블카로 산 정상의 성 후안 수도원까지 올라가 탁 트인 전망 감상. 또는 산악열차로 산타 코바 동굴 방문. 해발 1,236m에서 바라보는 카탈루냐 평원의 절경",
+            "cost": "50유로",
+            "duration": "약 1시간 30분",
+            "waitingPlace": "몬세라트 수도원 광장",
+            "waitingActivity": "수도원 내부 성당 및 검은 성모상 관람, 소년 합창단 공연 감상(시간대별), 기념품샵 방문",
+            "isGuideAccompanied": false
+          }
+        },
+        {
           "id": "d6-item-4",
           "startTime": "14:30",
           "endTime": "15:30",
@@ -641,11 +760,29 @@
         {
           "id": "d6-item-7",
           "startTime": "17:30",
+          "endTime": "18:00",
+          "title": "[쇼핑] 잡화",
+          "type": "activity",
+          "placeId": null,
+          "location": "바르셀로나 람블라스 거리 인근",
+          "notes": "스페인 기념품 및 잡화 쇼핑",
+          "status": "pending",
+          "shopping": {
+            "id": "shop-barcelona-misc",
+            "item": "잡화 (스페인 기념품, 올리브오일, 와인 등)",
+            "location": "바르셀로나 람블라스 거리 인근 쇼핑센터",
+            "duration": "약 30분",
+            "refundPolicy": "품목별 상이. 개봉하지 않은 상품에 한해 교환/환불 가능"
+          }
+        },
+        {
+          "id": "d6-item-7a",
+          "startTime": "18:00",
           "endTime": "18:30",
           "title": "바르셀로나 자유시간",
           "type": "free",
           "placeId": null,
-          "notes": "약 1시간 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
+          "notes": "약 30분 진행 (가이드 미동행). 현지 상황에 따라 변동 가능",
           "status": "pending",
           "recommendations": [
             {
@@ -675,11 +812,32 @@
           "id": "d6-item-8",
           "startTime": "18:30",
           "endTime": "20:00",
-          "title": "저녁 식사 및 호텔 투숙",
+          "title": "저녁 식사",
           "type": "meal",
           "placeId": null,
           "notes": "호텔식",
           "status": "pending"
+        },
+        {
+          "id": "d6-item-9",
+          "startTime": "21:00",
+          "endTime": "22:30",
+          "title": "[선택] 바르셀로나 야경 투어",
+          "type": "activity",
+          "placeId": null,
+          "location": "바르셀로나 시내",
+          "notes": "바르셀로나 야경 명소 투어",
+          "status": "pending",
+          "optionalTour": {
+            "id": "opt-barcelona-night",
+            "title": "바르셀로나 야경 연장투어",
+            "description": "전용 버스로 바르셀로나 야경 명소 탐방. 카사 바트요, 카사 밀라 야간 조명, 몬주익 언덕에서 바라보는 바르셀로나 항구와 시내 야경, 마법의 분수 쇼(운영 시)",
+            "cost": "70유로",
+            "duration": "약 1시간 30분",
+            "waitingPlace": "호텔",
+            "waitingActivity": "호텔에서 자유롭게 휴식. 호텔 주변 산책 또는 객실에서 편안한 휴식으로 다음날 바르셀로나 관광 준비",
+            "isGuideAccompanied": true
+          }
         }
       ],
       "meals": {
@@ -889,6 +1047,24 @@
           "placeId": "place-plaza-mayor",
           "notes": "마드리드 시민들의 휴식처",
           "status": "pending"
+        },
+        {
+          "id": "d8-item-6a",
+          "startTime": "16:00",
+          "endTime": "16:30",
+          "title": "[쇼핑] 가죽제품",
+          "type": "activity",
+          "placeId": null,
+          "location": "마드리드 그란비아 인근",
+          "notes": "스페인 가죽제품 쇼핑",
+          "status": "pending",
+          "shopping": {
+            "id": "shop-madrid-leather",
+            "item": "가죽제품 (지갑, 벨트, 가방 등)",
+            "location": "마드리드 그란비아 인근 가죽제품 전문점",
+            "duration": "약 30분",
+            "refundPolicy": "미사용 상품에 한해 30일 이내 교환 가능. 환불은 카드 결제 건에 한함"
+          }
         },
         {
           "id": "d8-item-7",

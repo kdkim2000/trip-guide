@@ -60,6 +60,27 @@ export interface AttractionAlternative {
   reason: string
 }
 
+// 선택관광
+export interface OptionalTour {
+  id: string
+  title: string
+  description: string
+  cost: string
+  duration: string
+  waitingPlace: string       // 미참가시 대기장소
+  waitingActivity: string    // 미참가시 활동
+  isGuideAccompanied: boolean // 가이드 동행 여부
+}
+
+// 쇼핑 정보
+export interface ShoppingInfo {
+  id: string
+  item: string               // 쇼핑 항목
+  location: string           // 쇼핑 장소
+  duration: string           // 소요시간
+  refundPolicy: string       // 환불 정책
+}
+
 // 일정 아이템
 export interface ScheduleItem {
   id: string
@@ -74,6 +95,8 @@ export interface ScheduleItem {
   status: 'pending' | 'in_progress' | 'completed'
   recommendations?: FreeTimeRecommendation[]  // 자유시간 추천 활동
   alternatives?: AttractionAlternative[]       // 대체 관광지/선택관광
+  optionalTour?: OptionalTour                  // 선택관광
+  shopping?: ShoppingInfo                      // 쇼핑 정보
 }
 
 // 일별 일정
