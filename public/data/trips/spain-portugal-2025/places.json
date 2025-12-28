@@ -8,9 +8,9 @@
       "country": "스페인",
       "category": "cathedral",
       "images": [
-        "/images/톨레도대성당1.jpg",
-        "/images/톨레도대성당2.jfif",
-        "/images/톨레도대성당3.jpg"
+        "/images/toledocathedral1.jpg",
+        "/images/toledocathedral2.jpg",
+        "/images/toledocathedral3.jpg"
       ],
       "location": {
         "address": "Calle Cardenal Cisneros, 1, 45002 Toledo, Spain",
@@ -38,7 +38,7 @@
       "country": "스페인",
       "category": "church",
       "images": [
-        "/images/산토토메 교회.JPG"
+        "/images/santo-tome-church.jpg"
       ],
       "location": {
         "address": "Plaza del Conde, 4, 45002 Toledo, Spain",
@@ -66,8 +66,8 @@
       "country": "포르투갈",
       "category": "sanctuary",
       "images": [
-        "/images/파티마성당1.jpg",
-        "/images/파티마성당2.jpg"
+        "/images/fatima-church1.jpg",
+        "/images/fatima-church2.jpg"
       ],
       "location": {
         "address": "Santuário de Fátima, 2495-402 Fátima, Portugal",
@@ -95,7 +95,7 @@
       "country": "포르투갈",
       "category": "church",
       "images": [
-        "/images/삼위일체 성당.jpg"
+        "/images/trinity-church.jpg"
       ],
       "location": {
         "address": "Santuário de Fátima, 2495-402 Fátima, Portugal",
@@ -123,8 +123,8 @@
       "country": "포르투갈",
       "category": "square",
       "images": [
-        "/images/로시우광장1.jpg",
-        "/images/로시우광장2.jpg"
+        "/images/rossio-square1.jpg",
+        "/images/rossio-square2.jpg"
       ],
       "location": {
         "address": "Praça Dom Pedro IV, 1100-026 Lisboa, Portugal",
@@ -152,8 +152,8 @@
       "country": "포르투갈",
       "category": "tower",
       "images": [
-        "/images/벨렘탑.jpg",
-        "/images/벨렘탑2.jpg"
+        "/images/belem-tower.jpg",
+        "/images/belem-tower2.jpg"
       ],
       "location": {
         "address": "Av. Brasília, 1400-038 Lisboa, Portugal",
@@ -181,8 +181,8 @@
       "country": "포르투갈",
       "category": "monastery",
       "images": [
-        "/images/제로니모스수도원1.jpg",
-        "/images/제로니모스수도원2.jpg"
+        "/images/jeronimos-monastery1.jpg",
+        "/images/jeronimos-monastery2.jpg"
       ],
       "location": {
         "address": "Praça do Império, 1400-206 Lisboa, Portugal",
@@ -210,7 +210,7 @@
       "country": "스페인",
       "category": "square",
       "images": [
-        "/images/스페인 광장 (세비야).jfif"
+        "/images/spain-square-sevilla.jpg"
       ],
       "location": {
         "address": "Av. Isabel la Católica, 41004 Sevilla, Spain",
@@ -238,9 +238,9 @@
       "country": "스페인",
       "category": "cathedral",
       "images": [
-        "/images/세비야대성당1.jfif",
-        "/images/세비야대성당2.jfif",
-        "/images/세비아대성당3.jpg"
+        "/images/sevilla-cathedral1.jpg",
+        "/images/sevilla-cathedral2.jpg",
+        "/images/sevilla-cathedral3.jpg"
       ],
       "location": {
         "address": "Av. de la Constitución, 41004 Sevilla, Spain",
@@ -268,7 +268,7 @@
       "country": "스페인",
       "category": "tower",
       "images": [
-        "/images/히랄다 탑.jfif"
+        "/images/giralda-tower.jpg"
       ],
       "location": {
         "address": "Calle Alemanes, 41004 Sevilla, Spain",
@@ -296,8 +296,8 @@
       "country": "스페인",
       "category": "tower",
       "images": [
-        "/images/황금의탑1.jpg",
-        "/images/황금의탑2.jpg"
+        "/images/torre-del-oro1.jpg",
+        "/images/torre-del-oro2.jpg"
       ],
       "location": {
         "address": "Paseo de Cristóbal Colón, 41001 Sevilla, Spain",
@@ -325,8 +325,8 @@
       "country": "스페인",
       "category": "bridge",
       "images": [
-        "/images/론다1.jpg",
-        "/images/론다2.jpg"
+        "/images/ronda1.jpg",
+        "/images/ronda2.jpg"
       ],
       "location": {
         "address": "Puente Nuevo, 29400 Ronda, Málaga, Spain",
@@ -354,7 +354,7 @@
       "country": "스페인",
       "category": "arena",
       "images": [
-        "/images/론다 투우장.jfif"
+        "/images/ronda-bullring.jpg"
       ],
       "location": {
         "address": "Calle Virgen de la Paz, 15, 29400 Ronda, Málaga, Spain",
@@ -382,8 +382,8 @@
       "country": "스페인",
       "category": "hotel",
       "images": [
-        "/images/론다 파라도르1.jpg",
-        "/images/론다 파라도르2.jpg"
+        "/images/ronda-parador1.jpg",
+        "/images/ronda-parador2.jpg"
       ],
       "location": {
         "address": "Plaza de España, s/n, 29400 Ronda, Málaga, Spain",
@@ -411,9 +411,9 @@
       "country": "스페인",
       "category": "palace",
       "images": [
-        "/images/알함브라1.jpg",
-        "/images/알함브라2.jpg",
-        "/images/알함브라3.jpg"
+        "/images/alhambra1.jpg",
+        "/images/alhambra2.jpg",
+        "/images/alhambra3.jpg"
       ],
       "location": {
         "address": "Calle Real de la Alhambra, s/n, 18009 Granada, Spain",
@@ -441,7 +441,7 @@
       "country": "스페인",
       "category": "garden",
       "images": [
-        "/images/헤네랄리페 정원.jfif"
+        "/images/generalife-garden.jpg"
       ],
       "location": {
         "address": "Calle Real de la Alhambra, s/n, 18009 Granada, Spain",
@@ -469,7 +469,7 @@
       "country": "스페인",
       "category": "district",
       "images": [
-        "/images/알바이신 지구.jfif"
+        "/images/albaicin-district.jpg"
       ],
       "location": {
         "address": "Albaicín, Granada, Spain",
@@ -497,8 +497,8 @@
       "country": "스페인",
       "category": "monastery",
       "images": [
-        "/images/몬세라트1.jpg",
-        "/images/몬세라트2.jpg"
+        "/images/montserrat1.jpg",
+        "/images/montserrat2.jpg"
       ],
       "location": {
         "address": "08199 Montserrat, Barcelona, Spain",
@@ -526,8 +526,8 @@
       "country": "스페인",
       "category": "street",
       "images": [
-        "/images/람블라스1.jpg",
-        "/images/람블라스2.jpg"
+        "/images/las-ramblas1.jpg",
+        "/images/las-ramblas2.jpg"
       ],
       "location": {
         "address": "La Rambla, Barcelona, Spain",
@@ -555,8 +555,8 @@
       "country": "스페인",
       "category": "cathedral",
       "images": [
-        "/images/성가족성당1.jpg",
-        "/images/성가족성당2.jpg"
+        "/images/sagrada-familia1.jpg",
+        "/images/sagrada-familia2.jpg"
       ],
       "location": {
         "address": "Carrer de Mallorca, 401, 08013 Barcelona, Spain",
@@ -584,9 +584,9 @@
       "country": "스페인",
       "category": "park",
       "images": [
-        "/images/구엘공원1.jpg",
-        "/images/구엘공원2.jpg",
-        "/images/구엘공원3.jpg"
+        "/images/park-guell1.jpg",
+        "/images/park-guell2.jpg",
+        "/images/park-guell3.jpg"
       ],
       "location": {
         "address": "08024 Barcelona, Spain",
@@ -614,7 +614,7 @@
       "country": "스페인",
       "category": "building",
       "images": [
-        "/images/카사 밀라.jfif"
+        "/images/casa-mila.jpg"
       ],
       "location": {
         "address": "Passeig de Gràcia, 92, 08008 Barcelona, Spain",
@@ -642,8 +642,8 @@
       "country": "스페인",
       "category": "cathedral",
       "images": [
-        "/images/사라고사1.jpg",
-        "/images/사라고사2.jpg"
+        "/images/zaragoza1.jpg",
+        "/images/zaragoza2.jpg"
       ],
       "location": {
         "address": "Plaza del Pilar, 50003 Zaragoza, Spain",
@@ -671,7 +671,7 @@
       "country": "스페인",
       "category": "square",
       "images": [
-        "/images/필라르 광장.jfif"
+        "/images/pilar-square.jpg"
       ],
       "location": {
         "address": "Plaza del Pilar, 50003 Zaragoza, Spain",
@@ -699,7 +699,7 @@
       "country": "스페인",
       "category": "ruins",
       "images": [
-        "/images/로마시대 성벽.jfif"
+        "/images/roman-wall.jpg"
       ],
       "location": {
         "address": "Av. de César Augusto, 50003 Zaragoza, Spain",
@@ -727,9 +727,9 @@
       "country": "스페인",
       "category": "museum",
       "images": [
-        "/images/프라도미술관1.jpg",
-        "/images/프라도미술관2.jfif",
-        "/images/프로도미술관3.jpg"
+        "/images/prado-museum1.jpg",
+        "/images/prado-museum2.jpg",
+        "/images/prado-museum3.jpg"
       ],
       "location": {
         "address": "Calle de Ruiz de Alarcón, 23, 28014 Madrid, Spain",
@@ -757,7 +757,7 @@
       "country": "스페인",
       "category": "square",
       "images": [
-        "/images/푸에르타 델 솔.jfif"
+        "/images/puerta-del-sol.jpg"
       ],
       "location": {
         "address": "Puerta del Sol, 28013 Madrid, Spain",
@@ -785,8 +785,8 @@
       "country": "스페인",
       "category": "square",
       "images": [
-        "/images/마요르광장1.jpg",
-        "/images/마요르광장2.jpg"
+        "/images/plaza-mayor1.jpg",
+        "/images/plaza-mayor2.jpg"
       ],
       "location": {
         "address": "Plaza Mayor, 28012 Madrid, Spain",
