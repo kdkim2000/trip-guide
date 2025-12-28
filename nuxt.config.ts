@@ -115,9 +115,11 @@ export default defineNuxtConfig({
     typeCheck: false,
   },
 
-  // Nitro 설정 - GitHub Pages 배포
+  // Nitro 설정 - 배포 환경별 preset 자동 선택
+  // - Vercel: 자동 감지 (preset 생략)
+  // - GitHub Pages: NUXT_APP_BASE_URL 설정 시 'github-pages' 사용
   nitro: {
-    preset: 'github-pages',
+    preset: process.env.NUXT_APP_BASE_URL ? 'github-pages' : undefined,
     publicAssets: [
       {
         dir: 'public',
