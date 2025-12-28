@@ -3,16 +3,19 @@
     "5fb8a512-db80-4a15-a9d6-f2bb86afc7ef",
     "65955e3e-1159-4602-83aa-f20fdf7e08b5",
     "76755a7c-a775-49e3-b208-9041189248ad",
-    "bde32c6b-9920-4dc4-b9ab-2bb8f7ebee9a"
+    "bde32c6b-9920-4dc4-b9ab-2bb8f7ebee9a",
+    "60c7eba7-9243-4239-9228-0349a095bfe6",
+    "f45ca34f-3481-4ac5-ba1b-129475210f98"
   ],
-  "lastMigration": "2025-12-28T08:18:18.659Z",
-  "totalMigrated": 4,
+  "lastMigration": "2025-12-28T13:47:29.540Z",
+  "totalMigrated": 6,
   "stats": {
     "byCategory": {
-      "ui-ux": 4
+      "ui-ux": 5,
+      "bug-fix": 1
     },
     "byMonth": {
-      "2025-12": 4
+      "2025-12": 6
     }
   }
 }
