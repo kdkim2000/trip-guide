@@ -117,6 +117,15 @@ export default defineNuxtConfig({
         maxAge: 60 * 60 * 24 * 365, // 1 year
       },
     ],
+    // Vercel 런타임 버전 지정 (Vercel은 nodejs22.x 미지원)
+    vercel: {
+      config: {
+        runtime: 'nodejs20.x',
+      },
+      functions: {
+        maxDuration: 10,
+      },
+    },
   },
 
   compatibilityDate: '2024-12-28',
