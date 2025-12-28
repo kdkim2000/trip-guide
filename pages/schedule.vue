@@ -56,34 +56,19 @@ const currentDaySchedule = computed<DaySchedule | undefined>(() => {
   return itinerary.value?.schedules.find(s => s.dayNumber === selectedDay.value)
 })
 
-// 아이템 타입별 아이콘
-const getTypeIcon = (type: string) => {
-  const icons: Record<string, string> = {
-    meeting: '👥',
-    transport: '✈️',
-    attraction: '🏛️',
-    meal: '🍽️',
-    free: '🚶',
-    transfer: '🚌',
-    activity: '⭐',
-    arrival: '🛬',
-  }
-  return icons[type] || '📍'
-}
-
 // 아이템 타입별 색상
-const getTypeColor = (type: string) => {
+const getTypeDotColor = (type: string) => {
   const colors: Record<string, string> = {
-    meeting: 'bg-blue-100 text-blue-700',
-    transport: 'bg-purple-100 text-purple-700',
-    attraction: 'bg-amber-100 text-amber-700',
-    meal: 'bg-green-100 text-green-700',
-    free: 'bg-pink-100 text-pink-700',
-    transfer: 'bg-gray-100 text-gray-700',
-    activity: 'bg-orange-100 text-orange-700',
-    arrival: 'bg-cyan-100 text-cyan-700',
+    meeting: 'bg-flat-blue',
+    transport: 'bg-purple-500',
+    attraction: 'bg-flat-orange',
+    meal: 'bg-flat-green',
+    free: 'bg-pink-500',
+    transfer: 'bg-flat-gray-400',
+    activity: 'bg-flat-yellow',
+    arrival: 'bg-teal-500',
   }
-  return colors[type] || 'bg-gray-100 text-gray-700'
+  return colors[type] || 'bg-flat-gray-400'
 }
 
 // 장소 정보 가져오기
@@ -94,25 +79,29 @@ const getPlace = (placeId: string | null): Place | undefined => {
 </script>
 
 <template>
-  <div class="min-h-screen">
+  <div class="min-h-screen bg-flat-gray-50 dark:bg-flat-gray-900">
     <!-- 헤더 -->
-    <header class="bg-white border-b border-gray-200 px-4 pt-12 pb-4 safe-top sticky top-0 z-10">
-      <h1 class="text-xl font-bold">여행 일정</h1>
+    <header class="nav-bar pt-safe-top">
+      <div class="max-w-lg mx-auto">
+        <div class="px-4 pt-4 pb-2">
+          <h1 class="text-title-large dark:text-white">일정</h1>
+        </div>
 
-      <!-- 일자 선택 탭 -->
-      <div class="flex gap-2 mt-4 overflow-x-auto no-scrollbar -mx-4 px-4">
-        <button
-          v-for="schedule in itinerary?.schedules"
-          :key="schedule.id"
-          :data-day="schedule.dayNumber"
-          class="flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors"
-          :class="selectedDay === schedule.dayNumber
-            ? 'bg-primary-500 text-white'
-            : 'bg-gray-100 text-gray-600'"
-          @click="selectedDay = schedule.dayNumber"
-        >
-          Day {{ schedule.dayNumber }}
-        </button>
+        <!-- 세그먼트 컨트롤 스타일 Day 선택 -->
+        <div class="px-4 pb-4">
+          <div class="segment-control overflow-x-auto no-scrollbar">
+            <button
+              v-for="schedule in itinerary?.schedules"
+              :key="schedule.id"
+              :data-day="schedule.dayNumber"
+              class="segment-item shrink-0"
+              :class="{ active: selectedDay === schedule.dayNumber }"
+              @click="selectedDay = schedule.dayNumber"
+            >
+              Day {{ schedule.dayNumber }}
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -138,66 +127,99 @@ const getPlace = (placeId: string | null): Place | undefined => {
 
       <!-- 일정 상세 -->
       <template v-else-if="currentDaySchedule">
-      <!-- 일자 정보 -->
-      <div class="mb-6">
-        <h2 class="text-lg font-semibold">{{ currentDaySchedule.title }}</h2>
-        <p class="text-sm text-gray-500">
-          {{ currentDaySchedule.date }} ({{ currentDaySchedule.dayOfWeek }})
-          • {{ currentDaySchedule.cities.join(' → ') }}
-        </p>
-      </div>
-
-      <!-- 식사 정보 -->
-      <div class="card mb-6">
-        <h3 class="text-sm font-medium text-gray-500 mb-2">오늘의 식사</h3>
-        <div class="flex justify-between text-sm">
-          <span>조식: {{ currentDaySchedule.meals.breakfast.type }}</span>
-          <span>중식: {{ currentDaySchedule.meals.lunch.type }}</span>
-          <span>석식: {{ currentDaySchedule.meals.dinner.type }}</span>
-        </div>
-      </div>
-
-      <!-- 타임라인 -->
-      <div class="space-y-4">
-        <div
-          v-for="item in currentDaySchedule.items"
-          :key="item.id"
-          class="timeline-item"
-        >
-          <div class="card">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-sm text-gray-500">
-                {{ item.startTime }} - {{ item.endTime }}
-              </span>
-              <span
-                class="text-xs px-2 py-0.5 rounded-full"
-                :class="getTypeColor(item.type)"
-              >
-                {{ getTypeIcon(item.type) }}
-              </span>
-            </div>
-
-            <h3 class="font-semibold">{{ item.title }}</h3>
-
-            <p v-if="item.location" class="text-sm text-gray-500 mt-1">
-              📍 {{ item.location }}
-            </p>
-
-            <p v-if="item.notes" class="text-sm text-gray-600 mt-2">
-              {{ item.notes }}
-            </p>
-
-            <!-- 연결된 장소 정보 -->
-            <NuxtLink
-              v-if="item.placeId && getPlace(item.placeId)"
-              :to="`/guide/${item.placeId}`"
-              class="mt-3 flex items-center gap-2 text-primary-500 text-sm font-medium"
-            >
-              상세 정보 보기 →
-            </NuxtLink>
+        <!-- 일자 정보 카드 -->
+        <div class="card-apple p-4 mb-6">
+          <h2 class="text-headline dark:text-white">{{ currentDaySchedule.title }}</h2>
+          <p class="text-footnote text-flat-gray-500 mt-1">
+            {{ currentDaySchedule.date }} ({{ currentDaySchedule.dayOfWeek }})
+          </p>
+          <div class="flex items-center gap-2 mt-2">
+            <svg class="w-4 h-4 text-flat-gray-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <span class="text-footnote text-flat-gray-500">{{ currentDaySchedule.cities.join(' → ') }}</span>
           </div>
         </div>
-      </div>
+
+        <!-- 식사 정보 -->
+        <div class="card-apple overflow-hidden mb-6">
+          <div class="px-4 py-3 border-b border-flat-gray-200 dark:border-flat-gray-700">
+            <h3 class="text-footnote uppercase text-flat-gray-500">오늘의 식사</h3>
+          </div>
+          <div class="grid grid-cols-3 divide-x divide-flat-gray-200 dark:divide-flat-gray-700">
+            <div class="px-3 py-3 text-center">
+              <p class="text-caption-1 text-flat-gray-500">조식</p>
+              <p class="text-subhead dark:text-white mt-0.5">{{ currentDaySchedule.meals.breakfast.type }}</p>
+            </div>
+            <div class="px-3 py-3 text-center">
+              <p class="text-caption-1 text-flat-gray-500">중식</p>
+              <p class="text-subhead dark:text-white mt-0.5">{{ currentDaySchedule.meals.lunch.type }}</p>
+            </div>
+            <div class="px-3 py-3 text-center">
+              <p class="text-caption-1 text-flat-gray-500">석식</p>
+              <p class="text-subhead dark:text-white mt-0.5">{{ currentDaySchedule.meals.dinner.type }}</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 일정 리스트 -->
+        <div class="card-apple overflow-hidden">
+          <div
+            v-for="(item, index) in currentDaySchedule.items"
+            :key="item.id"
+            class="px-4 py-4 border-b border-flat-gray-200 dark:border-flat-gray-700 last:border-b-0"
+          >
+            <div class="flex gap-4">
+              <!-- 시간 -->
+              <div class="w-14 shrink-0">
+                <p class="text-subhead text-flat-gray-500">{{ item.startTime }}</p>
+                <p class="text-caption-1 text-flat-gray-400">{{ item.endTime }}</p>
+              </div>
+
+              <!-- 내용 -->
+              <div class="flex-1 min-w-0">
+                <div class="flex items-start gap-2">
+                  <h3 class="text-body font-medium dark:text-white flex-1">{{ item.title }}</h3>
+                  <!-- 타입 도트 -->
+                  <span
+                    class="w-2 h-2 rounded-full shrink-0 mt-2"
+                    :class="getTypeDotColor(item.type)"
+                  ></span>
+                </div>
+
+                <p v-if="item.location" class="text-footnote text-flat-gray-500 mt-1 flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                  {{ item.location }}
+                </p>
+
+                <p v-if="item.notes" class="text-footnote text-flat-gray-500 mt-1">
+                  {{ item.notes }}
+                </p>
+
+                <!-- 연결된 장소 정보 -->
+                <NuxtLink
+                  v-if="item.placeId && getPlace(item.placeId)"
+                  :to="`/guide/${item.placeId}`"
+                  class="inline-flex items-center gap-1 mt-2 text-flat-blue dark:text-primary-400 text-footnote font-medium touch-feedback"
+                >
+                  상세 정보
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 스와이프 힌트 -->
+        <p class="text-center text-caption-1 text-flat-gray-400 mt-6">
+          좌우로 스와이프하여 일자 변경
+        </p>
       </template>
     </div>
   </div>

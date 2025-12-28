@@ -13,86 +13,101 @@ export default {
   theme: {
     extend: {
       colors: {
+        // 미니멀 컬러 시스템
+        flat: {
+          blue: '#007AFF',
+          green: '#00C853',
+          red: '#FF3B30',
+          orange: '#FF9500',
+          yellow: '#FFC107',
+          gray: {
+            50: '#FAFAFA',
+            100: '#F5F5F5',
+            200: '#EEEEEE',
+            300: '#E0E0E0',
+            400: '#BDBDBD',
+            500: '#9E9E9E',
+            600: '#757575',
+            700: '#616161',
+            800: '#424242',
+            900: '#212121',
+          },
+        },
+        // Primary 색상
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#E3F2FD',
+          100: '#BBDEFB',
+          200: '#90CAF9',
+          300: '#64B5F6',
+          400: '#42A5F5',
+          500: '#007AFF',
+          600: '#1E88E5',
+          700: '#1976D2',
+          800: '#1565C0',
+          900: '#0D47A1',
         },
       },
       fontFamily: {
-        sans: ['Pretendard', 'sans-serif'],
+        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
       },
-      // 반응형 폰트 크기
+      // 미니멀 타이포그래피
       fontSize: {
-        'xs': ['0.75rem', { lineHeight: '1rem' }],
-        'sm': ['0.875rem', { lineHeight: '1.25rem' }],
-        'base': ['1rem', { lineHeight: '1.5rem' }],
-        'lg': ['1.125rem', { lineHeight: '1.75rem' }],
-        'xl': ['1.25rem', { lineHeight: '1.75rem' }],
-        '2xl': ['1.5rem', { lineHeight: '2rem' }],
-        '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
-        // 모바일 최적화 크기
-        'mobile-title': ['1.25rem', { lineHeight: '1.75rem', fontWeight: '700' }],
-        'mobile-subtitle': ['1rem', { lineHeight: '1.5rem', fontWeight: '600' }],
-        'mobile-body': ['0.9375rem', { lineHeight: '1.5rem' }],
-        'mobile-caption': ['0.8125rem', { lineHeight: '1.25rem' }],
+        'title-large': ['32px', { lineHeight: '40px', fontWeight: '600' }],
+        'title-1': ['24px', { lineHeight: '32px', fontWeight: '600' }],
+        'title-2': ['20px', { lineHeight: '28px', fontWeight: '600' }],
+        'title-3': ['18px', { lineHeight: '24px', fontWeight: '500' }],
+        'headline': ['16px', { lineHeight: '24px', fontWeight: '500' }],
+        'body': ['15px', { lineHeight: '22px', fontWeight: '400' }],
+        'subhead': ['14px', { lineHeight: '20px', fontWeight: '400' }],
+        'footnote': ['13px', { lineHeight: '18px', fontWeight: '400' }],
+        'caption-1': ['12px', { lineHeight: '16px', fontWeight: '400' }],
+        'caption-2': ['11px', { lineHeight: '14px', fontWeight: '400' }],
       },
-      // 모바일 최적화 간격
+      // 간격 시스템
       spacing: {
         'safe-top': 'env(safe-area-inset-top)',
         'safe-bottom': 'env(safe-area-inset-bottom)',
         'safe-left': 'env(safe-area-inset-left)',
         'safe-right': 'env(safe-area-inset-right)',
       },
+      // 플랫 라운드 코너 (최소화)
+      borderRadius: {
+        'flat-sm': '4px',
+        'flat-md': '6px',
+        'flat-lg': '8px',
+        'flat-xl': '12px',
+      },
       // 터치 친화적 최소 크기
       minHeight: {
         'touch': '44px',
+        'nav': '48px',
       },
       minWidth: {
         'touch': '44px',
       },
-      // 터치 피드백용 스케일
-      scale: {
-        '98': '0.98',
-        '102': '1.02',
+      // 그림자 제거 (플랫 디자인)
+      boxShadow: {
+        'none': 'none',
+        'subtle': '0 1px 2px rgba(0, 0, 0, 0.05)',
       },
-      // 애니메이션
+      // 간단한 애니메이션
       animation: {
         'skeleton': 'skeleton 1.5s ease-in-out infinite',
-        'slide-up': 'slideUp 0.3s ease-out',
-        'slide-down': 'slideDown 0.3s ease-out',
-        'fade-in': 'fadeIn 0.2s ease-out',
-        'toast': 'toast 0.3s ease-out',
+        'fade-in': 'fadeIn 0.15s ease-out',
       },
       keyframes: {
         skeleton: {
           '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.5' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(100%)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        slideDown: {
-          '0%': { transform: 'translateY(-100%)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+          '50%': { opacity: '0.4' },
         },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        toast: {
-          '0%': { transform: 'translateY(100%) scale(0.9)', opacity: '0' },
-          '100%': { transform: 'translateY(0) scale(1)', opacity: '1' },
-        },
+      },
+      // 빠른 트랜지션
+      transitionDuration: {
+        'fast': '150ms',
       },
     },
   },

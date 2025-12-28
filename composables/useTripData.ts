@@ -13,43 +13,75 @@ const getCurrentTripId = () => {
   return store.currentTripId || 'spain-portugal-2025' // 기본값
 }
 
-// 여행 일정 데이터 로드
+// 사용자 여행 데이터 확인 (IndexedDB)
+const getUserTripData = (tripId: string) => {
+  const store = useTripStore()
+  return store.userTrips.find(ut => ut.id === tripId)
+}
+
+// 여행 일정 데이터 로드 (IndexedDB 우선 조회)
 export const useItinerary = () => {
   const store = useTripStore()
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<Itinerary>(
     `itinerary-${tripId.value}`,
-    () => $fetch(`/data/trips/${tripId.value}/itinerary.json`),
+    async () => {
+      // 1. IndexedDB에서 사용자 데이터 확인
+      const userTrip = getUserTripData(tripId.value)
+      if (userTrip?.itinerary) {
+        return userTrip.itinerary
+      }
+
+      // 2. 정적 JSON 로드
+      return $fetch(`/data/trips/${tripId.value}/itinerary.json`)
+    },
     {
       watch: [tripId],
-      // 캐시된 데이터가 있으면 사용 (기본 동작)
     }
   )
 }
 
-// 여행지 정보 데이터 로드
+// 여행지 정보 데이터 로드 (IndexedDB 우선 조회)
 export const usePlaces = () => {
   const store = useTripStore()
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<PlacesData>(
     `places-${tripId.value}`,
-    () => $fetch(`/data/trips/${tripId.value}/places.json`),
+    async () => {
+      // 1. IndexedDB에서 사용자 데이터 확인
+      const userTrip = getUserTripData(tripId.value)
+      if (userTrip?.places) {
+        return userTrip.places
+      }
+
+      // 2. 정적 JSON 로드
+      return $fetch(`/data/trips/${tripId.value}/places.json`)
+    },
     {
       watch: [tripId],
     }
   )
 }
 
-// 하이라이트 데이터 로드
+// 하이라이트 데이터 로드 (IndexedDB 우선 조회)
 export const useHighlights = () => {
   const store = useTripStore()
   const tripId = computed(() => store.currentTripId || 'spain-portugal-2025')
 
   return useAsyncData<HighlightsData>(
     `highlights-${tripId.value}`,
-    () => $fetch(`/data/trips/${tripId.value}/highlights.json`),
+    async () => {
+      // 1. IndexedDB에서 사용자 데이터 확인
+      const userTrip = getUserTripData(tripId.value)
+      if (userTrip?.highlights) {
+        return userTrip.highlights
+      }
+
+      // 2. 정적 JSON 로드
+      return $fetch(`/data/trips/${tripId.value}/highlights.json`)
+    },
     {
       watch: [tripId],
     }

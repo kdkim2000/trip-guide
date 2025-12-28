@@ -7,6 +7,23 @@ const toast = useToast()
 const tripStore = useTripStore()
 await tripStore.loadTrips()
 
+// 알림 서비스
+const notifications = useNotifications()
+
+// 클라이언트에서 알림 초기화 및 체크
+onMounted(() => {
+  // 알림 서비스 초기화
+  notifications.init()
+
+  // 현재 여행이 있으면 D-Day 알림 체크
+  if (tripStore.currentTrip) {
+    notifications.checkTripReminder(
+      tripStore.currentTrip.startDate,
+      tripStore.currentTrip.title
+    )
+  }
+})
+
 // 오프라인/온라인 알림
 watch(isOnline, (online) => {
   if (!online) {
@@ -23,7 +40,7 @@ watch(isOnline, (online) => {
     <Transition name="slide-down">
       <div
         v-if="!isOnline"
-        class="fixed top-0 left-0 right-0 z-50 bg-amber-500 text-white text-center py-2 text-sm font-medium safe-top"
+        class="fixed top-0 left-0 right-0 z-50 bg-apple-orange text-white text-center py-2 text-sm font-medium safe-top"
       >
         오프라인 모드 - 저장된 데이터로 동작합니다
       </div>

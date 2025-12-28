@@ -8,6 +8,20 @@ const icons: Record<string, string> = {
   warning: 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z',
   info: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
 }
+
+// 토스트 타입별 색상
+const getToastClass = (type: string) => {
+  switch (type) {
+    case 'success':
+      return 'bg-apple-green text-white'
+    case 'error':
+      return 'bg-apple-red text-white'
+    case 'warning':
+      return 'bg-apple-orange text-white'
+    default:
+      return 'bg-apple-gray-800 dark:bg-apple-gray-700 text-white'
+  }
+}
 </script>
 
 <template>
@@ -21,14 +35,14 @@ const icons: Record<string, string> = {
         <div
           v-for="toast in toasts"
           :key="toast.id"
-          class="toast pointer-events-auto"
-          :class="`toast-${toast.type}`"
+          class="flex items-center gap-2 px-4 py-3 rounded-apple-lg shadow-apple pointer-events-auto cursor-pointer"
+          :class="getToastClass(toast.type)"
           @click="remove(toast.id)"
         >
-          <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="icons[toast.type]" />
           </svg>
-          <span class="text-sm">{{ toast.message }}</span>
+          <span class="text-subhead">{{ toast.message }}</span>
         </div>
       </TransitionGroup>
     </Teleport>
@@ -37,14 +51,36 @@ const icons: Record<string, string> = {
 
 <style scoped>
 .toast-enter-active {
-  animation: toast 0.3s ease-out;
+  animation: toast-in 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 .toast-leave-active {
-  animation: toast 0.2s ease-in reverse;
+  animation: toast-out 0.2s ease-in;
 }
 
 .toast-move {
   transition: transform 0.3s ease;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
 }
 </style>

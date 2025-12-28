@@ -58,7 +58,7 @@ const { isPulling, isRefreshing, pullDistance, canRefresh } = usePullToRefresh(p
 </script>
 
 <template>
-  <div ref="pageRef" class="min-h-screen relative">
+  <div ref="pageRef" class="min-h-screen relative bg-flat-gray-50 dark:bg-flat-gray-900">
     <!-- Pull to Refresh 인디케이터 -->
     <PullToRefresh
       :is-refreshing="isRefreshing"
@@ -67,32 +67,38 @@ const { isPulling, isRefreshing, pullDistance, canRefresh } = usePullToRefresh(p
     />
 
     <!-- 헤더 -->
-    <header class="bg-primary-500 text-white px-4 pt-12 pb-6 safe-top">
-      <div class="max-w-lg mx-auto">
-        <!-- 여행 선택 -->
-        <div class="mb-4">
-          <TripSelector />
-        </div>
+    <header class="bg-white dark:bg-flat-gray-900 pt-safe-top">
+      <div class="px-4 pt-4 pb-2 max-w-lg mx-auto">
+        <!-- Large Title -->
+        <h1 class="text-title-large dark:text-white">여행</h1>
+      </div>
 
-        <!-- 여행 상태 -->
-        <div v-if="tripStatus" class="bg-white/20 rounded-lg p-4">
-          <template v-if="tripStatus.type === 'before'">
-            <p class="text-sm text-primary-100">여행까지</p>
-            <p class="text-3xl font-bold">D-{{ tripStatus.daysLeft }}</p>
-          </template>
-          <template v-else-if="tripStatus.type === 'during'">
-            <p class="text-sm text-primary-100">현재</p>
-            <p class="text-3xl font-bold">Day {{ tripStatus.dayNumber }}</p>
-          </template>
-          <template v-else>
-            <p class="text-lg font-medium">여행 완료</p>
-          </template>
+      <!-- 여행 선택 -->
+      <div class="px-4 pb-4 max-w-lg mx-auto">
+        <TripSelector />
+      </div>
+
+      <!-- 여행 상태 -->
+      <div v-if="tripStatus" class="px-4 pb-6 max-w-lg mx-auto">
+        <div v-if="tripStatus.type === 'before'" class="flex items-baseline gap-2">
+          <span class="text-footnote text-flat-gray-500">출발까지</span>
+          <span class="text-title-1 text-flat-blue dark:text-flat-blue-dark">D-{{ tripStatus.daysLeft }}</span>
+        </div>
+        <div v-else-if="tripStatus.type === 'during'" class="flex items-baseline gap-2">
+          <span class="text-footnote text-flat-gray-500">여행중</span>
+          <span class="text-title-1 text-flat-blue dark:text-flat-blue-dark">Day {{ tripStatus.dayNumber }}</span>
+        </div>
+        <div v-else class="flex items-center gap-2">
+          <span class="text-headline text-flat-gray-500">여행 완료</span>
+          <svg class="w-5 h-5 text-flat-green" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
         </div>
       </div>
     </header>
 
     <!-- 메인 콘텐츠 -->
-    <div class="px-4 py-6 max-w-lg mx-auto space-y-6">
+    <div class="px-4 py-6 max-w-lg mx-auto space-y-8">
       <!-- 로딩 상태 -->
       <template v-if="isLoading">
         <SkeletonCard :show-image="false" :lines="2" />
@@ -109,87 +115,95 @@ const { isPulling, isRefreshing, pullDistance, canRefresh } = usePullToRefresh(p
 
       <!-- 콘텐츠 -->
       <template v-else>
-        <!-- 빠른 링크 (상단으로 이동) -->
+        <!-- 빠른 액세스 -->
         <section class="grid grid-cols-2 gap-3">
-          <NuxtLink to="/schedule" class="card flex items-center gap-3 hover:shadow-md transition-shadow active:scale-98">
-            <IconCalendar class="w-8 h-8 text-primary-500" />
+          <NuxtLink
+            to="/schedule"
+            class="card-apple p-4 flex items-center gap-3 touch-scale"
+          >
+            <div class="w-10 h-10 rounded-flat-md bg-primary-50 flex items-center justify-center">
+              <IconCalendar class="w-5 h-5 text-flat-blue" />
+            </div>
             <div>
-              <p class="font-semibold">전체 일정</p>
-              <p class="text-sm text-gray-500">{{ itinerary?.schedules.length }}일</p>
+              <p class="text-headline dark:text-white">일정</p>
+              <p class="text-footnote text-flat-gray-500">{{ itinerary?.schedules.length }}일</p>
             </div>
           </NuxtLink>
-          <NuxtLink to="/guide" class="card flex items-center gap-3 hover:shadow-md transition-shadow active:scale-98">
-            <IconMap class="w-8 h-8 text-primary-500" />
+          <NuxtLink
+            to="/guide"
+            class="card-apple p-4 flex items-center gap-3 touch-scale"
+          >
+            <div class="w-10 h-10 rounded-flat-md bg-orange-50 flex items-center justify-center">
+              <IconMap class="w-5 h-5 text-flat-orange" />
+            </div>
             <div>
-              <p class="font-semibold">여행지 정보</p>
-              <p class="text-sm text-gray-500">{{ placesData?.places.length }}곳</p>
+              <p class="text-headline dark:text-white">가이드</p>
+              <p class="text-footnote text-flat-gray-500">{{ placesData?.places.length }}곳</p>
             </div>
           </NuxtLink>
         </section>
 
-        <!-- 오늘의 일정 (여행 중일 때) - 강조 스타일 -->
-        <section v-if="currentSchedule" class="card border-l-4 border-l-primary-500 bg-gradient-to-r from-primary-50 to-white dark:from-primary-900/20 dark:to-gray-800">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xl">📅</span>
-            <h2 class="text-lg font-bold">오늘의 일정</h2>
-            <span class="ml-auto text-xs bg-primary-500 text-white px-2 py-0.5 rounded-full">
-              Day {{ tripStatus?.dayNumber }}
-            </span>
+        <!-- 오늘의 일정 (여행 중일 때) -->
+        <section v-if="currentSchedule" class="card-apple overflow-hidden">
+          <div class="px-4 py-3 border-b border-flat-gray-200 dark:border-flat-gray-700 flex items-center justify-between">
+            <h2 class="text-headline dark:text-white">오늘의 일정</h2>
+            <span class="badge badge-primary">Day {{ tripStatus?.dayNumber }}</span>
           </div>
-        <div class="space-y-3">
-          <div
-            v-for="item in currentSchedule.items.slice(0, 3)"
-            :key="item.id"
-            class="flex items-start gap-3"
-          >
-            <span class="text-sm text-gray-500 w-14 shrink-0">{{ item.startTime }}</span>
-            <div>
-              <p class="font-medium">{{ item.title }}</p>
-              <p v-if="item.notes" class="text-sm text-gray-500">{{ item.notes }}</p>
+          <div class="divide-y divide-flat-gray-200 dark:divide-flat-gray-700">
+            <div
+              v-for="item in currentSchedule.items.slice(0, 3)"
+              :key="item.id"
+              class="px-4 py-3 flex items-start gap-4"
+            >
+              <span class="text-subhead text-flat-gray-500 w-12 shrink-0">{{ item.startTime }}</span>
+              <div class="flex-1 min-w-0">
+                <p class="text-body dark:text-white truncate">{{ item.title }}</p>
+                <p v-if="item.notes" class="text-footnote text-flat-gray-500 truncate">{{ item.notes }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <NuxtLink to="/schedule" class="block mt-4 text-center text-primary-500 text-sm font-medium">
-          전체 일정 보기 →
-        </NuxtLink>
-      </section>
-
-      <!-- 주요 하이라이트 -->
-      <section>
-        <h2 class="text-lg font-semibold mb-3">주요 하이라이트</h2>
-        <div class="grid grid-cols-2 gap-3">
-          <div
-            v-for="highlight in topHighlights"
-            :key="highlight.id"
-            class="card"
+          <NuxtLink
+            to="/schedule"
+            class="block px-4 py-3 text-center text-flat-blue dark:text-flat-blue-dark text-subhead font-medium border-t border-flat-gray-200 dark:border-flat-gray-700 touch-feedback"
           >
-            <span class="text-xs bg-primary-100 text-primary-700 px-2 py-0.5 rounded-full">
-              Day {{ highlight.dayNumber }}
-            </span>
-            <h3 class="font-medium mt-2 line-clamp-2">{{ highlight.title }}</h3>
-            <p class="text-sm text-gray-500 mt-1 line-clamp-2">{{ highlight.description }}</p>
-          </div>
-        </div>
-      </section>
+            전체 일정 보기
+          </NuxtLink>
+        </section>
 
-      <!-- 여행 정보 요약 -->
-      <section class="card">
-        <h2 class="text-lg font-semibold mb-3">여행 정보</h2>
-        <dl class="space-y-2 text-sm">
-          <div class="flex justify-between">
-            <dt class="text-gray-500">기간</dt>
-            <dd>{{ itinerary?.tripInfo.startDate }} ~ {{ itinerary?.tripInfo.endDate }}</dd>
+        <!-- 주요 하이라이트 -->
+        <section v-if="topHighlights.length > 0">
+          <h2 class="text-footnote uppercase text-flat-gray-500 px-1 mb-3">하이라이트</h2>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              v-for="highlight in topHighlights"
+              :key="highlight.id"
+              class="card-apple p-4"
+            >
+              <span class="badge badge-primary">Day {{ highlight.dayNumber }}</span>
+              <h3 class="text-headline dark:text-white mt-2 line-clamp-2">{{ highlight.title }}</h3>
+              <p class="text-footnote text-flat-gray-500 mt-1 line-clamp-2">{{ highlight.description }}</p>
+            </div>
           </div>
-          <div class="flex justify-between">
-            <dt class="text-gray-500">항공</dt>
-            <dd>{{ itinerary?.tripInfo.airline?.name }}</dd>
+        </section>
+
+        <!-- 여행 정보 요약 -->
+        <section>
+          <h2 class="text-footnote uppercase text-flat-gray-500 px-1 mb-3">여행 정보</h2>
+          <div class="card-apple overflow-hidden divide-y divide-flat-gray-200 dark:divide-flat-gray-700">
+            <div class="px-4 py-3 flex justify-between items-center">
+              <span class="text-body dark:text-white">기간</span>
+              <span class="text-body text-flat-gray-500">{{ itinerary?.tripInfo.startDate }} ~ {{ itinerary?.tripInfo.endDate }}</span>
+            </div>
+            <div class="px-4 py-3 flex justify-between items-center">
+              <span class="text-body dark:text-white">항공</span>
+              <span class="text-body text-flat-gray-500">{{ itinerary?.tripInfo.airline?.name }}</span>
+            </div>
+            <div class="px-4 py-3 flex justify-between items-center">
+              <span class="text-body dark:text-white">숙소</span>
+              <span class="text-body text-flat-gray-500 text-right max-w-[55%] truncate">{{ itinerary?.tripInfo.accommodation }}</span>
+            </div>
           </div>
-          <div class="flex justify-between">
-            <dt class="text-gray-500">숙소</dt>
-            <dd class="text-right max-w-[60%]">{{ itinerary?.tripInfo.accommodation }}</dd>
-          </div>
-        </dl>
-      </section>
+        </section>
       </template>
     </div>
   </div>
