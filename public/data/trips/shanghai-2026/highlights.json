@@ -1,0 +1,186 @@
+{
+  "tripHighlights": [
+    {
+      "id": "hl-sh-001",
+      "placeId": "place-the-bund",
+      "dayNumber": 2,
+      "title": "상하이의 상징, 외탄 야경",
+      "description": "황푸강변의 52개 서양식 건축물과 강 건너 푸동의 화려한 스카이라인이 어우러진 환상적인 야경. 상하이 여행의 필수 코스입니다.",
+      "priority": 1,
+      "tags": ["필수방문", "야경", "상하이상징", "포토스팟"]
+    },
+    {
+      "id": "hl-sh-002",
+      "placeId": "place-provisional-government",
+      "dayNumber": 3,
+      "title": "대한민국 임시정부청사",
+      "description": "1919년부터 1932년까지 김구 선생 등 독립운동가들이 활동한 역사의 현장. 한국인이라면 반드시 방문해야 할 곳입니다.",
+      "priority": 1,
+      "tags": ["필수방문", "역사", "독립운동", "한국인필수"]
+    },
+    {
+      "id": "hl-sh-003",
+      "placeId": "place-starbucks-reserve",
+      "dayNumber": 2,
+      "title": "아시아 최대 스타벅스 리저브",
+      "description": "2,700평방미터 규모의 아시아 최대 스타벅스에서 프리미엄 커피와 원두 로스팅 현장을 체험해보세요.",
+      "priority": 2,
+      "tags": ["특별체험", "커피", "인스타그램"]
+    },
+    {
+      "id": "hl-sh-004",
+      "placeId": "place-panlong-tiandi",
+      "dayNumber": 2,
+      "title": "상해의 새로운 핫플 판롱티엔디",
+      "description": "2023년 오픈한 수향마을 스타일의 복합문화공간. 배 위 티타임과 인스타그래머블 카페가 가득합니다.",
+      "priority": 2,
+      "tags": ["핫플레이스", "카페", "포토스팟", "신상"]
+    },
+    {
+      "id": "hl-sh-005",
+      "placeId": "place-tianzifang",
+      "dayNumber": 1,
+      "title": "상하이의 인사동, 티엔즈팡",
+      "description": "좁은 골목 속 앤티크한 카페와 공방, 기념품 숍이 가득한 이국적인 거리를 걸어보세요.",
+      "priority": 2,
+      "tags": ["문화거리", "쇼핑", "카페", "골목투어"]
+    },
+    {
+      "id": "hl-sh-006",
+      "placeId": "place-yuyuan-garden",
+      "dayNumber": 3,
+      "title": "옛 상해의 정취, 예원",
+      "description": "명나라 시대 조성된 전통 정원과 140년 역사의 전통 시장에서 진짜 중국을 만나보세요. 난샹 샤오롱바오는 필수!",
+      "priority": 2,
+      "tags": ["전통", "정원", "맛집", "쇼핑"]
+    },
+    {
+      "id": "hl-sh-007",
+      "placeId": "place-xintiandi",
+      "dayNumber": 3,
+      "title": "세련된 카페 골목, 신천지",
+      "description": "1920년대 석고문 건물을 현대적으로 재해석한 복합문화공간. 도심 속 여유로운 휴식처입니다.",
+      "priority": 3,
+      "tags": ["카페", "휴식", "분위기", "데이트코스"]
+    },
+    {
+      "id": "hl-sh-008",
+      "placeId": "place-lujiazui",
+      "dayNumber": 3,
+      "title": "미래도시 루자주이",
+      "description": "상하이 금융 중심지에서 IFC몰 쇼핑과 루자주이 육교에서의 스카이라인 감상을 즐겨보세요.",
+      "priority": 3,
+      "tags": ["쇼핑", "전망", "현대도시"]
+    }
+  ],
+  "dailyBest": [
+    {
+      "dayNumber": 1,
+      "title": "상하이 첫인상",
+      "bestMoment": "티엔즈팡의 이국적인 골목에서 느끼는 상해의 첫 만남"
+    },
+    {
+      "dayNumber": 2,
+      "title": "상하이 핵심 투어",
+      "bestMoment": "아시아 최대 스타벅스 체험과 황홀한 외탄 야경"
+    },
+    {
+      "dayNumber": 3,
+      "title": "역사와 현대의 공존",
+      "bestMoment": "임시정부청사의 감동과 루자주이의 미래도시 풍경"
+    },
+    {
+      "dayNumber": 4,
+      "title": "남경로와 안녕 상하이",
+      "bestMoment": "180년 역사의 번화가 남경로 산책과 2층 버스 시티투어"
+    }
+  ],
+  "photoSpots": [
+    {
+      "id": "photo-sh-001",
+      "placeId": "place-the-bund",
+      "title": "외탄 야경",
+      "description": "푸동의 동방명주탑, 상하이타워를 배경으로 촬영",
+      "bestTime": "일몰 후 19:00-21:00",
+      "tips": "삼각대 사용시 더욱 선명한 야경 촬영 가능"
+    },
+    {
+      "id": "photo-sh-002",
+      "placeId": "place-tianzifang",
+      "title": "티엔즈팡 골목",
+      "description": "좁은 골목의 이국적인 분위기를 담은 스트리트 사진",
+      "bestTime": "오후 늦은 시간 (황금빛 조명)",
+      "tips": "인파를 피해 평일 오전 방문 추천"
+    },
+    {
+      "id": "photo-sh-003",
+      "placeId": "place-starbucks-reserve",
+      "title": "스타벅스 리저브 내부",
+      "description": "거대한 원두 사일로와 로스팅 기계 배경",
+      "bestTime": "오전 개장 직후",
+      "tips": "2층에서 내려다보는 전경이 베스트"
+    },
+    {
+      "id": "photo-sh-004",
+      "placeId": "place-yuyuan-garden",
+      "title": "예원 구곡교",
+      "description": "지그재그 다리와 호심정을 배경으로",
+      "bestTime": "오전 09:00-10:00",
+      "tips": "다리 위에서 사방으로 촬영 가능"
+    },
+    {
+      "id": "photo-sh-005",
+      "placeId": "place-lujiazui",
+      "title": "루자주이 육교",
+      "description": "원형 육교 위에서 360도 푸동 스카이라인 촬영",
+      "bestTime": "맑은 날 오후",
+      "tips": "동방명주탑, 상하이타워가 모두 보이는 각도 찾기"
+    },
+    {
+      "id": "photo-sh-006",
+      "placeId": "place-panlong-tiandi",
+      "title": "판롱티엔디 수로",
+      "description": "수향마을 스타일 건물과 수로를 배경으로",
+      "bestTime": "오전~오후",
+      "tips": "카페 테라스에서 수로를 바라보며 촬영"
+    }
+  ],
+  "localTips": [
+    {
+      "category": "음식",
+      "title": "샤오롱바오 (小籠包)",
+      "description": "상하이 대표 음식. 예원의 난샹만터우뎬이 원조로 유명합니다. 육즙이 터지지 않게 조심해서 드세요!",
+      "where": "예원 옛거리"
+    },
+    {
+      "category": "음식",
+      "title": "생전병 (生煎包)",
+      "description": "바삭하게 구운 만두. 현지인들이 아침 식사로 즐겨 먹는 상하이 소울푸드입니다.",
+      "where": "예원, 남경로 주변"
+    },
+    {
+      "category": "쇼핑",
+      "title": "상하이 기념품",
+      "description": "티엔즈팡에서 수공예품, 전통 부채, 비단 스카프 등을 구입할 수 있습니다.",
+      "where": "티엔즈팡"
+    },
+    {
+      "category": "교통",
+      "title": "지하철 이용",
+      "description": "상하이 지하철은 깨끗하고 저렴합니다. 관광지 대부분이 지하철로 연결되어 있어요.",
+      "where": "상하이 전역"
+    },
+    {
+      "category": "팁",
+      "title": "결제수단",
+      "description": "위챗페이, 알리페이가 보편화되어 있지만 외국인은 현금이나 신용카드 준비 권장",
+      "where": "상하이 전역"
+    },
+    {
+      "category": "팁",
+      "title": "VPN 필수",
+      "description": "중국에서는 구글, 유튜브, 카카오톡 등이 차단됩니다. VPN 앱을 미리 설치하세요.",
+      "where": "중국 전역"
+    }
+  ]
+}
