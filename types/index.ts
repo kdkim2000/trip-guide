@@ -259,11 +259,17 @@ export interface TermsAndConditions {
 // 언어 표현
 export interface LanguagePhrase {
   id: string
-  language: 'spanish' | 'portuguese'
+  language: string  // 'spanish', 'portuguese', 'chinese' 등
   category: string
   korean: string
   foreign: string
   pronunciation: string
+}
+
+// 지원 언어 정보
+export interface LanguageInfo {
+  code: string      // 'spanish', 'portuguese', 'chinese'
+  label: string     // '스페인어', '포르투갈어', '중국어'
 }
 
 // 체크리스트 아이템
@@ -285,7 +291,8 @@ export interface ChecklistCategory {
 // 전체 여행꿀팁 데이터
 export interface TravelTipsData {
   precautions: PrecautionCategory[]
-  termsAndConditions: TermsAndConditions
+  termsAndConditions?: TermsAndConditions  // 자유여행은 없을 수 있음
+  languages?: LanguageInfo[]               // 지원 언어 목록 (없으면 phrases에서 추출)
   phrases: LanguagePhrase[]
   checklist: ChecklistCategory[]
 }

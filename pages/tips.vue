@@ -1,24 +1,75 @@
 <script setup lang="ts">
-import type { TravelTipsData, ChecklistCategory } from '~/types'
+import type { TravelTipsData, ChecklistCategory, LanguageInfo } from '~/types'
 
-// 탭 정의
-const tabs = [
-  { id: 'precautions', label: '유의사항' },
-  { id: 'terms', label: '약관' },
-  { id: 'language', label: '언어' },
-  { id: 'checklist', label: '준비물' },
-]
+const tripStore = useTripStore()
+
+// 현재 여행 ID 기반으로 동적 데이터 로드
+const { data: tipsData, status, refresh } = await useAsyncData<TravelTipsData>(
+  () => `travel-tips-${tripStore.currentTripId}`,
+  () => $fetch(`/data/trips/${tripStore.currentTripId}/tips.json`),
+  { watch: [() => tripStore.currentTripId] }
+)
+
+// 지원 언어 목록 (데이터에서 동적으로 추출)
+const availableLanguages = computed<LanguageInfo[]>(() => {
+  if (!tipsData.value) return []
+
+  // languages 필드가 있으면 사용
+  if (tipsData.value.languages?.length) {
+    return tipsData.value.languages
+  }
+
+  // 없으면 phrases에서 언어 추출
+  const languageSet = new Set<string>()
+  tipsData.value.phrases.forEach(p => languageSet.add(p.language))
+
+  const labelMap: Record<string, string> = {
+    spanish: '스페인어',
+    portuguese: '포르투갈어',
+    chinese: '중국어',
+    english: '영어',
+    japanese: '일본어',
+  }
+
+  return Array.from(languageSet).map(code => ({
+    code,
+    label: labelMap[code] || code,
+  }))
+})
+
+// 약관 탭 표시 여부 (자유여행은 약관이 없을 수 있음)
+const hasTerms = computed(() => !!tipsData.value?.termsAndConditions)
+
+// 탭 정의 (동적)
+const tabs = computed(() => {
+  const baseTabs = [
+    { id: 'precautions', label: '유의사항' },
+  ]
+
+  if (hasTerms.value) {
+    baseTabs.push({ id: 'terms', label: '약관' })
+  }
+
+  if (availableLanguages.value.length > 0) {
+    baseTabs.push({ id: 'language', label: '언어' })
+  }
+
+  baseTabs.push({ id: 'checklist', label: '준비물' })
+
+  return baseTabs
+})
 
 const activeTab = ref('precautions')
 
-// 언어 선택 (스페인어/포르투갈어)
-const selectedLanguage = ref<'spanish' | 'portuguese'>('spanish')
+// 언어 선택 (동적)
+const selectedLanguage = ref<string>('')
 
-// 데이터 로드
-const { data: tipsData, status } = await useAsyncData<TravelTipsData>(
-  'travel-tips',
-  () => $fetch('/data/tips.json')
-)
+// 언어 목록이 로드되면 첫 번째 언어 선택
+watch(availableLanguages, (languages) => {
+  if (languages.length > 0 && !selectedLanguage.value) {
+    selectedLanguage.value = languages[0].code
+  }
+}, { immediate: true })
 
 // 체크리스트 상태 관리
 const checklistStates = ref<Record<string, boolean>>({})
@@ -135,7 +186,7 @@ const checklistProgress = computed(() => {
       </div>
 
       <!-- 약관 탭 -->
-      <div v-else-if="activeTab === 'terms' && tipsData" class="space-y-6">
+      <div v-else-if="activeTab === 'terms' && tipsData?.termsAndConditions" class="space-y-6">
         <!-- 특별약관 -->
         <section>
           <h2 class="text-footnote uppercase text-apple-gray-500 px-1 mb-3">특별약관</h2>
@@ -195,22 +246,21 @@ const checklistProgress = computed(() => {
 
       <!-- 언어 탭 -->
       <div v-else-if="activeTab === 'language' && tipsData" class="space-y-6">
-        <!-- 언어 선택 세그먼트 -->
-        <div class="segment-control">
+        <!-- 언어 선택 세그먼트 (동적) -->
+        <div v-if="availableLanguages.length > 1" class="segment-control">
           <button
+            v-for="lang in availableLanguages"
+            :key="lang.code"
             class="segment-item"
-            :class="{ active: selectedLanguage === 'spanish' }"
-            @click="selectedLanguage = 'spanish'"
+            :class="{ active: selectedLanguage === lang.code }"
+            @click="selectedLanguage = lang.code"
           >
-            스페인어
+            {{ lang.label }}
           </button>
-          <button
-            class="segment-item"
-            :class="{ active: selectedLanguage === 'portuguese' }"
-            @click="selectedLanguage = 'portuguese'"
-          >
-            포르투갈어
-          </button>
+        </div>
+        <!-- 단일 언어일 경우 헤더 표시 -->
+        <div v-else-if="availableLanguages.length === 1" class="text-subhead text-apple-gray-500">
+          {{ availableLanguages[0].label }} 기본 표현
         </div>
 
         <!-- 카테고리별 문구 -->

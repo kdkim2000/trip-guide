@@ -9,6 +9,16 @@
       "endDate": "2025-02-09",
       "countries": ["스페인", "포르투갈"],
       "status": "upcoming"
+    },
+    {
+      "id": "shanghai-2026",
+      "title": "상하이",
+      "subtitle": "4일간의 상하이 핵심 투어",
+      "thumbnail": "/images/shanghai/waitan.jpg",
+      "startDate": "2026-01-12",
+      "endDate": "2026-01-15",
+      "countries": ["중국"],
+      "status": "upcoming"
     }
   ],
   "defaultTripId": "spain-portugal-2025"

@@ -1,6 +1,36 @@
 {
   "places": [
     {
+      "id": "place-oriental-pearl-tower",
+      "name": "동방명주탑",
+      "nameLocal": "东方明珠广播电视塔",
+      "city": "상하이",
+      "country": "중국",
+      "category": "tower",
+      "images": [
+        "/images/shanghai/oriental-pearl-tower3.jpg",
+        "/images/shanghai/oriental-pearl-tower2.jpg",
+        "/images/shanghai/oriental-pearl-tower1.jpg"
+      ],
+      "location": {
+        "address": "1 Century Avenue, Pudong New District, Shanghai, China",
+        "coordinates": { "lat": 31.2397, "lng": 121.4998 }
+      },
+      "basicInfo": {
+        "openingHours": "08:00-21:30",
+        "admission": "약 220위안 (전망대)",
+        "recommendedDuration": "1-1.5시간",
+        "website": "http://www.orientalpearltower.com"
+      },
+      "description": {
+        "summary": "상하이의 상징, 아시아에서 가장 높았던 TV 타워",
+        "history": "동방명주탑(东方明珠广播电视塔)은 1991년 착공하여 1994년 완공된 상하이의 상징적인 랜드마크입니다. 높이 468m로 완공 당시 아시아에서 가장 높은 타워였으며, 현재도 세계에서 6번째로 높은 TV 타워입니다. '동양의 진주'라는 이름처럼 11개의 크고 작은 구체가 마치 진주가 옥반 위에 떨어지는 듯한 형상을 하고 있습니다. 이 디자인은 당나라 시인 백거이(白居易)의 시 '비파행(琵琶行)'에서 영감을 받았습니다. 263m 높이의 중간 구체에는 회전 레스토랑이 있으며, 350m 높이의 태공캡슐에서는 투명 바닥을 통해 아찔한 전망을 즐길 수 있습니다. 지하에는 상하이역사진열관이 있어 100여 년의 상하이 역사를 체험할 수 있습니다.",
+        "highlights": ["1994년 완공, 468m 높이", "11개 구체의 독특한 디자인", "350m 태공캡슐 투명 바닥", "회전 레스토랑", "상하이역사진열관"]
+      },
+      "tips": ["오전 일찍 방문 시 대기 시간 짧음", "맑은 날 전망 최고", "티켓 온라인 예매 권장", "지하 역사진열관 무료 관람 가능"],
+      "photoSpots": ["외탄에서 전경 촬영", "루자주이 육교에서", "투명 바닥 위", "회전 레스토랑"]
+    },
+    {
       "id": "place-tianzifang",
       "name": "티엔즈팡",
       "nameLocal": "田子坊",

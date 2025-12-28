@@ -10,6 +10,8 @@ const props = withDefaults(defineProps<Props>(), {
   isSelected: false
 })
 
+const { getImagePath } = useImagePath()
+
 const emit = defineEmits<{
   select: [tripId: string]
 }>()
@@ -63,7 +65,7 @@ const statusBadgeClass = computed(() => {
       <!-- 썸네일 -->
       <div class="w-16 h-16 rounded-apple-md overflow-hidden shrink-0 bg-apple-gray-100 dark:bg-apple-gray-700">
         <NuxtImg
-          :src="trip.thumbnail"
+          :src="getImagePath(trip.thumbnail)"
           :alt="trip.title"
           class="w-full h-full object-cover"
           loading="lazy"

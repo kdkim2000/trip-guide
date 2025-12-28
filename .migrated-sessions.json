@@ -1,0 +1,18 @@
+{
+  "migratedSessions": [
+    "5fb8a512-db80-4a15-a9d6-f2bb86afc7ef",
+    "65955e3e-1159-4602-83aa-f20fdf7e08b5",
+    "76755a7c-a775-49e3-b208-9041189248ad",
+    "bde32c6b-9920-4dc4-b9ab-2bb8f7ebee9a"
+  ],
+  "lastMigration": "2025-12-28T08:18:18.659Z",
+  "totalMigrated": 4,
+  "stats": {
+    "byCategory": {
+      "ui-ux": 4
+    },
+    "byMonth": {
+      "2025-12": 4
+    }
+  }
+}
