@@ -29,23 +29,11 @@ export default defineNuxtConfig({
   },
 
   // 이미지 최적화 설정
+  // SPA 모드(ssr: false)에서는 IPX 서버가 동작하지 않으므로 비활성화
   image: {
-    // GitHub Pages 정적 호스팅: IPX 서버가 없으므로 최적화 비활성화
-    provider: process.env.NUXT_APP_BASE_URL ? 'none' : 'ipx',
+    provider: 'none',
     // 로컬 이미지 디렉토리
     dir: 'public',
-    // 이미지 품질 (기본값 80)
-    quality: 80,
-    // 이미지 포맷 설정
-    format: ['webp', 'jpg'],
-    // 화면 크기별 이미지 사이즈
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-    },
   },
 
   app: {
