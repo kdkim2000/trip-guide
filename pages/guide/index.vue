@@ -3,6 +3,7 @@ import type { Place } from '~/types'
 
 // Composable을 통한 데이터 로드 (pending, error 상태 추적)
 const { data: placesData, pending, error, refresh } = await usePlaces()
+const { getImagePath } = useImagePath()
 
 // 검색어
 const searchQuery = ref('')
@@ -151,7 +152,7 @@ const placesByCity = computed(() => {
               <!-- 썸네일 이미지 -->
               <div v-if="place.images && place.images.length > 0" class="shrink-0 w-20 h-20 rounded-flat-md overflow-hidden bg-flat-gray-100">
                 <NuxtImg
-                  :src="place.images[0]"
+                  :src="getImagePath(place.images[0])"
                   :alt="place.name"
                   width="80"
                   height="80"

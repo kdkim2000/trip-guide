@@ -7,6 +7,7 @@ const placeId = route.params.id as string
 // Composable을 통한 데이터 로드
 const { data: placesData } = await usePlaces()
 const { data: highlightsData } = await useHighlights()
+const { getImagePath } = useImagePath()
 
 // 현재 장소 정보
 const place = computed<Place | undefined>(() => {
@@ -111,7 +112,7 @@ const { isSwiping, direction } = useSwipe(galleryRef, {
       >
         <div class="aspect-[4/3] bg-apple-gray-100 dark:bg-apple-gray-800 overflow-hidden">
           <NuxtImg
-            :src="place.images[currentImageIndex]"
+            :src="getImagePath(place.images[currentImageIndex])"
             :alt="`${place.name} - ${currentImageIndex + 1}`"
             width="640"
             height="480"

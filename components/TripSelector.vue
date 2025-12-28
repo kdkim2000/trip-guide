@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const tripStore = useTripStore()
 const toast = useToast()
+const { getImagePath } = useImagePath()
 
 // 모달 상태
 const isOpen = ref(false)
@@ -46,7 +47,7 @@ onUnmounted(() => {
       <div v-if="tripStore.currentTrip" class="flex items-center gap-3">
         <div class="w-10 h-10 rounded-apple-md overflow-hidden bg-apple-gray-100 dark:bg-apple-gray-700 shrink-0">
           <NuxtImg
-            :src="tripStore.currentTrip.thumbnail"
+            :src="getImagePath(tripStore.currentTrip.thumbnail)"
             :alt="tripStore.currentTrip.title"
             class="w-full h-full object-cover"
             width="40"
