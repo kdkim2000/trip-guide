@@ -1,0 +1,34 @@
+---
+pid: 41992
+cwd: |
+  E:/apps/trip.com
+last_command: git status
+last_exit_code: 0
+---
+
+kdkim2000@DESKTOP-E91TQ0N MINGW64 /e/apps/trip.com (01-tips)
+$ git status
+On branch 01-tips
+Your branch is up to date with 'origin/01-tips'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .migrated-sessions.json
+        modified:   composables/useIndexedDB.ts
+        modified:   composables/useTripData.ts
+        modified:   pages/schedule.vue
+        modified:   scripts/extract-all-sessions.mjs
+        modified:   stores/trip.ts
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        components/ScheduleItemAddSheet.vue
+        components/TimeEditSheet.vue
+        composables/useTimeEditor.ts
+        docs/schedule-item-add-feature.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kdkim2000@DESKTOP-E91TQ0N MINGW64 /e/apps/trip.com (01-tips)
+$

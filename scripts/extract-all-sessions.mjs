@@ -4,10 +4,9 @@ import path from 'path';
 const dir = 'C:/Users/kdkim2000/.claude/projects/E--apps-trip-com';
 const files = fs.readdirSync(dir).filter(f => f.endsWith('.jsonl') && !f.startsWith('agent-'));
 
-// 모든 세션의 요약과 주요 대화 추출
-const allData = [];
+ const allData = [];
 
-files.forEach(file => {
+files.forEach(file => { 
   const content = fs.readFileSync(path.join(dir, file), 'utf8');
   const lines = content.split('\n').filter(l => l.trim());
 
