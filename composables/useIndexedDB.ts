@@ -64,12 +64,32 @@ export const useIndexedDB = () => {
   const saveTrip = async (tripData: UserTripData): Promise<void> => {
     const database = await getDB()
     return new Promise((resolve, reject) => {
+      // #region agent log
+      const canStringifyTripData = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+      fetch('http://127.0.0.1:7242/ingest/6d58e71f-f7ca-4deb-8a44-d47e17225386',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'useIndexedDB.ts:64',message:'saveTrip entry',data:{tripDataId:tripData.id,canStringify:canStringifyTripData,itineraryType:typeof tripData.itinerary,placesType:typeof tripData.places,highlightsType:typeof tripData.highlights},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'A'})}).catch(()=>{});
+      // #endregion
+      // IndexedDB에 저장하기 전에 한 번 더 평면 객체로 변환 (안전장치)
+      const plainData = JSON.parse(JSON.stringify(tripData))
+      // #region agent log
+      const canStringifyPlainData = (() => { try { JSON.stringify(plainData); return true; } catch { return false; } })();
+      fetch('http://127.0.0.1:7242/ingest/6d58e71f-f7ca-4deb-8a44-d47e17225386',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'useIndexedDB.ts:68',message:'before store.put',data:{plainDataId:plainData.id,canStringify:canStringifyPlainData},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'A'})}).catch(()=>{});
+      // #endregion
       const transaction = database.transaction([STORES.USER_TRIPS], 'readwrite')
       const store = transaction.objectStore(STORES.USER_TRIPS)
-      const request = store.put(tripData)
+      const request = store.put(plainData)
 
-      request.onsuccess = () => resolve()
-      request.onerror = () => reject(request.error)
+      request.onsuccess = () => {
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/6d58e71f-f7ca-4deb-8a44-d47e17225386',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'useIndexedDB.ts:75',message:'store.put success',data:{},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'A'})}).catch(()=>{});
+        // #endregion
+        resolve()
+      }
+      request.onerror = () => {
+        // #region agent log
+        fetch('http://127.0.0.1:7242/ingest/6d58e71f-f7ca-4deb-8a44-d47e17225386',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'useIndexedDB.ts:79',message:'store.put error',data:{errorName:request.error?.name,errorMessage:request.error?.message},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hypothesisId:'A'})}).catch(()=>{});
+        // #endregion
+        reject(request.error)
+      }
     })
   }
 

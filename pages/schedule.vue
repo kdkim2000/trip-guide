@@ -1,9 +1,24 @@
 <script setup lang="ts">
-import type { DaySchedule, Place } from '~/types'
+import type { DaySchedule, Place, ScheduleItem } from '~/types'
+import { timeToMinutes, minutesToTime } from '~/composables/useTimeEditor'
 
 // Composable을 통한 데이터 로드 (pending, error 상태 추적)
 const { data: itinerary, pending, error, refresh } = await useItinerary()
 const { data: placesData } = await usePlaces()
+
+// Trip Store
+const tripStore = useTripStore()
+const toast = useToast()
+
+// 시간 편집 시트 상태
+const isTimeEditSheetOpen = ref(false)
+const editingItem = ref<ScheduleItem | null>(null)
+const isSaving = ref(false)
+
+// 일정 추가 시트 상태
+const isAddSheetOpen = ref(false)
+const insertAfterItemId = ref<string | null>(null)
+const isAdding = ref(false)
 
 // URL 쿼리에서 선택된 일자 읽기/쓰기
 const route = useRoute()
@@ -76,6 +91,94 @@ const getPlace = (placeId: string | null): Place | undefined => {
   if (!placeId) return undefined
   return placesData.value?.places.find(p => p.id === placeId)
 }
+
+// 시간 편집 시작
+const openTimeEdit = (item: ScheduleItem) => {
+  editingItem.value = item
+  isTimeEditSheetOpen.value = true
+}
+
+// 시간 편집 닫기
+const closeTimeEdit = () => {
+  isTimeEditSheetOpen.value = false
+  editingItem.value = null
+}
+
+// 일정 추가 시작
+const openAddSheet = (afterItemId?: string | null) => {
+  insertAfterItemId.value = afterItemId || null
+  isAddSheetOpen.value = true
+}
+
+// 일정 추가 닫기
+const closeAddSheet = () => {
+  isAddSheetOpen.value = false
+  insertAfterItemId.value = null
+}
+
+// 시간 저장
+const handleTimeSave = async (startTime: string, endTime: string) => {
+  if (!editingItem.value || !currentDaySchedule.value) {
+    return
+  }
+
+  isSaving.value = true
+  try {
+    const hasStartTimeChanged = editingItem.value.startTime !== startTime
+    const hasEndTimeChanged = editingItem.value.endTime !== endTime
+
+    if (!hasStartTimeChanged && !hasEndTimeChanged) {
+      closeTimeEdit()
+      return
+    }
+
+    await tripStore.updateItineraryItem(
+      currentDaySchedule.value.dayNumber,
+      editingItem.value.id,
+      hasStartTimeChanged ? startTime : undefined,
+      hasEndTimeChanged ? endTime : undefined
+    )
+
+    // 데이터 새로고침
+    await refresh()
+
+    toast.success('시간이 업데이트되었습니다')
+    closeTimeEdit()
+  } catch (error: any) {
+    console.error('Failed to update time:', error)
+    toast.error(error.message || '시간 업데이트에 실패했습니다')
+  } finally {
+    isSaving.value = false
+  }
+}
+
+// 일정 추가 저장
+const handleAddItem = async (newItem: Omit<ScheduleItem, 'id' | 'status'>) => {
+  if (!currentDaySchedule.value) {
+    return
+  }
+
+  isAdding.value = true
+  try {
+    await tripStore.addScheduleItem(
+      currentDaySchedule.value.dayNumber,
+      newItem,
+      insertAfterItemId.value
+    )
+
+    // 데이터 새로고침
+    await refresh()
+
+    toast.success('일정이 추가되었습니다')
+    closeAddSheet()
+  } catch (error: any) {
+    console.error('Failed to add schedule item:', error)
+    toast.error(error.message || '일정 추가에 실패했습니다')
+  } finally {
+    isAdding.value = false
+  }
+}
+
 </script>
 
 <template>
@@ -165,17 +268,20 @@ const getPlace = (placeId: string | null): Place | undefined => {
 
         <!-- 일정 리스트 -->
         <div class="card-apple overflow-hidden">
-          <div
-            v-for="(item, index) in currentDaySchedule.items"
-            :key="item.id"
-            class="px-4 py-4 border-b border-flat-gray-200 dark:border-flat-gray-700 last:border-b-0"
-          >
+          <template v-for="(item, index) in currentDaySchedule.items" :key="item.id">
+            <!-- 일정 아이템 -->
+            <div
+              class="px-4 py-4 border-b border-flat-gray-200 dark:border-flat-gray-700"
+            >
             <div class="flex gap-4">
-              <!-- 시간 -->
-              <div class="w-14 shrink-0">
+              <!-- 시간 (클릭 가능) -->
+              <button
+                @click="openTimeEdit(item)"
+                class="w-14 shrink-0 text-left touch-feedback"
+              >
                 <p class="text-subhead text-flat-gray-500">{{ item.startTime }}</p>
                 <p class="text-caption-1 text-flat-gray-400">{{ item.endTime }}</p>
-              </div>
+              </button>
 
               <!-- 내용 -->
               <div class="flex-1 min-w-0">
@@ -213,7 +319,30 @@ const getPlace = (placeId: string | null): Place | undefined => {
                 </NuxtLink>
               </div>
             </div>
-          </div>
+            </div>
+
+            <!-- 일정 사이 삽입 버튼 -->
+            <button
+              @click="openAddSheet(item.id)"
+              class="w-full px-4 py-2 flex items-center justify-center gap-2 text-flat-gray-400 hover:text-flat-blue dark:hover:text-flat-blue-dark transition-colors touch-feedback border-b border-flat-gray-200 dark:border-flat-gray-700"
+            >
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+              </svg>
+              <span class="text-caption-1">일정 추가</span>
+            </button>
+          </template>
+
+          <!-- 맨 끝 추가 버튼 -->
+          <button
+            @click="openAddSheet(null)"
+            class="w-full px-4 py-3 flex items-center justify-center gap-2 text-flat-blue dark:text-flat-blue-dark font-medium hover:bg-flat-gray-100 dark:hover:bg-flat-gray-800 transition-colors touch-feedback"
+          >
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+            <span class="text-subhead">일정 추가</span>
+          </button>
         </div>
 
         <!-- 스와이프 힌트 -->
@@ -222,5 +351,21 @@ const getPlace = (placeId: string | null): Place | undefined => {
         </p>
       </template>
     </div>
+
+    <!-- 시간 편집 시트 -->
+    <TimeEditSheet
+      :item="editingItem"
+      :is-open="isTimeEditSheetOpen"
+      @close="closeTimeEdit"
+      @save="handleTimeSave"
+    />
+
+    <!-- 일정 추가 시트 -->
+    <ScheduleItemAddSheet
+      :is-open="isAddSheetOpen"
+      :insert-after-item-id="insertAfterItemId"
+      @close="closeAddSheet"
+      @save="handleAddItem"
+    />
   </div>
 </template>

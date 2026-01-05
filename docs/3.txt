@@ -1,0 +1,17 @@
+---
+pid: -1
+cwd: |
+  E:\apps\trip.com
+last_command: |
+  cd /d E:\apps\trip.com && npm run dev 2>&1 | head -20
+last_exit_code: 1
+---
+$ cd /d E:\apps\trip.com && npm run dev 2>&1 | head -20
+��ġ C:\Users\kdkim2000\AppData\Local\Temp\ps-script-e9ff753b-19da-42dc-a11a-3aa2ca489044.ps1:7 ����:24
++ cd /d E:\apps\trip.com && npm run dev 2>&1 | head -20
++                        ~~
+'&&' ��ū�� �� �������� �ùٸ� �� ���� ��ȣ�� �ƴմϴ�.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ 
+$

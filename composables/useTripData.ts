@@ -37,7 +37,7 @@ export const useItinerary = () => {
       return $fetch(`/data/trips/${tripId.value}/itinerary.json`)
     },
     {
-      watch: [tripId],
+      watch: [tripId, () => store.userTrips],
     }
   )
 }

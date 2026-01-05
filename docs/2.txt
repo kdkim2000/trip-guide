@@ -1,0 +1,923 @@
+---
+pid: 28180
+cwd: |
+  E:/apps/trip.com
+active_command: npm run dev
+last_command: git pull
+last_exit_code: 0
+---
+  58 |  ...52',message:'before saveTrip',data:{canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:26:18  
+E:/apps/trip.com/stores/trip.ts:58:240: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:240
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...52',message:'before saveTrip',data:{canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) (x2)
+
+[오후 11:26:42] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:26:42  
+E:/apps/trip.com/stores/trip.ts:58:253: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:253
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...before saveTrip',data:{canStringify:canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:26:42  
+E:/apps/trip.com/stores/trip.ts:58:253: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:253
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...before saveTrip',data:{canStringify:canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:27:00] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:27:00  
+E:/apps/trip.com/stores/trip.ts:58:253: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:253
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...before saveTrip',data:{canStringify:canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:27:00  
+E:/apps/trip.com/stores/trip.ts:58:253: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:253
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...before saveTrip',data:{canStringify:canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:27:05  
+E:/apps/trip.com/stores/trip.ts:58:253: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:58:253
+
+  Expected ")" but found ":"
+  56 |          // #region agent log
+  57 |          const canStringify = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  58 |  ...before saveTrip',data:{canStringify:canStringify}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  59 |          // #endregion
+  60 |          await db.saveTrip(tripData)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) (x2)
+
+[오후 11:28:01] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:28:01  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:28:02  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:28:14  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) (x2)
+
+[오후 11:28:15] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:28:16  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:28:16  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+ℹ Compiled plugins.client.mjs in 638.21ms                                                                                                           nuxt 오후 11:28:17
+ℹ Compiled types/plugins.d.ts in 881.42ms                                                                                                           nuxt 오후 11:28:17
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:28:22  
+E:/apps/trip.com/stores/trip.ts:62:235: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:62:235
+
+  Expected ")" but found ":"
+  60 |          await db.saveTrip(tripData)
+  61 |          // #region agent log
+  62 |  ...p.ts:54',message:'after saveTrip success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  63 |          // #endregion
+  64 |          await loadUserTrips()
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) (x2)
+
+[오후 11:28:52] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:28:52  
+E:/apps/trip.com/stores/trip.ts:67:321: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:67:321
+
+  Expected ")" but found ":"
+  65 |        } catch (error) {
+  66 |          // #region agent log
+  67 |  ...essage,errorStack:error?.stack?.substring(0,200)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  68 |          // #endregion
+  69 |          console.error('Failed to add user trip:', error)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:28:53  
+E:/apps/trip.com/stores/trip.ts:67:321: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:67:321
+
+  Expected ")" but found ":"
+  65 |        } catch (error) {
+  66 |          // #region agent log
+  67 |  ...essage,errorStack:error?.stack?.substring(0,200)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  68 |          // #endregion
+  69 |          console.error('Failed to add user trip:', error)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:29:12] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:29:12  
+E:/apps/trip.com/stores/trip.ts:67:321: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:67:321
+
+  Expected ")" but found ":"
+  65 |        } catch (error) {
+  66 |          // #region agent log
+  67 |  ...essage,errorStack:error?.stack?.substring(0,200)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  68 |          // #endregion
+  69 |          console.error('Failed to add user trip:', error)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:29:13  
+E:/apps/trip.com/stores/trip.ts:67:321: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:67:321
+
+  Expected ")" but found ":"
+  65 |        } catch (error) {
+  66 |          // #region agent log
+  67 |  ...essage,errorStack:error?.stack?.substring(0,200)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+     |                                                                 ^
+  68 |          // #endregion
+  69 |          console.error('Failed to add user trip:', error)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:24] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:24  
+E:/apps/trip.com/stores/trip.ts:205:450: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:205:450
+
+  Expected ")" but found ":"
+  203 |        // 사용자 여행 데이터 생성 (reactive 객체를 평면 객체로 변환)
+  204 |        // #region agent log
+  205 |  ...ghts,highlightsIsArray:Array.isArray(highlights)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+      |                                                                 ^
+  206 |        // #endregion
+  207 |        // toRaw로 reactive 객체를 평면 객체로 변환한 후 JSON 직렬화/역직렬화
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:24  
+E:/apps/trip.com/stores/trip.ts:205:450: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:205:450
+
+  Expected ")" but found ":"
+  203 |        // 사용자 여행 데이터 생성 (reactive 객체를 평면 객체로 변환)
+  204 |        // #region agent log
+  205 |  ...ghts,highlightsIsArray:Array.isArray(highlights)}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+      |                                                                 ^
+  206 |        // #endregion
+  207 |        // toRaw로 reactive 객체를 평면 객체로 변환한 후 JSON 직렬화/역직렬화
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:30] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:30  
+E:/apps/trip.com/stores/trip.ts:224:301: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:224:301
+
+  Expected ")" but found ":"
+  222 |        // #region agent log
+  223 |        const canStringifyUserTrip = (() => { try { JSON.stringify(userTripData); return true; } catch { return false; ...
+  224 |  ...ingify)',data:{canStringify:canStringifyUserTrip}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+      |                                                                 ^
+  225 |        // #endregion
+  226 |
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:30  
+E:/apps/trip.com/stores/trip.ts:224:301: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:224:301
+
+  Expected ")" but found ":"
+  222 |        // #region agent log
+  223 |        const canStringifyUserTrip = (() => { try { JSON.stringify(userTripData); return true; } catch { return false; ...
+  224 |  ...ingify)',data:{canStringify:canStringifyUserTrip}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+      |                                                                 ^
+  225 |        // #endregion
+  226 |
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:34] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:34  
+E:/apps/trip.com/stores/trip.ts:275:360: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:275:360
+
+  Expected ")" but found ":"
+  273 |      // #region agent log
+  274 |      const canStringifyItinerary = (() => { try { JSON.stringify(userTrip.itinerary); return true; } catch { return fa...
+  275 |  ...rTrip.itinerary?.__v_isRef,canStringifyItinerary}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  276 |      // #endregion
+  277 |
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:34  
+E:/apps/trip.com/stores/trip.ts:275:360: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:275:360
+
+  Expected ")" but found ":"
+  273 |      // #region agent log
+  274 |      const canStringifyItinerary = (() => { try { JSON.stringify(userTrip.itinerary); return true; } catch { return fa...
+  275 |  ...rTrip.itinerary?.__v_isRef,canStringifyItinerary}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  276 |      // #endregion
+  277 |
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:43] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:43  
+E:/apps/trip.com/stores/trip.ts:289:360: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:289:360
+
+  Expected ")" but found ":"
+  287 |      // #region agent log
+  288 |      const canStringifyUpdatedItinerary = (() => { try { JSON.stringify(updatedItinerary); return true; } catch { retu...
+  289 |  ...tinerary?.__v_isRef,canStringifyUpdatedItinerary}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  290 |      // #endregion
+  291 |
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:43  
+E:/apps/trip.com/stores/trip.ts:289:360: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:289:360
+
+  Expected ")" but found ":"
+  287 |      // #region agent log
+  288 |      const canStringifyUpdatedItinerary = (() => { try { JSON.stringify(updatedItinerary); return true; } catch { retu...
+  289 |  ...tinerary?.__v_isRef,canStringifyUpdatedItinerary}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  290 |      // #endregion
+  291 |
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:44] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:45  
+E:/apps/trip.com/stores/trip.ts:302:408: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:302:408
+
+  Expected ")" but found ":"
+  300 |      // #region agent log
+  301 |      const canStringifyUpdatedUserTrip = (() => { try { JSON.stringify(updatedUserTrip); return true; } catch { return...
+  302 |  ...highlightsType:typeof updatedUserTrip.highlights}},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix'...
+      |                                                                 ^
+  303 |      // #endregion
+  304 |
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:45  
+E:/apps/trip.com/stores/trip.ts:302:408: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/stores/trip.ts:302:408
+
+  Expected ")" but found ":"
+  300 |      // #region agent log
+  301 |      const canStringifyUpdatedUserTrip = (() => { try { JSON.stringify(updatedUserTrip); return true; } catch { return...
+  302 |  ...highlightsType:typeof updatedUserTrip.highlights}},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix'...
+      |                                                                 ^
+  303 |      // #endregion
+  304 |
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:50] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:50  
+E:/apps/trip.com/composables/useIndexedDB.ts:69:405: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:69:405
+
+  Expected ")" but found ":"
+  67 |        // #region agent log
+  68 |        const canStringifyTripData = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  69 |  ...places,highlightsType:typeof tripData.highlights}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  70 |        // #endregion
+  71 |        // IndexedDB에 저장하기 전에 한 번 더 평면 객체로 변환 (안전장치)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:50  
+E:/apps/trip.com/composables/useIndexedDB.ts:69:405: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:69:405
+
+  Expected ")" but found ":"
+  67 |        // #region agent log
+  68 |        const canStringifyTripData = (() => { try { JSON.stringify(tripData); return true; } catch { return false; } })();
+  69 |  ...places,highlightsType:typeof tripData.highlights}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  70 |        // #endregion
+  71 |        // IndexedDB에 저장하기 전에 한 번 더 평면 객체로 변환 (안전장치)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:30:57] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:30:57  
+E:/apps/trip.com/composables/useIndexedDB.ts:75:294: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:75:294
+
+  Expected ")" but found ":"
+  73 |        // #region agent log
+  74 |        const canStringifyPlainData = (() => { try { JSON.stringify(plainData); return true; } catch { return false; } ...
+  75 |  ...:plainData.id,canStringify:canStringifyPlainData}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  76 |        // #endregion
+  77 |        const transaction = database.transaction([STORES.USER_TRIPS], 'readwrite')
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:30:58  
+E:/apps/trip.com/composables/useIndexedDB.ts:75:294: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:75:294
+
+  Expected ")" but found ":"
+  73 |        // #region agent log
+  74 |        const canStringifyPlainData = (() => { try { JSON.stringify(plainData); return true; } catch { return false; } ...
+  75 |  ...:plainData.id,canStringify:canStringifyPlainData}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  76 |        // #endregion
+  77 |        const transaction = database.transaction([STORES.USER_TRIPS], 'readwrite')
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:31:01] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:31:01  
+E:/apps/trip.com/composables/useIndexedDB.ts:83:238: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:83:238
+
+  Expected ")" but found ":"
+  81 |        request.onsuccess = () => {
+  82 |          // #region agent log
+  83 |  ...exedDB.ts:75',message:'store.put success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  84 |          // #endregion
+  85 |          resolve()
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:31:02  
+E:/apps/trip.com/composables/useIndexedDB.ts:83:238: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:83:238
+
+  Expected ")" but found ":"
+  81 |        request.onsuccess = () => {
+  82 |          // #region agent log
+  83 |  ...exedDB.ts:75',message:'store.put success',data:{}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  84 |          // #endregion
+  85 |          resolve()
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:31:05] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:31:06  
+E:/apps/trip.com/composables/useIndexedDB.ts:89:301: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:89:301
+
+  Expected ")" but found ":"
+  87 |        request.onerror = () => {
+  88 |          // #region agent log
+  89 |  ....error?.name,errorMessage:request.error?.message}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  90 |          // #endregion
+  91 |          reject(request.error)
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:31:06  
+E:/apps/trip.com/composables/useIndexedDB.ts:89:301: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useIndexedDB.ts:89:301
+
+  Expected ")" but found ":"
+  87 |        request.onerror = () => {
+  88 |          // #region agent log
+  89 |  ....error?.name,errorMessage:request.error?.message}},timestamp:Date.now(),sessionId:'debug-session',runId:'run2',hyp...
+     |                                                                 ^
+  90 |          // #endregion
+  91 |          reject(request.error)
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:31:10] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+ℹ Compiled types/plugins.d.ts in 831.27ms                                                                                                           nuxt 오후 11:31:11
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:31:12  
+E:/apps/trip.com/composables/useTimeEditor.ts:129:398: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useTimeEditor.ts:129:398
+
+  Expected ")" but found ":"
+  127 |  ): Itinerary {
+  128 |    // #region agent log
+  129 |  ...tinerary);return true}catch(e){return false}})()}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  130 |    // #endregion
+  131 |    const updatedItinerary: Itinerary = JSON.parse(JSON.stringify(itinerary))
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:31:24] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+[오후 11:31:24] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:31:26  
+E:/apps/trip.com/composables/useTimeEditor.ts:129:398: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useTimeEditor.ts:129:398
+
+  Expected ")" but found ":"
+  127 |  ): Itinerary {
+  128 |    // #region agent log
+  129 |  ...tinerary);return true}catch(e){return false}})()}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  130 |    // #endregion
+  131 |    const updatedItinerary: Itinerary = JSON.parse(JSON.stringify(itinerary))
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:31:28  
+E:/apps/trip.com/composables/useTimeEditor.ts:129:398: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useTimeEditor.ts:129:398
+
+  Expected ")" but found ":"
+  127 |  ): Itinerary {
+  128 |    // #region agent log
+  129 |  ...tinerary);return true}catch(e){return false}})()}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  130 |    // #endregion
+  131 |    const updatedItinerary: Itinerary = JSON.parse(JSON.stringify(itinerary))
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) (x2)
+
+[오후 11:32:11] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue, /components/TimeEditSheet.vue
+
+ ERROR  Pre-transform error: Transform failed with 1 error:  오후 11:32:12  
+E:/apps/trip.com/composables/useTimeEditor.ts:134:382: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useTimeEditor.ts:134:382
+
+  Expected ")" but found ":"
+  132 |    const updatedItinerary: Itinerary = JSON.parse(JSON.stringify(itinerary))
+  133 |    // #region agent log
+  134 |  ...tinerary);return true}catch(e){return false}})()}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  135 |    // #endregion
+  136 |
+
+
+
+ ERROR  Internal server error: Transform failed with 1 error:  오후 11:32:12  
+E:/apps/trip.com/composables/useTimeEditor.ts:134:382: ERROR: Expected ")" but found ":"
+  Plugin: vite:esbuild
+  File: E:/apps/trip.com/composables/useTimeEditor.ts:134:382
+
+  Expected ")" but found ":"
+  132 |    const updatedItinerary: Itinerary = JSON.parse(JSON.stringify(itinerary))
+  133 |    // #region agent log
+  134 |  ...tinerary);return true}catch(e){return false}})()}},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hyp...
+      |                                                                 ^
+  135 |    // #endregion
+  136 |
+
+      at failureErrorWithLog (E:\apps\trip.com\node_modules\esbuild\lib\main.js:1467:15)
+      at E:\apps\trip.com\node_modules\esbuild\lib\main.js:736:50
+      at responseCallbacks.<computed> (E:\apps\trip.com\node_modules\esbuild\lib\main.js:603:9)
+      at handleIncomingPacket (E:\apps\trip.com\node_modules\esbuild\lib\main.js:658:12)
+      at Socket.readFromStdout (E:\apps\trip.com\node_modules\esbuild\lib\main.js:581:7)
+      at Socket.emit (node:events:518:28)
+      at addChunk (node:internal/streams/readable:561:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+      at Readable.push (node:internal/streams/readable:392:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+
+[오후 11:32:17] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue, /components/TimeEditSheet.vue
+[오후 11:32:29] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue, /components/TimeEditSheet.vue (x2)
+[오후 11:47:03] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue, /components/TimeEditSheet.vue (x3)
+[오후 11:47:24] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+[오후 11:47:26] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue (x2)
+[오후 11:47:28] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue (x3)
+ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs    오후 11:47:40
+[오후 11:47:55] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x2)
+[오후 11:47:58] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x3)
+[오후 11:48:29] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x4)
+[오후 11:49:13] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x5)
+
+ ERROR  Internal server error: Element is missing end tag.  오후 11:49:13  
+  Plugin: vite-plugin-vue-inspector
+  File: E:/apps/trip.com/pages/schedule.vue
+      at createCompilerError (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2381:13)
+      at Tokenizer.stateInClosingTagName (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at parse (E:\apps\trip.com\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at result (file:///E:/apps/trip.com/node_modules/vite-plugin-vue-inspector/dist/index.mjs:29:21)
+      at new Promise (<anonymous>)
+      at compileSFCTemplate (file:///E:/apps/trip.com/node_modules/vite-plugin-vue-inspector/dist/index.mjs:26:24)
+
+
+ ERROR  Pre-transform error: Element is missing end tag.  오후 11:49:13  
+  Plugin: vite-plugin-vue-inspector
+  File: E:/apps/trip.com/pages/schedule.vue?macro=true
+
+
+ ERROR  Internal server error: Element is missing end tag.  오후 11:49:13  
+  Plugin: vite-plugin-vue-inspector
+  File: E:/apps/trip.com/pages/schedule.vue?macro=true
+      at createCompilerError (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1378:17)
+      at emitError (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3014:5)
+      at Object.onclosetag (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:2381:13)
+      at Tokenizer.stateInClosingTagName (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:799:16)
+      at Tokenizer.parse (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:1157:16)
+      at Object.baseParse (E:\apps\trip.com\node_modules\@vue\compiler-core\dist\compiler-core.cjs.js:3053:13)
+      at parse (E:\apps\trip.com\node_modules\@vue\compiler-dom\dist\compiler-dom.cjs.js:910:23)
+      at result (file:///E:/apps/trip.com/node_modules/vite-plugin-vue-inspector/dist/index.mjs:29:21)
+      at new Promise (<anonymous>)
+      at compileSFCTemplate (file:///E:/apps/trip.com/node_modules/vite-plugin-vue-inspector/dist/index.mjs:26:24)
+
+ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs    오후 11:49:17
+%2Froutes.mjs (x2)
+[오후 11:49:49] ℹ hmr update /assets/css/main.css, /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue, /components/TimeEditSheet.vue, /components/ScheduleItemAddSheet.vue
+[오후 11:49:49] ℹ hmr update /app.vue, /pages/index.vue, /pages/schedule.vue, /pages/guide/index.vue, /pages/guide/[id].vue, /components/TripSelector.vue, /pages/tips.vue, /pages/settings.vue
+ℹ hmr update /assets/css/main.css                                                                                                                        오후 11:49:49
+ℹ hmr update /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs                         오후 11:49:49
+ℹ hmr update /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x2)                    오후 11:49:50
+ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs   
+ 오후 11:56:48
+[오후 11:56:51] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x2)
+[오후 11:57:15] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x3)
+[오후 11:57:51] ℹ hmr update /pages/schedule.vue, /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x4)
+ℹ hmr update /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs                        
+ 오후 11:58:07
+ℹ hmr update /assets/css/main.css, /pages/schedule.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fapps%2Ftrip.com%2F.nuxt%2Froutes.mjs (x2)                   
+ 오후 11:58:14
